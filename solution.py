@@ -4,10 +4,7 @@ import numpy as np
 import rospy
 
 
-print("asd1")
 env = AutonomousCar()
-
-print("asd")
 
 
 def policy_iteration(env, num_episodes):
@@ -15,7 +12,6 @@ def policy_iteration(env, num_episodes):
         state = env.reset()
         action = [0.5, 0.0, 0.5]
         next_obs, reward, done, _ = env.step(action)
-        print(i)
 
 
 if __name__ == '__main__':

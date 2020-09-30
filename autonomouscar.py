@@ -7,7 +7,7 @@ import sensormessages as sm
 from prius_msgs.msg import Control
 from std_srvs.srv import Empty
 
-print("asd2")
+
 
 
 class AutonomousCar(gym.Env):
