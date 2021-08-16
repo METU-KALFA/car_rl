@@ -33,7 +33,7 @@ if __name__ == '__main__':
         if ch:
             msg = Control()
             if ch == 'w':
-                msg.throttle = 1.0
+                msg.throttle = 3.0
             elif ch == 's':
                 msg.brake = 1.0
             elif ch == 'a':
