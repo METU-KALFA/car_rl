@@ -1,0 +1,1 @@
+Logging to /home/adnanhd/local/src/rl-hw1/data/part2_ab/MountainCarEnv/modelinear_state_discretization21/

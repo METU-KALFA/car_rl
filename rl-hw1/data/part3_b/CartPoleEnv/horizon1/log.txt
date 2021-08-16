@@ -1,0 +1,1 @@
+Logging to /home/adnanhd/local/src/rl-hw1/data/part3_b/CartPoleEnv/horizon1
