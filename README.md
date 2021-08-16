@@ -1,3 +1,6 @@
+# car_rl
+Reinforcement autonomous driving project of Kovan Lab.
+
 # AutonomousCar & Gym Environment
 
 In this project we have built an environment which subclasses OpenAI's gym environment. 
