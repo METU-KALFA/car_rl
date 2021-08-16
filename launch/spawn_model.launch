@@ -7,8 +7,8 @@
     <param name="robot_description" textfile="$(arg model)"/>
   </include>
   
-    <node name="spawn_road" pkg="gazebo_ros" type="spawn_model" args="-param road_description -urdf -x 0 -y -20 -z 0.5 -Y -1.5707 -model road">
       <param name="road_description" textfile="$(arg road_model)"/>
+    <node name="spawn_road" pkg="gazebo_ros" type="spawn_model" args="-param road_description -urdf -x 0 -y -20 -z 0.5 -Y -1.5707 -model road">
     </node>
 
   <!--node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 0 -y -10 -z 0.5 -Y -1.5707 -model mcity"/-->
