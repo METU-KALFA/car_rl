@@ -25,6 +25,13 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 
+# install ros package dependencies
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    ros-foxy-rviz2 \
+    ros-foxy-velodyne \
+    rm -rf /var/lib/apt/lists/*
+
+
 WORKDIR /root
 # run ros package launch file
 #CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
