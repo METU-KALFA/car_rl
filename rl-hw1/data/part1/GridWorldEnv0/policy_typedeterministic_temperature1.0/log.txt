@@ -1,4 +1,4 @@
-Logging to /home/adnanhd/local/src/rl-hw1/data/part1/GridWorldEnv0/policy_typedeterministic_temperature1.0/
+Logging to /home/adnanhd/local/src/kovan_ws/src/car-rl/rl-hw1/data/part1/GridWorldEnv0/policy_typedeterministic_temperature1.0/
 ------------------------------
 | Average Returns | 0        |
 | Iteration       | 0        |

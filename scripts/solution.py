@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from autonomouscar import AutonomousCar
 import numpy as np
 import rospy
