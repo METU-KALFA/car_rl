@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # clone ros package repo
-ENV ROS_WS /opt/ros_ws
+ENV ROS_WS /root/catkin_ws
 RUN mkdir -p $ROS_WS/src
 WORKDIR $ROS_WS
 RUN git -C src clone \
@@ -29,9 +29,23 @@ RUN apt-get update && \
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     ros-foxy-rviz2 \
     ros-foxy-velodyne \
+    ros-foxy-pcl-conversions && \
     rm -rf /var/lib/apt/lists/*
 
+# SVL Bridge codes
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    libboost-all-dev \
+    ros-foxy-lgsvl-bridge && \
+    rm -rf /var/lib/apt/lists/*
 
-WORKDIR /root
+RUN git -C src clone \
+        --single-branch -b foxy-devel \
+        https://github.com/lgsvl/ros2-lgsvl-bridge.git 
+    #source /opt/ros/foxy/setup.bash && \
+RUN colcon build --cmake-args && \
+    source install/setup.bash 
+    #lgsvl_bridge 
+
+WORKDIR $ROS_WS
 # run ros package launch file
-#CMD ["ros2", "launch", "demo_nodes_cpp", "talker_listener.launch.py"]
+#CMD ["colcon", "build", "--cmake-args", "-DCMAKE_BUILD_TYPE=Release"]

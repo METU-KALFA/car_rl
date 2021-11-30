@@ -1,11 +1,25 @@
 #!/bin/bash
 
+XSOCK=/tmp/$USER/.X11-unix
+XAUTH=/tmp/$USER/.docker.xauth
+
+mkdir -p /tmp/$USER/
+
+if [ ! -f "$XAUTH" ]; then 
+	touch $XAUTH
+	xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
+fi
+
 xhost +local:root
 docker run -it --rm \
 	--network host \
-	--env DISPLAY \
+	--env XAUTHORITH=${XAUTH} \
+	--env DISPLAY=$DISPLAY \
+	--env QT_GRAPHICSYSTEM=native \
 	--env QT_X11_NO_MITSHM=1 \
-	--volume ~/ros2_foxy:/root/ros_ws \
-	--volume /tmp/.X11-unix:/tmp/.X11-unix:rw \
-	kovan:latest bash
+	--volume $XSOCK:$XSOCK:rw \
+	--volume $XAUTH:$XAUTH:rw \
+	--volume ~root/ros2_foxy:/root/ros_ws \
+	--volume $XSOCK:/tmp/.X11-unix:rw \
+	kovan:latest /bin/bash
 xhost -local:root
