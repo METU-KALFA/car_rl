@@ -19,7 +19,4 @@ Action space consists of 3 inputs.
 In order to estimate the state of the agent you should utilize and combine different data from sensors. You can choose which sensors to use by modifying the autonomouscar's observation space.
 
 ***
-By
 
-Enes Altuntaş &
-Umur Görkem Karaduman
