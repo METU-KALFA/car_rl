@@ -34,7 +34,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
 
 # SVL Bridge codes
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    libboost-all-dev \
+    libboost-all-dev \  
+    libopencv-dev \
     ros-foxy-lgsvl-bridge && \
     rm -rf /var/lib/apt/lists/*
 
