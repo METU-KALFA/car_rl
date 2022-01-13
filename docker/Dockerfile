@@ -43,8 +43,8 @@ RUN git -C src clone \
         --single-branch -b foxy-devel \
         https://github.com/lgsvl/ros2-lgsvl-bridge.git 
     #source /opt/ros/foxy/setup.bash && \
-RUN colcon build --cmake-args && \
-    source install/setup.bash 
+#RUN colcon build --cmake-args && \
+    #source install/setup.bash 
     #lgsvl_bridge 
 
 WORKDIR $ROS_WS
