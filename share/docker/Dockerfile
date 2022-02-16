@@ -18,7 +18,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     
 # install slam-toolbox ROS2/foxy package dependencies
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    ros-foxy-slam-toolbox
+    ros-foxy-slam-toolbox \
+    ros-foxy-xacro \
+    ros-foxy-robot-localization \
+    ros-foxy-robot-state-publisher-gui
     
 # Remove apt caches
 RUN  rm -rf /var/lib/apt/lists/*
