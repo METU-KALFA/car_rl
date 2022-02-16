@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/descriptions
+-- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/descriptions/sam_bot_description.urdf
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/description
+-- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/description/sam_bot_description.urdf
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/launch
+-- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/launch/display.launch.py
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/rviz
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/rviz/urdf_config.rviz
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/package_run_dependencies/sam_bot_description
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/parent_prefix_path/sam_bot_description
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/ament_prefix_path.sh
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/path.sh
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/path.dsv
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.bash
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.sh
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.zsh
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.dsv
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/package.dsv
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/packages/sam_bot_description
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/cmake/sam_bot_descriptionConfig.cmake
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/cmake/sam_bot_descriptionConfig-version.cmake
+-- Up-to-date: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/package.xml

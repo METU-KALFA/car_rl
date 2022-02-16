@@ -1,0 +1,62 @@
+[0.018s] Invoking command in '/root/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/sam_bot_description -DCMAKE_INSTALL_PREFIX=/root/sam_bot_description/install/sam_bot_description
+[0.148s] -- The C compiler identification is GNU 9.3.0
+[0.247s] -- The CXX compiler identification is GNU 9.3.0
+[0.256s] -- Check for working C compiler: /usr/bin/cc
+[0.328s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.330s] -- Detecting C compiler ABI info
+[0.409s] -- Detecting C compiler ABI info - done
+[0.418s] -- Detecting C compile features
+[0.419s] -- Detecting C compile features - done
+[0.421s] -- Check for working CXX compiler: /usr/bin/c++
+[0.492s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.495s] -- Detecting CXX compiler ABI info
+[0.575s] -- Detecting CXX compiler ABI info - done
+[0.600s] -- Detecting CXX compile features
+[0.601s] -- Detecting CXX compile features - done
+[0.607s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.652s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.652s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.806s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.904s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.908s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.908s] -- Configured cppcheck include dirs: 
+[0.908s] -- Configured cppcheck exclude dirs and/or files: 
+[0.912s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.912s] -- Configured cpplint exclude dirs and/or files: 
+[0.913s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.914s] -- Added test 'lint_cmake' to check CMake code style
+[0.916s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.919s] -- Added test 'uncrustify' to check C / C++ code style
+[0.920s] -- Configured uncrustify additional arguments: 
+[0.921s] -- Added test 'xmllint' to check XML markup files
+[0.923s] -- Configuring done
+[0.925s] -- Generating done
+[0.926s] -- Build files have been written to: /root/sam_bot_description/build/sam_bot_description
+[0.929s] Invoked command in '/root/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/sam_bot_description -DCMAKE_INSTALL_PREFIX=/root/sam_bot_description/install/sam_bot_description
+[0.932s] Invoking command in '/root/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/build/sam_bot_description -- -j16 -l16
+[0.968s] Invoked command in '/root/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/build/sam_bot_description -- -j16 -l16
+[1.012s] Invoking command in '/root/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/sam_bot_description/build/sam_bot_description
+[1.025s] -- Install configuration: ""
+[1.026s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src
+[1.026s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/descriptions
+[1.027s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/descriptions/sam_bot_description.urdf
+[1.027s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/launch
+[1.027s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/launch/display.launch.py
+[1.027s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/rviz
+[1.027s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/rviz/urdf_config.rviz
+[1.028s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/package_run_dependencies/sam_bot_description
+[1.028s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/parent_prefix_path/sam_bot_description
+[1.028s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/ament_prefix_path.sh
+[1.028s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/ament_prefix_path.dsv
+[1.028s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/path.sh
+[1.029s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/path.dsv
+[1.029s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.bash
+[1.029s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.sh
+[1.030s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.zsh
+[1.030s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.dsv
+[1.031s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/package.dsv
+[1.031s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/packages/sam_bot_description
+[1.031s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/cmake/sam_bot_descriptionConfig.cmake
+[1.032s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/cmake/sam_bot_descriptionConfig-version.cmake
+[1.032s] -- Installing: /root/sam_bot_description/install/sam_bot_description/share/sam_bot_description/package.xml
+[1.036s] Invoked command in '/root/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/sam_bot_description/build/sam_bot_description

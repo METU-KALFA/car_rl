@@ -1,0 +1,6 @@
+Invoking command in '/root/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/sam_bot_description -DCMAKE_INSTALL_PREFIX=/root/sam_bot_description/install/sam_bot_description
+Invoked command in '/root/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/sam_bot_description -DCMAKE_INSTALL_PREFIX=/root/sam_bot_description/install/sam_bot_description
+Invoking command in '/root/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/build/sam_bot_description -- -j16 -l16
+Invoked command in '/root/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/build/sam_bot_description -- -j16 -l16
+Invoking command in '/root/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/sam_bot_description/build/sam_bot_description
+Invoked command in '/root/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/sam_bot_description/build/sam_bot_description
