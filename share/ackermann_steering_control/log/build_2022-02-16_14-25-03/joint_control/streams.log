@@ -1,0 +1,21 @@
+[0.015s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.143s] [100%] Built target joint
+[0.153s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.195s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/sam_bot_description/src/joint_control/build/joint_control
+[0.204s] -- Install configuration: ""
+[0.205s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/package_run_dependencies/joint_control
+[0.206s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/parent_prefix_path/joint_control
+[0.208s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/ament_prefix_path.sh
+[0.209s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/ament_prefix_path.dsv
+[0.211s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/path.sh
+[0.212s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/path.dsv
+[0.214s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.bash
+[0.215s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.sh
+[0.216s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.zsh
+[0.218s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.dsv
+[0.219s] -- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/package.dsv
+[0.220s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/packages/joint_control
+[0.220s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/cmake/joint_controlConfig.cmake
+[0.222s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/cmake/joint_controlConfig-version.cmake
+[0.223s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/package.xml
+[0.227s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/sam_bot_description/src/joint_control/build/joint_control

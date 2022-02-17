@@ -1,0 +1,39 @@
+[0.015s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.038s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.073s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.228s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.293s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.300s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.424s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.464s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.465s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.578s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.668s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.724s] -- Found tf2_msgs: 0.13.12 (/opt/ros/foxy/share/tf2_msgs/cmake)
+[0.869s] -- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.984s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.065s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.095s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.095s] -- Configured cppcheck include dirs: 
+[1.095s] -- Configured cppcheck exclude dirs and/or files: 
+[1.125s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.125s] -- Configured cpplint exclude dirs and/or files: 
+[1.129s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.137s] -- Added test 'lint_cmake' to check CMake code style
+[1.141s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.171s] -- Added test 'uncrustify' to check C / C++ code style
+[1.172s] -- Configured uncrustify additional arguments: 
+[1.176s] -- Added test 'xmllint' to check XML markup files
+[1.178s] -- Configuring done
+[1.191s] -- Generating done
+[1.193s] -- Build files have been written to: /root/sam_bot_description/src/joint_control/build/joint_control
+[1.233s] [35m[1mScanning dependencies of target joint[0m
+[1.267s] [ 33%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
+[3.434s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In constructor ‘[01m[KTwistToAackermann::TwistToAackermann()[m[K’:
+[3.434s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:36:7:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[3.434s]    36 |       [01;31m[K100ms[m[K, std::bind(&TwistToAackermann::broadcast_timer_callback, this));
+[3.434s]       |       [01;31m[K^~~~~[m[K
+[5.003s] make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1
+[5.003s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+[5.003s] make: *** [Makefile:141: all] Error 2
+[5.006s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

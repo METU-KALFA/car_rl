@@ -1,0 +1,4 @@
+Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j8 -l8
+Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '0': /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j8 -l8
+Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': /usr/bin/cmake --install /root/sam_bot_description/src/joint_control/build/joint_control
+Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '0': /usr/bin/cmake --install /root/sam_bot_description/src/joint_control/build/joint_control

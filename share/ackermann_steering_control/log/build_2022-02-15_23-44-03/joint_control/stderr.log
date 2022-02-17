@@ -1,0 +1,40 @@
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:80:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KTwistToAackermann::[m[K’ on member ‘[01m[Kbroadcast_timer_callback[m[K’ [[01;31m[K-fpermissive[m[K]
+   80 |   void [01;31m[KTwistToAackermann[m[K::broadcast_timer_callback(){
+      |        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:175:28:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformBroadcaster[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+  175 |   std::shared_ptr<tf2_ros::[01;31m[KTransformBroadcaster[m[K> tf_publisher_;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:175:28:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformBroadcaster[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:175:48:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  175 |   std::shared_ptr<tf2_ros::TransformBroadcaster[01;31m[K>[m[K tf_publisher_;
+      |                                                [01;31m[K^[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In constructor ‘[01m[KTwistToAackermann::TwistToAackermann()[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:34:47:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformBroadcaster[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+   34 |     tf_publisher_ = std::make_shared<tf2_ros::[01;31m[KTransformBroadcaster[m[K>(this);
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:34:47:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformBroadcaster[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:34:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(TwistToAackermann*)[m[K’
+   34 |     tf_publisher_ = std::make_shared<tf2_ros::TransformBroadcaster>(this[01;31m[K)[m[K;
+      |                                                                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19[m[K,
+                 from [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/string__struct.hpp:8[m[K,
+                 from [01m[K/opt/ros/foxy/include/std_msgs/msg/string.hpp:7[m[K,
+                 from [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:3[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  714 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:34:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 |     tf_publisher_ = std::make_shared<tf2_ros::TransformBroadcaster>(this[01;31m[K)[m[K;
+      |                                                                         [01;31m[K^[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:36:7:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   36 |       [01;31m[K100ms[m[K, std::bind(&TwistToAackermann::broadcast_timer_callback, this));
+      |       [01;31m[K^~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistToAackermann::broadcast_timer_callback()[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:88:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   88 |     tf_publisher_[01;31m[K->[m[KsendTransform(t);
+      |                  [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

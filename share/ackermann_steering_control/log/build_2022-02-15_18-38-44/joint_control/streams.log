@@ -1,0 +1,31 @@
+[0.013s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.045s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.083s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.238s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.265s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.273s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.423s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.462s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.463s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.575s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.679s] CMake Error at CMakeLists.txt:24 (find_package):
+[0.679s]   By not providing "Findtf.cmake" in CMAKE_MODULE_PATH this project has asked
+[0.679s]   CMake to find a package configuration file provided by "tf", but CMake did
+[0.679s]   not find one.
+[0.679s] 
+[0.679s]   Could not find a package configuration file provided by "tf" with any of
+[0.679s]   the following names:
+[0.679s] 
+[0.679s]     tfConfig.cmake
+[0.679s]     tf-config.cmake
+[0.680s] 
+[0.680s]   Add the installation prefix of "tf" to CMAKE_PREFIX_PATH or set "tf_DIR" to
+[0.680s]   a directory containing one of the above files.  If "tf" provides a separate
+[0.680s]   development package or SDK, be sure it has been installed.
+[0.680s] 
+[0.680s] 
+[0.680s] -- Configuring incomplete, errors occurred!
+[0.680s] See also "/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/CMakeOutput.log".
+[0.681s] See also "/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/CMakeError.log".
+[0.685s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.688s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

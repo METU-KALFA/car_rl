@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target joint[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/joint.dir/src/odometry.cpp.o[0m
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:[m[K In member function ‘[01m[Kbool Odometry::update(double, double, const rclcpp::Time&)[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:98:34:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Krclcpp::Time::operator-(const rclcpp::Time&) const(((Odometry*)this)->Odometry::timestamp_)[m[K’ from ‘[01m[Krclcpp::Duration[m[K’ to ‘[01m[Krclcpp::Time[m[K’
+   98 |     const double dt = toSec([01;31m[Ktime - timestamp_[m[K);
+      |                             [01;31m[K~~~~~^~~~~~~~~~~~[m[K
+      |                                  [01;31m[K|[m[K
+      |                                  [01;31m[Krclcpp::Duration[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:[m[K In member function ‘[01m[Kvoid Odometry::updateOpenLoop(double, double, const rclcpp::Time&)[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:121:34:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Krclcpp::Time::operator-(const rclcpp::Time&) const(((Odometry*)this)->Odometry::timestamp_)[m[K’ from ‘[01m[Krclcpp::Duration[m[K’ to ‘[01m[Krclcpp::Time[m[K’
+  121 |     const double dt = toSec([01;31m[Ktime - timestamp_[m[K);
+      |                             [01;31m[K~~~~~^~~~~~~~~~~~[m[K
+      |                                  [01;31m[K|[m[K
+      |                                  [01;31m[Krclcpp::Duration[m[K
+make[2]: *** [CMakeFiles/joint.dir/build.make:76: CMakeFiles/joint.dir/src/odometry.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

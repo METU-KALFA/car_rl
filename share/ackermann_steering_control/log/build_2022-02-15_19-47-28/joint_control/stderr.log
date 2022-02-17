@@ -1,0 +1,7 @@
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:43:10:[m[K [01;31m[Kfatal error: [m[Kackermann_steering_controller/odometry.h: No such file or directory
+   43 | #include [01;31m[K<ackermann_steering_controller/odometry.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/joint.dir/build.make:76: CMakeFiles/joint.dir/src/odometry.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

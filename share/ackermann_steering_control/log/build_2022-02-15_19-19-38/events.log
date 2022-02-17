@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000317] (joint_control) JobQueued: {'identifier': 'joint_control', 'dependencies': OrderedDict()}
+[0.000591] (joint_control) JobStarted: {'identifier': 'joint_control'}
+[0.009463] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'cmake'}
+[0.010424] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'build'}
+[0.011199] (joint_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/sam_bot_description/src/joint_control/build/joint_control', '--', '-j16', '-l16'], 'cwd': '/root/sam_bot_description/src/joint_control/build/joint_control', 'env': OrderedDict([('HOSTNAME', 'devononeofeleven'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/sam_bot_description/src/joint_control/src'), ('XAUTHORITH', '/tmp/.docker.xauth'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'foxy'), ('QT_GRAPHICSYSTEM', 'native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_WS', '/root/catkin_ws'), ('PWD', '/root/sam_bot_description/src/joint_control/build/joint_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.065827] (joint_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target joint\x1b[0m\n'}
+[0.093725] (joint_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o\x1b[0m\n'}
+[0.098302] (-) TimerEvent: {}
+[0.198702] (-) TimerEvent: {}
+[0.299088] (-) TimerEvent: {}
+[0.399443] (-) TimerEvent: {}
+[0.499789] (-) TimerEvent: {}
+[0.600151] (-) TimerEvent: {}
+[0.700494] (-) TimerEvent: {}
+[0.800836] (-) TimerEvent: {}
+[0.901188] (-) TimerEvent: {}
+[1.001537] (-) TimerEvent: {}
+[1.102052] (-) TimerEvent: {}
+[1.202406] (-) TimerEvent: {}
+[1.302776] (-) TimerEvent: {}
+[1.403120] (-) TimerEvent: {}
+[1.503482] (-) TimerEvent: {}
+[1.603839] (-) TimerEvent: {}
+[1.704191] (-) TimerEvent: {}
+[1.804556] (-) TimerEvent: {}
+[1.904917] (-) TimerEvent: {}
+[2.005247] (-) TimerEvent: {}
+[2.105912] (-) TimerEvent: {}
+[2.206505] (-) TimerEvent: {}
+[2.238265] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:154:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOdometry\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.238548] (joint_control) StderrLine: {'line': b'  154 |   \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K odometry_;\n'}
+[2.238651] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.251255] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTwistToAackermann::TwistToAackermann()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.251481] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.251585] (joint_control) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[Kjoint\x1b[m\x1b[K.header.frame_id = std::string("");\n'}
+[2.251678] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.254692] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:45:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodometry_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.254925] (joint_control) StderrLine: {'line': b'   45 |      \x1b[01;31m\x1b[Kodometry_\x1b[m\x1b[K.setVelocityRollingWindowSize(10);\n'}
+[2.255027] (joint_control) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.263318] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:72:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbase_frame_id_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.263545] (joint_control) StderrLine: {'line': b'   72 |     tf_msg_.transforms[0].child_frame_id = \x1b[01;31m\x1b[Kbase_frame_id_\x1b[m\x1b[K;\n'}
+[2.263645] (joint_control) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.271061] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:73:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_frame_id_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.271291] (joint_control) StderrLine: {'line': b'   73 |     tf_msg_.transforms[0].header.frame_id = \x1b[01;31m\x1b[Kodom_frame_id_\x1b[m\x1b[K;\n'}
+[2.271392] (joint_control) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.274447] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TwistToAackermann::callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.274920] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:81:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KJointState\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::JointState\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.275126] (joint_control) StderrLine: {'line': b'   81 |     sensor_msgs::\x1b[01;31m\x1b[KJointState\x1b[m\x1b[K joint;\n'}
+[2.275225] (joint_control) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.275315] (joint_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/sensor_msgs/msg/joint_state.hpp:7\x1b[m\x1b[K,\n'}
+[2.275405] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:4\x1b[m\x1b[K:\n'}
+[2.275511] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/sensor_msgs/msg/detail/joint_state__struct.hpp:166:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::JointState\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.275603] (joint_control) StderrLine: {'line': b'  166 | using \x1b[01;36m\x1b[KJointState\x1b[m\x1b[K =\n'}
+[2.275691] (joint_control) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.276905] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:91:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.277210] (joint_control) StderrLine: {'line': b'   91 |     \x1b[01;31m\x1b[Kjoint\x1b[m\x1b[K.header.stamp = rclcpp::Time::now();\n'}
+[2.277318] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.277419] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:91:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.277884] (joint_control) StderrLine: {'line': b'   91 |     joint.header.stamp = rclcpp::Time::\x1b[01;31m\x1b[Know\x1b[m\x1b[K();\n'}
+[2.278019] (joint_control) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.278113] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:92:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kangular\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.278222] (joint_control) StderrLine: {'line': b'   92 |     if (msg.\x1b[01;31m\x1b[Kangular\x1b[m\x1b[K.z==0 || msg.linear.x==0) {\n'}
+[2.278312] (joint_control) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.278400] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:92:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.278500] (joint_control) StderrLine: {'line': b'   92 |     if (msg.angular.z==0 || msg.\x1b[01;31m\x1b[Klinear\x1b[m\x1b[K.x==0) {\n'}
+[2.278596] (joint_control) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.278687] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:95:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.278779] (joint_control) StderrLine: {'line': b'   95 |       rwr = lwr =rwf= lwf = rwm = lwm = linearToAngularVelocity(msg.\x1b[01;31m\x1b[Klinear\x1b[m\x1b[K.x, wheelRadius);\n'}
+[2.278869] (joint_control) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.278960] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:100:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.279059] (joint_control) StderrLine: {'line': b'  100 |       r = msg.\x1b[01;31m\x1b[Klinear\x1b[m\x1b[K.x/msg.angular.z;\n'}
+[2.279148] (joint_control) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.279237] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:100:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kangular\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.279328] (joint_control) StderrLine: {'line': b'  100 |       r = msg.linear.x/msg.\x1b[01;31m\x1b[Kangular\x1b[m\x1b[K.z;\n'}
+[2.279417] (joint_control) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.279506] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:105:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K/\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.279597] (joint_control) StderrLine: {'line': b'  105 |       lwh = atan(actualBase+\x1b[01;31m\x1b[K/\x1b[m\x1b[K(r-(track/2)));\n'}
+[2.279685] (joint_control) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.279773] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:107:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kangular\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.279866] (joint_control) StderrLine: {'line': b'  107 |       lwf = lwm = lwr = linearToAngularVelocity((r-(track/2))*msg.\x1b[01;31m\x1b[Kangular\x1b[m\x1b[K.z,wheelRadius);\n'}
+[2.279956] (joint_control) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.280045] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:108:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kangular\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.280137] (joint_control) StderrLine: {'line': b'  108 |       rwf = rwm = rwr = linearToAngularVelocity((r+(track/2))*msg.\x1b[01;31m\x1b[Kangular\x1b[m\x1b[K.z,wheelRadius);             }\n'}
+[2.280227] (joint_control) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.280556] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:117:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodometry_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.280969] (joint_control) StderrLine: {'line': b'  117 |     \x1b[01;31m\x1b[Kodometry_\x1b[m\x1b[K.updateOpenLoop(msg.linear.x, msg.angular.z, joint.header.stamp);\n'}
+[2.281080] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.281186] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:117:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.281289] (joint_control) StderrLine: {'line': b'  117 |     odometry_.updateOpenLoop(msg.\x1b[01;31m\x1b[Klinear\x1b[m\x1b[K.x, msg.angular.z, joint.header.stamp);\n'}
+[2.281380] (joint_control) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.281468] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:117:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kangular\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.281590] (joint_control) StderrLine: {'line': b'  117 |     odometry_.updateOpenLoop(msg.linear.x, msg.\x1b[01;31m\x1b[Kangular\x1b[m\x1b[K.z, joint.header.stamp);\n'}
+[2.281769] (joint_control) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.281862] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:120:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KQuaternion\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.281964] (joint_control) StderrLine: {'line': b'  120 |     const geometry_msgs::\x1b[01;31m\x1b[KQuaternion\x1b[m\x1b[K orientation(\n'}
+[2.282095] (joint_control) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.285141] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:125:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Korientation\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.285371] (joint_control) StderrLine: {'line': b'  125 |        msg_.pose.pose.orientation = \x1b[01;31m\x1b[Korientation\x1b[m\x1b[K;\n'}
+[2.285472] (joint_control) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.285597] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:144:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.285795] (joint_control) StderrLine: {'line': b'  144 |     pub_odom_.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(msg_);\n'}
+[2.285884] (joint_control) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.285976] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:145:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.286082] (joint_control) StderrLine: {'line': b'  145 |     pub_odom_tf_.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(tf_msg_);\n'}
+[2.286171] (joint_control) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.286260] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:146:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::JointState_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::JointState_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.286353] (joint_control) StderrLine: {'line': b'  146 |     pub_.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(joint);\n'}
+[2.286442] (joint_control) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.306645] (-) TimerEvent: {}
+[2.406991] (-) TimerEvent: {}
+[2.507346] (-) TimerEvent: {}
+[2.607700] (-) TimerEvent: {}
+[2.708053] (-) TimerEvent: {}
+[2.808415] (-) TimerEvent: {}
+[2.908773] (-) TimerEvent: {}
+[3.009129] (-) TimerEvent: {}
+[3.109478] (-) TimerEvent: {}
+[3.210040] (-) TimerEvent: {}
+[3.310414] (-) TimerEvent: {}
+[3.410763] (-) TimerEvent: {}
+[3.511113] (-) TimerEvent: {}
+[3.611507] (-) TimerEvent: {}
+[3.711851] (-) TimerEvent: {}
+[3.812194] (-) TimerEvent: {}
+[3.869467] (joint_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1\n'}
+[3.869766] (joint_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2\n'}
+[3.869878] (joint_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[3.871983] (joint_control) CommandEnded: {'returncode': 2}
+[3.899611] (joint_control) JobEnded: {'identifier': 'joint_control', 'rc': 2}
+[3.911333] (-) EventReactorShutdown: {}

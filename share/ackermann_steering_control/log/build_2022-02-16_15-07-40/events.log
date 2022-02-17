@@ -1,0 +1,97 @@
+[0.000000] (-) TimerEvent: {}
+[0.000880] (joint_control) JobQueued: {'identifier': 'joint_control', 'dependencies': OrderedDict()}
+[0.001592] (joint_control) JobStarted: {'identifier': 'joint_control'}
+[0.012676] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'cmake'}
+[0.013348] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'build'}
+[0.014142] (joint_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/sam_bot_description/src/joint_control/build/joint_control', '--', '-j16', '-l16'], 'cwd': '/root/sam_bot_description/src/joint_control/build/joint_control', 'env': OrderedDict([('HOSTNAME', 'devononeofeleven'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/sam_bot_description'), ('XAUTHORITH', '/tmp/.docker.xauth'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/sam_bot_description/install:/root/sam_bot_description/src/constant_test_vel/install:/root/sam_bot_description/src/joint_init/install:/root/sam_bot_description/src/joint_control/install'), ('ROS_DISTRO', 'foxy'), ('QT_GRAPHICSYSTEM', 'native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/sam_bot_description/install/sam_bot_description:/root/sam_bot_description/src/constant_test_vel/install/constant_test_vel:/root/sam_bot_description/src/joint_init/install/joint_init:/root/sam_bot_description/src/joint_control/install/joint_control:/opt/ros/foxy'), ('ROS_WS', '/root/catkin_ws'), ('PWD', '/root/sam_bot_description/src/joint_control/build/joint_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/sam_bot_description/src/joint_init/install/joint_init/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/sam_bot_description/install/sam_bot_description:/root/sam_bot_description/src/constant_test_vel/install/constant_test_vel:/root/sam_bot_description/src/joint_control/install/joint_control:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy')]), 'shell': False}
+[0.079257] (joint_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target joint\x1b[0m\n'}
+[0.099346] (-) TimerEvent: {}
+[0.109339] (joint_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o\x1b[0m\n'}
+[0.199503] (-) TimerEvent: {}
+[0.299934] (-) TimerEvent: {}
+[0.400318] (-) TimerEvent: {}
+[0.500751] (-) TimerEvent: {}
+[0.601165] (-) TimerEvent: {}
+[0.701531] (-) TimerEvent: {}
+[0.802002] (-) TimerEvent: {}
+[0.902540] (-) TimerEvent: {}
+[1.003320] (-) TimerEvent: {}
+[1.103854] (-) TimerEvent: {}
+[1.204364] (-) TimerEvent: {}
+[1.304885] (-) TimerEvent: {}
+[1.405400] (-) TimerEvent: {}
+[1.506194] (-) TimerEvent: {}
+[1.606576] (-) TimerEvent: {}
+[1.707138] (-) TimerEvent: {}
+[1.807542] (-) TimerEvent: {}
+[1.907979] (-) TimerEvent: {}
+[2.008418] (-) TimerEvent: {}
+[2.108852] (-) TimerEvent: {}
+[2.209267] (-) TimerEvent: {}
+[2.309707] (-) TimerEvent: {}
+[2.410167] (-) TimerEvent: {}
+[2.510598] (-) TimerEvent: {}
+[2.611018] (-) TimerEvent: {}
+[2.711449] (-) TimerEvent: {}
+[2.811886] (-) TimerEvent: {}
+[2.912329] (-) TimerEvent: {}
+[3.012766] (-) TimerEvent: {}
+[3.113201] (-) TimerEvent: {}
+[3.213641] (-) TimerEvent: {}
+[3.314096] (-) TimerEvent: {}
+[3.414532] (-) TimerEvent: {}
+[3.514962] (-) TimerEvent: {}
+[3.615635] (-) TimerEvent: {}
+[3.716072] (-) TimerEvent: {}
+[3.816534] (-) TimerEvent: {}
+[3.916985] (-) TimerEvent: {}
+[4.017430] (-) TimerEvent: {}
+[4.117865] (-) TimerEvent: {}
+[4.218720] (-) TimerEvent: {}
+[4.319162] (-) TimerEvent: {}
+[4.419603] (-) TimerEvent: {}
+[4.520037] (-) TimerEvent: {}
+[4.620463] (-) TimerEvent: {}
+[4.720893] (-) TimerEvent: {}
+[4.821317] (-) TimerEvent: {}
+[4.921764] (-) TimerEvent: {}
+[5.022197] (-) TimerEvent: {}
+[5.122634] (-) TimerEvent: {}
+[5.223062] (-) TimerEvent: {}
+[5.323485] (-) TimerEvent: {}
+[5.423909] (-) TimerEvent: {}
+[5.524332] (-) TimerEvent: {}
+[5.624756] (-) TimerEvent: {}
+[5.725178] (-) TimerEvent: {}
+[5.825606] (-) TimerEvent: {}
+[5.926017] (-) TimerEvent: {}
+[6.026381] (-) TimerEvent: {}
+[6.126751] (-) TimerEvent: {}
+[6.132816] (joint_control) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable ../../install/joint_control/lib/joint_control/joint\x1b[0m\n'}
+[6.226941] (-) TimerEvent: {}
+[6.327389] (-) TimerEvent: {}
+[6.427798] (-) TimerEvent: {}
+[6.471727] (joint_control) StdoutLine: {'line': b'[100%] Built target joint\n'}
+[6.491030] (joint_control) CommandEnded: {'returncode': 0}
+[6.510834] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'install'}
+[6.520610] (joint_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/sam_bot_description/src/joint_control/build/joint_control'], 'cwd': '/root/sam_bot_description/src/joint_control/build/joint_control', 'env': OrderedDict([('HOSTNAME', 'devononeofeleven'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/sam_bot_description'), ('XAUTHORITH', '/tmp/.docker.xauth'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/sam_bot_description/install:/root/sam_bot_description/src/constant_test_vel/install:/root/sam_bot_description/src/joint_init/install:/root/sam_bot_description/src/joint_control/install'), ('ROS_DISTRO', 'foxy'), ('QT_GRAPHICSYSTEM', 'native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/sam_bot_description/install/sam_bot_description:/root/sam_bot_description/src/constant_test_vel/install/constant_test_vel:/root/sam_bot_description/src/joint_init/install/joint_init:/root/sam_bot_description/src/joint_control/install/joint_control:/opt/ros/foxy'), ('ROS_WS', '/root/catkin_ws'), ('PWD', '/root/sam_bot_description/src/joint_control/build/joint_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/sam_bot_description/src/joint_init/install/joint_init/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/sam_bot_description/install/sam_bot_description:/root/sam_bot_description/src/constant_test_vel/install/constant_test_vel:/root/sam_bot_description/src/joint_control/install/joint_control:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy')]), 'shell': False}
+[6.527941] (-) TimerEvent: {}
+[6.535371] (joint_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.536099] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/package_run_dependencies/joint_control\n'}
+[6.536425] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/parent_prefix_path/joint_control\n'}
+[6.536693] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/ament_prefix_path.sh\n'}
+[6.536807] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/ament_prefix_path.dsv\n'}
+[6.536933] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/path.sh\n'}
+[6.537076] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/path.dsv\n'}
+[6.537272] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.bash\n'}
+[6.537430] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.sh\n'}
+[6.537566] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.zsh\n'}
+[6.537701] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.dsv\n'}
+[6.537909] (joint_control) StdoutLine: {'line': b'-- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/package.dsv\n'}
+[6.538065] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/packages/joint_control\n'}
+[6.538221] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/cmake/joint_controlConfig.cmake\n'}
+[6.538356] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/cmake/joint_controlConfig-version.cmake\n'}
+[6.538654] (joint_control) StdoutLine: {'line': b'-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/package.xml\n'}
+[6.540609] (joint_control) CommandEnded: {'returncode': 0}
+[6.599828] (joint_control) JobEnded: {'identifier': 'joint_control', 'rc': 0}
+[6.601195] (-) EventReactorShutdown: {}

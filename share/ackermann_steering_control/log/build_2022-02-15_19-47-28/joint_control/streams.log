@@ -1,0 +1,37 @@
+[0.014s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.046s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.062s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.227s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.296s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.299s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.412s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.451s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.452s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.565s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.656s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[0.664s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.743s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.764s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.765s] -- Configured cppcheck include dirs: 
+[0.765s] -- Configured cppcheck exclude dirs and/or files: 
+[0.784s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.784s] -- Configured cpplint exclude dirs and/or files: 
+[0.787s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.793s] -- Added test 'lint_cmake' to check CMake code style
+[0.796s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.816s] -- Added test 'uncrustify' to check C / C++ code style
+[0.816s] -- Configured uncrustify additional arguments: 
+[0.819s] -- Added test 'xmllint' to check XML markup files
+[0.821s] -- Configuring done
+[0.828s] -- Generating done
+[0.830s] -- Build files have been written to: /root/sam_bot_description/src/joint_control/build/joint_control
+[0.853s] [35m[1mScanning dependencies of target joint[0m
+[0.877s] [ 33%] [32mBuilding CXX object CMakeFiles/joint.dir/src/odometry.cpp.o[0m
+[0.885s] [01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:43:10:[m[K [01;31m[Kfatal error: [m[Kackermann_steering_controller/odometry.h: No such file or directory
+[0.885s]    43 | #include [01;31m[K<ackermann_steering_controller/odometry.h>[m[K
+[0.885s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.886s] compilation terminated.
+[0.886s] make[2]: *** [CMakeFiles/joint.dir/build.make:76: CMakeFiles/joint.dir/src/odometry.cpp.o] Error 1
+[0.887s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+[0.887s] make: *** [Makefile:141: all] Error 2
+[0.889s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

@@ -1,0 +1,52 @@
+[0.015s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.049s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.089s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.247s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.319s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.322s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.448s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.488s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.489s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.604s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.695s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.752s] -- Found tf2_msgs: 0.13.12 (/opt/ros/foxy/share/tf2_msgs/cmake)
+[0.898s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[0.906s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.989s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.019s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.019s] -- Configured cppcheck include dirs: 
+[1.019s] -- Configured cppcheck exclude dirs and/or files: 
+[1.048s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.048s] -- Configured cpplint exclude dirs and/or files: 
+[1.052s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.060s] -- Added test 'lint_cmake' to check CMake code style
+[1.063s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.091s] -- Added test 'uncrustify' to check C / C++ code style
+[1.092s] -- Configured uncrustify additional arguments: 
+[1.095s] -- Added test 'xmllint' to check XML markup files
+[1.098s] -- Configuring done
+[1.109s] -- Generating done
+[1.111s] -- Build files have been written to: /root/sam_bot_description/src/joint_control/build/joint_control
+[1.156s] [35m[1mScanning dependencies of target joint[0m
+[1.215s] [ 33%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
+[7.411s] [ 66%] [32m[1mLinking CXX executable ../../install/joint_control/lib/joint_control/joint[0m
+[7.717s] [100%] Built target joint
+[7.736s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[7.782s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy /usr/bin/cmake --install /root/sam_bot_description/src/joint_control/build/joint_control
+[7.797s] -- Install configuration: ""
+[7.797s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/package_run_dependencies/joint_control
+[7.797s] -- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/parent_prefix_path/joint_control
+[7.797s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/ament_prefix_path.sh
+[7.797s] -- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/ament_prefix_path.dsv
+[7.797s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/path.sh
+[7.797s] -- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/path.dsv
+[7.798s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.bash
+[7.798s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.sh
+[7.798s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.zsh
+[7.798s] -- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.dsv
+[7.798s] -- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/package.dsv
+[7.798s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/packages/joint_control
+[7.798s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/cmake/joint_controlConfig.cmake
+[7.799s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/cmake/joint_controlConfig-version.cmake
+[7.799s] -- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/package.xml
+[7.801s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy /usr/bin/cmake --install /root/sam_bot_description/src/joint_control/build/joint_control

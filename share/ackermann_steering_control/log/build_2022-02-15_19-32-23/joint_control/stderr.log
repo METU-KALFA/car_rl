@@ -1,0 +1,16 @@
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistToAackermann::callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:120:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ has not been declared
+  120 |             [01;31m[Ktf[m[K::createQuaternionMsgFromYaw(odometry_.getHeading()));
+      |             [01;31m[K^~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:143:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  143 |     pub_odom_.[01;31m[Kpublish[m[K(msg_);
+      |               [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:144:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  144 |     pub_odom_tf_.[01;31m[Kpublish[m[K(tf_msg_);
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:145:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::JointState_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::JointState_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  145 |     pub_.[01;31m[Kpublish[m[K(joint);
+      |          [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

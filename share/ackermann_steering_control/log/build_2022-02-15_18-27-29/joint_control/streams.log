@@ -1,0 +1,32 @@
+[0.012s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.034s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.208s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.277s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.280s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.399s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.438s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.439s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.551s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.651s] CMake Error at CMakeLists.txt:24 (find_package):
+[0.651s]   By not providing "Findroscpp.cmake" in CMAKE_MODULE_PATH this project has
+[0.651s]   asked CMake to find a package configuration file provided by "roscpp", but
+[0.651s]   CMake did not find one.
+[0.651s] 
+[0.652s]   Could not find a package configuration file provided by "roscpp" with any
+[0.652s]   of the following names:
+[0.652s] 
+[0.652s]     roscppConfig.cmake
+[0.652s]     roscpp-config.cmake
+[0.652s] 
+[0.652s]   Add the installation prefix of "roscpp" to CMAKE_PREFIX_PATH or set
+[0.652s]   "roscpp_DIR" to a directory containing one of the above files.  If "roscpp"
+[0.652s]   provides a separate development package or SDK, be sure it has been
+[0.652s]   installed.
+[0.653s] 
+[0.653s] 
+[0.653s] -- Configuring incomplete, errors occurred!
+[0.653s] See also "/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/CMakeOutput.log".
+[0.653s] See also "/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/CMakeError.log".
+[0.657s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.659s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

@@ -1,0 +1,64 @@
+[35m[1mScanning dependencies of target joint[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/joint.dir/src/odometry.cpp.o[0m
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:66:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+   66 |   void Odometry::init(const [01;31m[Kros[m[K::Time& time)
+      |                             [01;31m[K^~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:66:38:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   66 |   void Odometry::init(const ros::Time[01;31m[K&[m[K time)
+      |                                      [01;31m[K^[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:66:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   66 |   void Odometry::init[34m[K([m[Kconst ros::Time[01;31m[K&[m[K time)
+      |                      [34m[K~[m[K               [01;31m[K^[m[K
+      |                                      [32m[K)[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:66:40:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Ktime[m[K’
+   66 |   void Odometry::init(const ros::Time& [01;31m[Ktime[m[K)
+      |                                        [01;31m[K^~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:73:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+   73 |   bool Odometry::update(double rear_wheel_pos, double front_steer_pos, const [01;31m[Kros[m[K::Time &time)
+      |                                                                              [01;31m[K^~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:73:88:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   73 |   bool Odometry::update(double rear_wheel_pos, double front_steer_pos, const ros::Time [01;31m[K&[m[Ktime)
+      |                                                                                        [01;31m[K^[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:73:87:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   73 |   bool Odometry::update[34m[K([m[Kdouble rear_wheel_pos, double front_steer_pos, const ros::Time[01;31m[K [m[K[32m[K&[m[Ktime)
+      |                        [34m[K~[m[K                                                              [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                                       [32m[K)[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:73:89:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Ktime[m[K’
+   73 |   bool Odometry::update(double rear_wheel_pos, double front_steer_pos, const ros::Time &[01;31m[Ktime[m[K)
+      |                                                                                         [01;31m[K^~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:112:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+  112 |   void Odometry::updateOpenLoop(double linear, double angular, const [01;31m[Kros[m[K::Time &time)
+      |                                                                      [01;31m[K^~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:112:80:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  112 |   void Odometry::updateOpenLoop(double linear, double angular, const ros::Time [01;31m[K&[m[Ktime)
+      |                                                                                [01;31m[K^[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:112:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  112 |   void Odometry::updateOpenLoop[34m[K([m[Kdouble linear, double angular, const ros::Time[01;31m[K [m[K[32m[K&[m[Ktime)
+      |                                [34m[K~[m[K                                              [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                               [32m[K)[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:112:81:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Ktime[m[K’
+  112 |   void Odometry::updateOpenLoop(double linear, double angular, const ros::Time &[01;31m[Ktime[m[K)
+      |                                                                                 [01;31m[K^~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:[m[K In member function ‘[01m[Kvoid Odometry::integrateRungeKutta2(double, double)[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:142:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcos[m[K’ was not declared in this scope; did you mean ‘[01m[Kclose[m[K’?
+  142 |     x_       += linear * [01;31m[Kcos[m[K(direction);
+      |                          [01;31m[K^~~[m[K
+      |                          [32m[Kclose[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:143:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ksin[m[K’ was not declared in this scope
+  143 |     y_       += linear * [01;31m[Ksin[m[K(direction);
+      |                          [01;31m[K^~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:[m[K In member function ‘[01m[Kvoid Odometry::integrateExact(double, double)[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:154:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfabs[m[K’ was not declared in this scope; did you mean ‘[01m[Klabs[m[K’?
+  154 |     if ([01;31m[Kfabs[m[K(angular) < 1e-6)
+      |         [01;31m[K^~~~[m[K
+      |         [32m[Klabs[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:162:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ksin[m[K’ was not declared in this scope
+  162 |       x_       +=  r * ([01;31m[Ksin[m[K(heading_) - sin(heading_old));
+      |                         [01;31m[K^~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:163:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcos[m[K’ was not declared in this scope; did you mean ‘[01m[Kclose[m[K’?
+  163 |       y_       += -r * ([01;31m[Kcos[m[K(heading_) - cos(heading_old));
+      |                         [01;31m[K^~~[m[K
+      |                         [32m[Kclose[m[K
+make[2]: *** [CMakeFiles/joint.dir/build.make:76: CMakeFiles/joint.dir/src/odometry.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

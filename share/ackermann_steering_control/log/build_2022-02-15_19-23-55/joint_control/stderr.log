@@ -1,0 +1,67 @@
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In constructor ‘[01m[KTwistToAackermann::TwistToAackermann()[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:71:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_frame_id_[m[K’ was not declared in this scope
+   71 |     tf_msg_.transforms[0].child_frame_id = [01;31m[Kbase_frame_id_[m[K;
+      |                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:72:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_frame_id_[m[K’ was not declared in this scope
+   72 |     tf_msg_.transforms[0].header.frame_id = [01;31m[Kodom_frame_id_[m[K;
+      |                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistToAackermann::callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:80:18:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::JointState[m[K’?
+   80 |     sensor_msgs::[01;31m[KJointState[m[K joint;
+      |                  [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/joint_state.hpp:7[m[K,
+                 from [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:4[m[K:
+[01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/joint_state__struct.hpp:166:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::JointState[m[K’ declared here
+  166 | using [01;36m[KJointState[m[K =
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:90:40:[m[K [01;31m[Kerror: [m[K‘[01m[Know[m[K’ is not a member of ‘[01m[Krclcpp::Time[m[K’
+   90 |     joint.header.stamp = rclcpp::Time::[01;31m[Know[m[K();
+      |                                        [01;31m[K^~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:91:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+   91 |     if (msg.[01;31m[Kangular[m[K.z==0 || msg.linear.x==0) {
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:91:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+   91 |     if (msg.angular.z==0 || msg.[01;31m[Klinear[m[K.x==0) {
+      |                                 [01;31m[K^~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:94:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+   94 |       rwr = lwr =rwf= lwf = rwm = lwm = linearToAngularVelocity(msg.[01;31m[Klinear[m[K.x, wheelRadius);
+      |                                                                     [01;31m[K^~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:99:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+   99 |       r = msg.[01;31m[Klinear[m[K.x/msg.angular.z;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:99:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+   99 |       r = msg.linear.x/msg.[01;31m[Kangular[m[K.z;
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:104:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K/[m[K’ token
+  104 |       lwh = atan(actualBase+[01;31m[K/[m[K(r-(track/2)));
+      |                             [01;31m[K^[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:106:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+  106 |       lwf = lwm = lwr = linearToAngularVelocity((r-(track/2))*msg.[01;31m[Kangular[m[K.z,wheelRadius);
+      |                                                                   [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:107:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+  107 |       rwf = rwm = rwr = linearToAngularVelocity((r+(track/2))*msg.[01;31m[Kangular[m[K.z,wheelRadius);             }
+      |                                                                   [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:116:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+  116 |     odometry_.updateOpenLoop(msg.[01;31m[Klinear[m[K.x, msg.angular.z, joint.header.stamp);
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:116:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+  116 |     odometry_.updateOpenLoop(msg.linear.x, msg.[01;31m[Kangular[m[K.z, joint.header.stamp);
+      |                                                [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:119:26:[m[K [01;31m[Kerror: [m[K‘[01m[KQuaternion[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+  119 |     const geometry_msgs::[01;31m[KQuaternion[m[K orientation(
+      |                          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:124:37:[m[K [01;31m[Kerror: [m[K‘[01m[Korientation[m[K’ was not declared in this scope
+  124 |        msg_.pose.pose.orientation = [01;31m[Korientation[m[K;
+      |                                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:143:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  143 |     pub_odom_.[01;31m[Kpublish[m[K(msg_);
+      |               [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:144:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  144 |     pub_odom_tf_.[01;31m[Kpublish[m[K(tf_msg_);
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:145:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::JointState_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::JointState_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  145 |     pub_.[01;31m[Kpublish[m[K(joint);
+      |          [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

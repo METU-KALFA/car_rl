@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.000309] (joint_control) JobQueued: {'identifier': 'joint_control', 'dependencies': OrderedDict()}
+[0.000414] (joint_control) JobStarted: {'identifier': 'joint_control'}
+[0.009342] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'cmake'}
+[0.010820] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'build'}
+[0.011658] (joint_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/sam_bot_description/src/joint_control/build/joint_control', '--', '-j16', '-l16'], 'cwd': '/root/sam_bot_description/src/joint_control/build/joint_control', 'env': OrderedDict([('HOSTNAME', 'devononeofeleven'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/sam_bot_description/src/joint_control/src'), ('XAUTHORITH', '/tmp/.docker.xauth'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'foxy'), ('QT_GRAPHICSYSTEM', 'native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_WS', '/root/catkin_ws'), ('PWD', '/root/sam_bot_description/src/joint_control/build/joint_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.070615] (joint_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target joint\x1b[0m\n'}
+[0.098453] (-) TimerEvent: {}
+[0.110380] (joint_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o\x1b[0m\n'}
+[0.198611] (-) TimerEvent: {}
+[0.299051] (-) TimerEvent: {}
+[0.399497] (-) TimerEvent: {}
+[0.499942] (-) TimerEvent: {}
+[0.600385] (-) TimerEvent: {}
+[0.700874] (-) TimerEvent: {}
+[0.801316] (-) TimerEvent: {}
+[0.901777] (-) TimerEvent: {}
+[1.002216] (-) TimerEvent: {}
+[1.102661] (-) TimerEvent: {}
+[1.164184] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:151:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.164455] (joint_control) StderrLine: {'line': b'  151 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle n_;\n'}
+[1.164624] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.165053] (joint_control) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[1.165188] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:152:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.165287] (joint_control) StderrLine: {'line': b'  152 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Publisher pub_;\n'}
+[1.165378] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.165468] (joint_control) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[1.165837] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:153:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.166069] (joint_control) StderrLine: {'line': b'  153 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Publisher pub_odom_;\n'}
+[1.166174] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.166266] (joint_control) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[1.166795] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:154:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.167024] (joint_control) StderrLine: {'line': b'  154 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Publisher pub_odom_tf;\n'}
+[1.167128] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.167220] (joint_control) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[1.167630] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:155:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.167857] (joint_control) StderrLine: {'line': b'  155 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Subscriber sub_;\n'}
+[1.167959] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.168050] (joint_control) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[1.169267] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:156:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOdometry\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.169499] (joint_control) StderrLine: {'line': b'  156 |   \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K odometry_;\n'}
+[1.169600] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.170984] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTwistToAackermann::TwistToAackermann()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.171227] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:29:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.171334] (joint_control) StderrLine: {'line': b'   29 |     \x1b[01;31m\x1b[Kpub_\x1b[m\x1b[K = n_.advertise<sensor_msgs::msg::JointState>("/joint_state", 1);\n'}
+[1.171428] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.172235] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:29:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kn_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.172467] (joint_control) StderrLine: {'line': b'   29 |     pub_ = \x1b[01;31m\x1b[Kn_\x1b[m\x1b[K.advertise<sensor_msgs::msg::JointState>("/joint_state", 1);\n'}
+[1.172569] (joint_control) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.172661] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:29:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.172753] (joint_control) StderrLine: {'line': b'   29 |     pub_ = n_.advertise<sensor_msgs::msg::JointState\x1b[01;31m\x1b[K>\x1b[m\x1b[K("/joint_state", 1);\n'}
+[1.172843] (joint_control) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.172934] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:29:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[1.173025] (joint_control) StderrLine: {'line': b'   29 |     pub_ = n_.advertise<sensor_msgs::msg::JointState>(\x1b[01;35m\x1b[K"/joint_state"\x1b[m\x1b[K, 1);\n'}
+[1.173115] (joint_control) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.174598] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:30:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_odom_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.174846] (joint_control) StderrLine: {'line': b'   30 |     \x1b[01;31m\x1b[Kpub_odom_\x1b[m\x1b[K  = n_.advertise<nav_msgs::msg::Odometry>("/odom",1);\n'}
+[1.174950] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.175043] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:30:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.175135] (joint_control) StderrLine: {'line': b'   30 |     pub_odom_  = n_.advertise<nav_msgs::msg::Odometry\x1b[01;31m\x1b[K>\x1b[m\x1b[K("/odom",1);\n'}
+[1.175224] (joint_control) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.175314] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:30:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[1.175432] (joint_control) StderrLine: {'line': b'   30 |     pub_odom_  = n_.advertise<nav_msgs::msg::Odometry>(\x1b[01;35m\x1b[K"/odom"\x1b[m\x1b[K,1);\n'}
+[1.175563] (joint_control) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.177366] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:31:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_odom_tf_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.177595] (joint_control) StderrLine: {'line': b'   31 |     \x1b[01;31m\x1b[Kpub_odom_tf_\x1b[m\x1b[K = n_.advertise<tf::tfMessage>("/odom_tf",1);\n'}
+[1.177697] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.177858] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:31:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktf\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.177984] (joint_control) StderrLine: {'line': b'   31 |     pub_odom_tf_ = n_.advertise<\x1b[01;31m\x1b[Ktf\x1b[m\x1b[K::tfMessage>("/odom_tf",1);\n'}
+[1.178075] (joint_control) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.178166] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:31:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[1.178258] (joint_control) StderrLine: {'line': b'   31 |     pub_odom_tf_ = n_.advertise<tf::tfMessage>(\x1b[01;35m\x1b[K"/odom_tf"\x1b[m\x1b[K,1);\n'}
+[1.178348] (joint_control) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.179077] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.179303] (joint_control) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[Kjoint\x1b[m\x1b[K.header.frame_id = std::string("");\n'}
+[1.179406] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.181525] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:45:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodometry_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.181862] (joint_control) StderrLine: {'line': b'   45 |      \x1b[01;31m\x1b[Kodometry_\x1b[m\x1b[K.setVelocityRollingWindowSize(10);\n'}
+[1.182036] (joint_control) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.185187] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:72:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbase_frame_id_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.185409] (joint_control) StderrLine: {'line': b'   72 |     tf_msg_.transforms[0].child_frame_id = \x1b[01;31m\x1b[Kbase_frame_id_\x1b[m\x1b[K;\n'}
+[1.185513] (joint_control) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.188525] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:73:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_frame_id_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.188759] (joint_control) StderrLine: {'line': b'   73 |     tf_msg_.transforms[0].header.frame_id = \x1b[01;31m\x1b[Kodom_frame_id_\x1b[m\x1b[K;\n'}
+[1.188865] (joint_control) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.189403] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:75:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.189629] (joint_control) StderrLine: {'line': b'   75 |     \x1b[01;31m\x1b[Ksub_\x1b[m\x1b[K = n_.subscribe("/cmd_vel", 1, &TwistToAackermann::callback, this);\n'}
+[1.189767] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.190392] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TwistToAackermann::callback(const Twist&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.190863] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:82:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KJointState\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::JointState\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.191089] (joint_control) StderrLine: {'line': b'   82 |     sensor_msgs::\x1b[01;31m\x1b[KJointState\x1b[m\x1b[K joint;\n'}
+[1.191192] (joint_control) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.191286] (joint_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/sensor_msgs/msg/joint_state.hpp:7\x1b[m\x1b[K,\n'}
+[1.191377] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:4\x1b[m\x1b[K:\n'}
+[1.191469] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/sensor_msgs/msg/detail/joint_state__struct.hpp:166:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::JointState\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.191565] (joint_control) StderrLine: {'line': b'  166 | using \x1b[01;36m\x1b[KJointState\x1b[m\x1b[K =\n'}
+[1.191655] (joint_control) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.192114] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:92:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.192341] (joint_control) StderrLine: {'line': b'   92 |     \x1b[01;31m\x1b[Kjoint\x1b[m\x1b[K.header.stamp = ros::Time::now();\n'}
+[1.192459] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.192551] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:92:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.192650] (joint_control) StderrLine: {'line': b'   92 |     joint.header.stamp = \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Time::now();\n'}
+[1.192741] (joint_control) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.194584] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:102:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KROS_DEBUG\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.194810] (joint_control) StderrLine: {'line': b'  102 |       \x1b[01;31m\x1b[KROS_DEBUG\x1b[m\x1b[K("%f\\n", r);\n'}
+[1.194915] (joint_control) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.195008] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:106:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K/\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.195101] (joint_control) StderrLine: {'line': b'  106 |       lwh = atan(actualBase+\x1b[01;31m\x1b[K/\x1b[m\x1b[K(r-(track/2)));\n'}
+[1.195193] (joint_control) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.197323] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:118:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodometry_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.197554] (joint_control) StderrLine: {'line': b'  118 |     \x1b[01;31m\x1b[Kodometry_\x1b[m\x1b[K.updateOpenLoop(msg.linear.x, msg.angular.z, joint.header.stamp);\n'}
+[1.197658] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.197842] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:121:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KQuaternion\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.197965] (joint_control) StderrLine: {'line': b'  121 |     const geometry_msgs::\x1b[01;31m\x1b[KQuaternion\x1b[m\x1b[K orientation(\n'}
+[1.198056] (joint_control) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.199682] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:126:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Korientation\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.199907] (joint_control) StderrLine: {'line': b'  126 |        msg_.pose.pose.orientation = \x1b[01;31m\x1b[Korientation\x1b[m\x1b[K;\n'}
+[1.200048] (joint_control) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.200410] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:133:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTransformStamped\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.200875] (joint_control) StderrLine: {'line': b'  133 |   geometry_msgs::\x1b[01;31m\x1b[KTransformStamped\x1b[m\x1b[K& odom_frame = tf_msg_.transforms[0];\n'}
+[1.201073] (joint_control) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.201173] (joint_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__struct.hpp:19\x1b[m\x1b[K,\n'}
+[1.201267] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_msgs/msg/tf_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.201357] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:7\x1b[m\x1b[K:\n'}
+[1.201447] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/transform_stamped__struct.hpp:155:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.201541] (joint_control) StderrLine: {'line': b'  155 | using \x1b[01;36m\x1b[KTransformStamped\x1b[m\x1b[K =\n'}
+[1.201647] (joint_control) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.202872] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:133:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_frame\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.203093] (-) TimerEvent: {}
+[1.203229] (joint_control) StderrLine: {'line': b'  133 |   geometry_msgs::TransformStamped& \x1b[01;31m\x1b[Kodom_frame\x1b[m\x1b[K = tf_msg_.transforms[0];\n'}
+[1.203406] (joint_control) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.205201] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:142:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KROS_DEBUG\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.205460] (joint_control) StderrLine: {'line': b'  142 |     \x1b[01;31m\x1b[KROS_DEBUG\x1b[m\x1b[K("Test");\n'}
+[1.205567] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.207413] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:145:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_odom_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.207642] (joint_control) StderrLine: {'line': b'  145 |     \x1b[01;31m\x1b[Kpub_odom_\x1b[m\x1b[K.publish(msg_);\n'}
+[1.207745] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.210546] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:146:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_odom_tf_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.210781] (joint_control) StderrLine: {'line': b'  146 |     \x1b[01;31m\x1b[Kpub_odom_tf_\x1b[m\x1b[K.publish(tf_msg_);\n'}
+[1.210887] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.211455] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:147:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.211937] (joint_control) StderrLine: {'line': b'  147 |     \x1b[01;31m\x1b[Kpub_\x1b[m\x1b[K.publish(joint);\n'}
+[1.212059] (joint_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.212154] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.212247] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:163:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.212340] (joint_control) StderrLine: {'line': b'  163 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::init(argc, argv, "twist_to_ackermann");\n'}
+[1.212430] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.212521] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:166:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.212612] (joint_control) StderrLine: {'line': b'  166 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::spin();\n'}
+[1.212743] (joint_control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.303216] (-) TimerEvent: {}
+[1.403561] (-) TimerEvent: {}
+[1.499212] (joint_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1\n'}
+[1.499730] (joint_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2\n'}
+[1.500183] (joint_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[1.503181] (joint_control) CommandEnded: {'returncode': 2}
+[1.504743] (-) TimerEvent: {}
+[1.564561] (joint_control) JobEnded: {'identifier': 'joint_control', 'rc': 2}
+[1.576089] (-) EventReactorShutdown: {}

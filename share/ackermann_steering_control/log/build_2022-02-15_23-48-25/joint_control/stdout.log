@@ -1,0 +1,20 @@
+[35m[1mScanning dependencies of target joint[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable ../../install/joint_control/lib/joint_control/joint[0m
+[100%] Built target joint
+-- Install configuration: ""
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/package_run_dependencies/joint_control
+-- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/parent_prefix_path/joint_control
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/ament_prefix_path.sh
+-- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/path.sh
+-- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/environment/path.dsv
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.bash
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.sh
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.zsh
+-- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/local_setup.dsv
+-- Installing: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/package.dsv
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/ament_index/resource_index/packages/joint_control
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/cmake/joint_controlConfig.cmake
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/cmake/joint_controlConfig-version.cmake
+-- Up-to-date: /root/sam_bot_description/src/joint_control/install/joint_control/share/joint_control/package.xml

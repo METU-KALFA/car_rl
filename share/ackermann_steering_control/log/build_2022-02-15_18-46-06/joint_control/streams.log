@@ -1,0 +1,137 @@
+[0.015s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.070s] [35m[1mScanning dependencies of target joint[0m
+[0.110s] [ 50%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
+[1.164s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:151:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type; did you mean ‘[01m[Kcos[m[K’?
+[1.164s]   151 |   [01;31m[Kros[m[K::NodeHandle n_;
+[1.164s]       |   [01;31m[K^~~[m[K
+[1.165s]       |   [32m[Kcos[m[K
+[1.165s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:152:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type; did you mean ‘[01m[Kcos[m[K’?
+[1.165s]   152 |   [01;31m[Kros[m[K::Publisher pub_;
+[1.165s]       |   [01;31m[K^~~[m[K
+[1.165s]       |   [32m[Kcos[m[K
+[1.166s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:153:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type; did you mean ‘[01m[Kcos[m[K’?
+[1.166s]   153 |   [01;31m[Kros[m[K::Publisher pub_odom_;
+[1.166s]       |   [01;31m[K^~~[m[K
+[1.166s]       |   [32m[Kcos[m[K
+[1.167s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:154:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type; did you mean ‘[01m[Kcos[m[K’?
+[1.167s]   154 |   [01;31m[Kros[m[K::Publisher pub_odom_tf;
+[1.167s]       |   [01;31m[K^~~[m[K
+[1.167s]       |   [32m[Kcos[m[K
+[1.167s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:155:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type; did you mean ‘[01m[Kcos[m[K’?
+[1.167s]   155 |   [01;31m[Kros[m[K::Subscriber sub_;
+[1.168s]       |   [01;31m[K^~~[m[K
+[1.168s]       |   [32m[Kcos[m[K
+[1.169s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:156:3:[m[K [01;31m[Kerror: [m[K‘[01m[KOdometry[m[K’ does not name a type
+[1.169s]   156 |   [01;31m[KOdometry[m[K odometry_;
+[1.169s]       |   [01;31m[K^~~~~~~~[m[K
+[1.171s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In constructor ‘[01m[KTwistToAackermann::TwistToAackermann()[m[K’:
+[1.171s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ was not declared in this scope
+[1.171s]    29 |     [01;31m[Kpub_[m[K = n_.advertise<sensor_msgs::msg::JointState>("/joint_state", 1);
+[1.171s]       |     [01;31m[K^~~~[m[K
+[1.172s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:29:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kn_[m[K’ was not declared in this scope
+[1.172s]    29 |     pub_ = [01;31m[Kn_[m[K.advertise<sensor_msgs::msg::JointState>("/joint_state", 1);
+[1.172s]       |            [01;31m[K^~[m[K
+[1.172s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:29:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.172s]    29 |     pub_ = n_.advertise<sensor_msgs::msg::JointState[01;31m[K>[m[K("/joint_state", 1);
+[1.172s]       |                                                     [01;31m[K^[m[K
+[1.173s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:29:55:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[1.173s]    29 |     pub_ = n_.advertise<sensor_msgs::msg::JointState>([01;35m[K"/joint_state"[m[K, 1);
+[1.173s]       |                                                       [01;35m[K^~~~~~~~~~~~~~[m[K
+[1.174s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_odom_[m[K’ was not declared in this scope
+[1.174s]    30 |     [01;31m[Kpub_odom_[m[K  = n_.advertise<nav_msgs::msg::Odometry>("/odom",1);
+[1.175s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.175s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:30:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.175s]    30 |     pub_odom_  = n_.advertise<nav_msgs::msg::Odometry[01;31m[K>[m[K("/odom",1);
+[1.175s]       |                                                      [01;31m[K^[m[K
+[1.175s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:30:56:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[1.175s]    30 |     pub_odom_  = n_.advertise<nav_msgs::msg::Odometry>([01;35m[K"/odom"[m[K,1);
+[1.175s]       |                                                        [01;35m[K^~~~~~~[m[K
+[1.177s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_odom_tf_[m[K’ was not declared in this scope
+[1.177s]    31 |     [01;31m[Kpub_odom_tf_[m[K = n_.advertise<tf::tfMessage>("/odom_tf",1);
+[1.177s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.178s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:31:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ has not been declared
+[1.178s]    31 |     pub_odom_tf_ = n_.advertise<[01;31m[Ktf[m[K::tfMessage>("/odom_tf",1);
+[1.178s]       |                                 [01;31m[K^~[m[K
+[1.178s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:31:48:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[1.178s]    31 |     pub_odom_tf_ = n_.advertise<tf::tfMessage>([01;35m[K"/odom_tf"[m[K,1);
+[1.178s]       |                                                [01;35m[K^~~~~~~~~~[m[K
+[1.179s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint[m[K’ was not declared in this scope
+[1.179s]    32 |     [01;31m[Kjoint[m[K.header.frame_id = std::string("");
+[1.179s]       |     [01;31m[K^~~~~[m[K
+[1.181s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:45:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kodometry_[m[K’ was not declared in this scope
+[1.182s]    45 |      [01;31m[Kodometry_[m[K.setVelocityRollingWindowSize(10);
+[1.182s]       |      [01;31m[K^~~~~~~~~[m[K
+[1.185s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:72:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_frame_id_[m[K’ was not declared in this scope
+[1.185s]    72 |     tf_msg_.transforms[0].child_frame_id = [01;31m[Kbase_frame_id_[m[K;
+[1.185s]       |                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.188s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:73:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_frame_id_[m[K’ was not declared in this scope
+[1.188s]    73 |     tf_msg_.transforms[0].header.frame_id = [01;31m[Kodom_frame_id_[m[K;
+[1.188s]       |                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.189s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_[m[K’ was not declared in this scope
+[1.189s]    75 |     [01;31m[Ksub_[m[K = n_.subscribe("/cmd_vel", 1, &TwistToAackermann::callback, this);
+[1.189s]       |     [01;31m[K^~~~[m[K
+[1.190s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistToAackermann::callback(const Twist&)[m[K’:
+[1.191s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:82:18:[m[K [01;31m[Kerror: [m[K‘[01m[KJointState[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::JointState[m[K’?
+[1.191s]    82 |     sensor_msgs::[01;31m[KJointState[m[K joint;
+[1.191s]       |                  [01;31m[K^~~~~~~~~~[m[K
+[1.191s] In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/joint_state.hpp:7[m[K,
+[1.191s]                  from [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:4[m[K:
+[1.191s] [01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/joint_state__struct.hpp:166:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::JointState[m[K’ declared here
+[1.191s]   166 | using [01;36m[KJointState[m[K =
+[1.191s]       |       [01;36m[K^~~~~~~~~~[m[K
+[1.192s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:92:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint[m[K’ was not declared in this scope
+[1.192s]    92 |     [01;31m[Kjoint[m[K.header.stamp = ros::Time::now();
+[1.192s]       |     [01;31m[K^~~~~[m[K
+[1.192s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:92:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.192s]    92 |     joint.header.stamp = [01;31m[Kros[m[K::Time::now();
+[1.192s]       |                          [01;31m[K^~~[m[K
+[1.194s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:102:7:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_DEBUG[m[K’ was not declared in this scope
+[1.194s]   102 |       [01;31m[KROS_DEBUG[m[K("%f\n", r);
+[1.195s]       |       [01;31m[K^~~~~~~~~[m[K
+[1.195s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:106:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K/[m[K’ token
+[1.195s]   106 |       lwh = atan(actualBase+[01;31m[K/[m[K(r-(track/2)));
+[1.195s]       |                             [01;31m[K^[m[K
+[1.197s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:118:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodometry_[m[K’ was not declared in this scope
+[1.197s]   118 |     [01;31m[Kodometry_[m[K.updateOpenLoop(msg.linear.x, msg.angular.z, joint.header.stamp);
+[1.197s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.197s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:121:26:[m[K [01;31m[Kerror: [m[K‘[01m[KQuaternion[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+[1.198s]   121 |     const geometry_msgs::[01;31m[KQuaternion[m[K orientation(
+[1.198s]       |                          [01;31m[K^~~~~~~~~~[m[K
+[1.199s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:126:37:[m[K [01;31m[Kerror: [m[K‘[01m[Korientation[m[K’ was not declared in this scope
+[1.200s]   126 |        msg_.pose.pose.orientation = [01;31m[Korientation[m[K;
+[1.200s]       |                                     [01;31m[K^~~~~~~~~~~[m[K
+[1.200s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:133:18:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’?
+[1.201s]   133 |   geometry_msgs::[01;31m[KTransformStamped[m[K& odom_frame = tf_msg_.transforms[0];
+[1.201s]       |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.201s] In file included from [01m[K/opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__struct.hpp:19[m[K,
+[1.201s]                  from [01m[K/opt/ros/foxy/include/tf2_msgs/msg/tf_message.hpp:7[m[K,
+[1.201s]                  from [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:7[m[K:
+[1.201s] [01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/transform_stamped__struct.hpp:155:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’ declared here
+[1.201s]   155 | using [01;36m[KTransformStamped[m[K =
+[1.201s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.203s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:133:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_frame[m[K’ was not declared in this scope
+[1.203s]   133 |   geometry_msgs::TransformStamped& [01;31m[Kodom_frame[m[K = tf_msg_.transforms[0];
+[1.203s]       |                                    [01;31m[K^~~~~~~~~~[m[K
+[1.205s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:142:5:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_DEBUG[m[K’ was not declared in this scope
+[1.205s]   142 |     [01;31m[KROS_DEBUG[m[K("Test");
+[1.205s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.207s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:145:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_odom_[m[K’ was not declared in this scope
+[1.207s]   145 |     [01;31m[Kpub_odom_[m[K.publish(msg_);
+[1.207s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.210s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:146:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_odom_tf_[m[K’ was not declared in this scope
+[1.210s]   146 |     [01;31m[Kpub_odom_tf_[m[K.publish(tf_msg_);
+[1.211s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.211s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:147:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ was not declared in this scope
+[1.212s]   147 |     [01;31m[Kpub_[m[K.publish(joint);
+[1.212s]       |     [01;31m[K^~~~[m[K
+[1.212s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.212s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:163:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.212s]   163 |   [01;31m[Kros[m[K::init(argc, argv, "twist_to_ackermann");
+[1.212s]       |   [01;31m[K^~~[m[K
+[1.212s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:166:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.212s]   166 |   [01;31m[Kros[m[K::spin();
+[1.212s]       |   [01;31m[K^~~[m[K
+[1.499s] make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1
+[1.499s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+[1.500s] make: *** [Makefile:141: all] Error 2
+[1.503s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000342] (joint_control) JobQueued: {'identifier': 'joint_control', 'dependencies': OrderedDict()}
+[0.000408] (joint_control) JobStarted: {'identifier': 'joint_control'}
+[0.009864] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'cmake'}
+[0.010526] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'build'}
+[0.011326] (joint_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/sam_bot_description/src/joint_control/build/joint_control', '--', '-j16', '-l16'], 'cwd': '/root/sam_bot_description/src/joint_control/build/joint_control', 'env': OrderedDict([('HOSTNAME', 'devononeofeleven'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/sam_bot_description'), ('XAUTHORITH', '/tmp/.docker.xauth'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'foxy'), ('QT_GRAPHICSYSTEM', 'native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ROS_WS', '/root/catkin_ws'), ('PWD', '/root/sam_bot_description/src/joint_control/build/joint_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.048897] (joint_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target joint\x1b[0m\n'}
+[0.082253] (joint_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o\x1b[0m\n'}
+[0.099020] (-) TimerEvent: {}
+[0.199319] (-) TimerEvent: {}
+[0.299761] (-) TimerEvent: {}
+[0.400094] (-) TimerEvent: {}
+[0.500425] (-) TimerEvent: {}
+[0.600759] (-) TimerEvent: {}
+[0.701099] (-) TimerEvent: {}
+[0.801442] (-) TimerEvent: {}
+[0.901803] (-) TimerEvent: {}
+[1.002139] (-) TimerEvent: {}
+[1.102491] (-) TimerEvent: {}
+[1.202836] (-) TimerEvent: {}
+[1.303211] (-) TimerEvent: {}
+[1.403593] (-) TimerEvent: {}
+[1.503940] (-) TimerEvent: {}
+[1.604259] (-) TimerEvent: {}
+[1.704606] (-) TimerEvent: {}
+[1.805230] (-) TimerEvent: {}
+[1.905584] (-) TimerEvent: {}
+[2.005935] (-) TimerEvent: {}
+[2.106281] (-) TimerEvent: {}
+[2.206629] (-) TimerEvent: {}
+[2.306972] (-) TimerEvent: {}
+[2.407324] (-) TimerEvent: {}
+[2.412419] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.413147] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:(\x1b[01;31m\x1b[K)\x1b[m\x1b[K : Node("ackiyooo"), pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", -1)),\n'}
+[2.413262] (joint_control) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.413400] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kname \xe2\x80\x98\x1b[01m\x1b[KTwistToAackermann\x1b[m\x1b[K\xe2\x80\x99 has incomplete type\n'}
+[2.413498] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.413573] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:(\x1b[01;31m\x1b[K)\x1b[m\x1b[K : Node("ackiyooo"), pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", -1)),\n'}
+[2.413620] (joint_control) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.413662] (joint_control) StderrLine: {'line': b'      |                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.413703] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemporary of non-literal type \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 in a constant expression\n'}
+[2.413745] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : \x1b[01;31m\x1b[KNode("ackiyooo")\x1b[m\x1b[K, pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", -1)),\n'}
+[2.413787] (joint_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.413829] (joint_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.413871] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.413912] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.413953] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_ros/buffer_interface.h:35\x1b[m\x1b[K,\n'}
+[2.413995] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[2.414037] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:9\x1b[m\x1b[K:\n'}
+[2.414078] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:74:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 is not literal because:\n'}
+[2.414120] (joint_control) StderrLine: {'line': b'   74 | class \x1b[01;36m\x1b[KNode\x1b[m\x1b[K : public std::enable_shared_from_this<Node>\n'}
+[2.414162] (joint_control) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.414203] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:74:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has a non-trivial destructor\n'}
+[2.414245] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Ktype name\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[2.414345] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : Node("ackiyooo"\x1b[01;31m\x1b[K)\x1b[m\x1b[K, pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", -1)),\n'}
+[2.414418] (joint_control) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.414461] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kwidth of bit-field \xe2\x80\x98\x1b[01m\x1b[K<anonymous>\x1b[m\x1b[K\xe2\x80\x99 has non-integral type \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.414504] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier\n'}
+[2.414547] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : Node("ackiyooo"), pub_(\x1b[01;31m\x1b[Kcreate_publisher<sensor_msgs::msg::JointState>\x1b[m\x1b[K("/joint_states", -1)),\n'}
+[2.414589] (joint_control) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.414631] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:93:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.414681] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : Node("ackiyooo"), pub_(create_publisher<sensor_msgs::msg::JointState>\x1b[01;31m\x1b[K(\x1b[m\x1b[K"/joint_states", -1)),\n'}
+[2.414724] (joint_control) StderrLine: {'line': b'      |                                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.414765] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:93:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.414811] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : Node("ackiyooo"), pub_\x1b[34m\x1b[K(\x1b[m\x1b[Kcreate_publisher<sensor_msgs::msg::JointState>\x1b[01;31m\x1b[K(\x1b[m\x1b[K"/joint_states", -1)),\n'}
+[2.414857] (joint_control) StderrLine: {'line': b'      |                                              \x1b[34m\x1b[K~\x1b[m\x1b[K                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.414899] (joint_control) StderrLine: {'line': b'      |                                                                                             \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.414940] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before string constant\n'}
+[2.414982] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : Node("ackiyooo"), pub_(create_publisher<sensor_msgs::msg::JointState>(\x1b[01;31m\x1b[K"/joint_states"\x1b[m\x1b[K, -1)),\n'}
+[2.415024] (joint_control) StderrLine: {'line': b'      |                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.415066] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before string constant\n'}
+[2.415108] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:113:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Kpub_\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[2.415155] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : Node("ackiyooo"), pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", -1\x1b[01;31m\x1b[K)\x1b[m\x1b[K),\n'}
+[2.415268] (joint_control) StderrLine: {'line': b'      |                                                                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.415332] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:113:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_\x1b[m\x1b[K\xe2\x80\x99 declared as function returning a function\n'}
+[2.415375] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:113:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.415418] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : Node("ackiyooo"), pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", -1\x1b[01;31m\x1b[K)\x1b[m\x1b[K),\n'}
+[2.415460] (joint_control) StderrLine: {'line': b'      |                                                                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.415540] (joint_control) StderrLine: {'line': b'      |                                                                                                                  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.415594] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:38:114:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.415637] (joint_control) StderrLine: {'line': b'   38 | TwistToAackermann:() : Node("ackiyooo"), pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", -1)\x1b[01;31m\x1b[K)\x1b[m\x1b[K,\n'}
+[2.415680] (joint_control) StderrLine: {'line': b'      |                                                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.440794] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TwistToAackermann::callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.441056] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:159:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdelta_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdelta_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.441265] (joint_control) StderrLine: {'line': b'  159 |  pose.x += msg->linear.x * cos(yaw+slip)*\x1b[01;31m\x1b[Kdelta_x\x1b[m\x1b[K;\n'}
+[2.441594] (joint_control) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.441746] (joint_control) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[Kdelta_t\x1b[m\x1b[K\n'}
+[2.441801] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:165:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.441846] (joint_control) StderrLine: {'line': b'  165 |             createQuaternionMsgFromYaw(yaw)\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.441892] (joint_control) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.441933] (joint_control) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.441975] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:164:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.442018] (joint_control) StderrLine: {'line': b'  164 |     const geometry_msgs::msg::Quaternion orientation\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[2.442059] (joint_control) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.507456] (-) TimerEvent: {}
+[2.607932] (-) TimerEvent: {}
+[2.708274] (-) TimerEvent: {}
+[2.806528] (joint_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[2.806692] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[2.806750] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:63\x1b[m\x1b[K,\n'}
+[2.806794] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[2.806836] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/string__struct.hpp:8\x1b[m\x1b[K,\n'}
+[2.806878] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/string.hpp:7\x1b[m\x1b[K,\n'}
+[2.806920] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.806962] (joint_control) StderrLine: {'line': b'/usr/include/c++/9/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = TwistToAackermann; _Args = {}; _Tp = TwistToAackermann]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.807006] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/alloc_traits.h:482:2:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp> >::construct(std::allocator_traits<std::allocator<_Tp> >::allocator_type&, _Up*, _Args&& ...) [with _Up = TwistToAackermann; _Args = {}; _Tp = TwistToAackermann; std::allocator_traits<std::allocator<_Tp> >::allocator_type = std::allocator<TwistToAackermann>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807051] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = TwistToAackermann; _Alloc = std::allocator<TwistToAackermann>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807096] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = TwistToAackermann; _Alloc = std::allocator<TwistToAackermann>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807139] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<TwistToAackermann>; _Args = {}; _Tp = TwistToAackermann; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807205] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:359:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<TwistToAackermann>; _Args = {}; _Tp = TwistToAackermann]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807259] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:701:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = TwistToAackermann; _Alloc = std::allocator<TwistToAackermann>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807357] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:717:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = TwistToAackermann; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807402] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:218:52:\x1b[m\x1b[K   required from here\n'}
+[2.807445] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ext/new_allocator.h:145:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KTwistToAackermann::TwistToAackermann()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807498] (joint_control) StderrLine: {'line': b'  145 |  noexcept(noexcept(\x1b[01;31m\x1b[K::new((void *)__p)\x1b[m\x1b[K\n'}
+[2.807540] (joint_control) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.807582] (joint_control) StderrLine: {'line': b'  146 | \x1b[01;31m\x1b[K       _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K))\n'}
+[2.807624] (joint_control) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.807665] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:27:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTwistToAackermann::TwistToAackermann()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[2.807708] (joint_control) StderrLine: {'line': b'   27 | struct \x1b[01;36m\x1b[KTwistToAackermann\x1b[m\x1b[K : public rclcpp::Node{\n'}
+[2.807750] (joint_control) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.807791] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:27:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.807834] (joint_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.807880] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.807926] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.807968] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_ros/buffer_interface.h:35\x1b[m\x1b[K,\n'}
+[2.808010] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[2.808052] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:9\x1b[m\x1b[K:\n'}
+[2.808093] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.808141] (joint_control) StderrLine: {'line': b' 1193 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[2.808182] (joint_control) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.808223] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[2.808263] (-) TimerEvent: {}
+[2.808350] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.808421] (joint_control) StderrLine: {'line': b'   98 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[2.808546] (joint_control) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.808671] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[2.808773] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.808822] (joint_control) StderrLine: {'line': b'   86 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[2.808865] (joint_control) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.808907] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[2.908432] (-) TimerEvent: {}
+[2.920460] (joint_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1\n'}
+[2.920821] (joint_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2\n'}
+[2.921318] (joint_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.923713] (joint_control) CommandEnded: {'returncode': 2}
+[2.971462] (joint_control) JobEnded: {'identifier': 'joint_control', 'rc': 2}
+[2.982255] (-) EventReactorShutdown: {}

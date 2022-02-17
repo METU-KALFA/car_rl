@@ -1,0 +1,36 @@
+[0.015s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.047s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.064s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.202s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.272s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.275s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.395s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.435s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.436s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.550s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.640s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.697s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.706s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.706s] -- Configured cppcheck include dirs: 
+[0.707s] -- Configured cppcheck exclude dirs and/or files: 
+[0.716s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.716s] -- Configured cpplint exclude dirs and/or files: 
+[0.717s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.720s] -- Added test 'lint_cmake' to check CMake code style
+[0.721s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.730s] -- Added test 'uncrustify' to check C / C++ code style
+[0.730s] -- Configured uncrustify additional arguments: 
+[0.731s] -- Added test 'xmllint' to check XML markup files
+[0.733s] -- Configuring done
+[0.741s] -- Generating done
+[0.743s] -- Build files have been written to: /root/sam_bot_description/src/joint_control/build/joint_control
+[0.776s] [35m[1mScanning dependencies of target joint[0m
+[0.804s] [ 50%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
+[0.813s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/String.h: No such file or directory
+[0.813s]     3 | #include [01;31m[K"std_msgs/msg/String.h"[m[K
+[0.813s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.813s] compilation terminated.
+[0.813s] make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1
+[0.814s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+[0.814s] make: *** [Makefile:141: all] Error 2
+[0.816s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

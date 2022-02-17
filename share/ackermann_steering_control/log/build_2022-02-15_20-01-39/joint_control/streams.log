@@ -1,0 +1,36 @@
+[0.014s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.044s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.061s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.222s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.292s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.294s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.416s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.455s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.457s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.571s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.662s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.718s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[0.726s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.806s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.829s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.829s] -- Configured cppcheck include dirs: 
+[0.829s] -- Configured cppcheck exclude dirs and/or files: 
+[0.852s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.852s] -- Configured cpplint exclude dirs and/or files: 
+[0.855s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.861s] -- Added test 'lint_cmake' to check CMake code style
+[0.865s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.886s] -- Added test 'uncrustify' to check C / C++ code style
+[0.886s] -- Configured uncrustify additional arguments: 
+[0.889s] -- Added test 'xmllint' to check XML markup files
+[0.892s] -- Configuring done
+[0.900s] -- Generating done
+[0.902s] -- Build files have been written to: /root/sam_bot_description/src/joint_control/build/joint_control
+[0.985s] [ 33%] [32m[1mLinking CXX executable joint[0m
+[1.279s] /usr/bin/ld: CMakeFiles/joint.dir/src/joint_controller.cpp.o: in function `rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> >, std::allocator<void> >::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::QoS const&, rclcpp::PublisherOptionsWithAllocator<std::allocator<void> > const&)':
+[1.279s] joint_controller.cpp:(.text._ZN6rclcpp9PublisherIN8tf2_msgs3msg10TFMessage_ISaIvEEES4_EC2EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS4_EE[_ZN6rclcpp9PublisherIN8tf2_msgs3msg10TFMessage_ISaIvEEES4_EC5EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS4_EE]+0x6e): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<tf2_msgs::msg::TFMessage_<std::allocator<void> > >()'
+[1.279s] collect2: error: ld returned 1 exit status
+[1.281s] make[2]: *** [CMakeFiles/joint.dir/build.make:163: joint] Error 1
+[1.282s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+[1.282s] make: *** [Makefile:141: all] Error 2
+[1.286s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

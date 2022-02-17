@@ -1,0 +1,11 @@
+[0.013s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.048s] [35m[1mScanning dependencies of target joint[0m
+[0.067s] [ 50%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
+[0.073s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/String.h: No such file or directory
+[0.074s]     3 | #include [01;31m[K<std_msgs/String.h>[m[K
+[0.074s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.074s] compilation terminated.
+[0.075s] make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1
+[0.075s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+[0.075s] make: *** [Makefile:141: all] Error 2
+[0.078s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

@@ -1,0 +1,1 @@
+Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /root/sam_bot_description/src/joint_control/install/joint_control/lib/joint_control/ --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

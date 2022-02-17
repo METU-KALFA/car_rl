@@ -1,0 +1,3 @@
+[35m[1mScanning dependencies of target joint[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/joint.dir/src/odometry.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable joint[0m

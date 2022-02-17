@@ -1,0 +1,56 @@
+[0.015s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.049s] [35m[1mScanning dependencies of target joint[0m
+[0.070s] [ 50%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
+[2.140s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:[m[K In member function ‘[01m[Kvoid TwistToAackermann::callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.140s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:90:40:[m[K [01;31m[Kerror: [m[K‘[01m[Know[m[K’ is not a member of ‘[01m[Krclcpp::Time[m[K’
+[2.141s]    90 |     joint.header.stamp = rclcpp::Time::[01;31m[Know[m[K();
+[2.141s]       |                                        [01;31m[K^~~[m[K
+[2.141s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:91:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+[2.141s]    91 |     if (msg.[01;31m[Kangular[m[K.z==0 || msg.linear.x==0) {
+[2.142s]       |             [01;31m[K^~~~~~~[m[K
+[2.142s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:91:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+[2.142s]    91 |     if (msg.angular.z==0 || msg.[01;31m[Klinear[m[K.x==0) {
+[2.142s]       |                                 [01;31m[K^~~~~~[m[K
+[2.142s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:94:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+[2.142s]    94 |       rwr = lwr =rwf= lwf = rwm = lwm = linearToAngularVelocity(msg.[01;31m[Klinear[m[K.x, wheelRadius);
+[2.142s]       |                                                                     [01;31m[K^~~~~~[m[K
+[2.142s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:99:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+[2.142s]    99 |       r = msg.[01;31m[Klinear[m[K.x/msg.angular.z;
+[2.142s]       |               [01;31m[K^~~~~~[m[K
+[2.142s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:99:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+[2.143s]    99 |       r = msg.linear.x/msg.[01;31m[Kangular[m[K.z;
+[2.143s]       |                            [01;31m[K^~~~~~~[m[K
+[2.143s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:104:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K/[m[K’ token
+[2.143s]   104 |       lwh = atan(actualBase+[01;31m[K/[m[K(r-(track/2)));
+[2.143s]       |                             [01;31m[K^[m[K
+[2.143s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:106:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+[2.143s]   106 |       lwf = lwm = lwr = linearToAngularVelocity((r-(track/2))*msg.[01;31m[Kangular[m[K.z,wheelRadius);
+[2.143s]       |                                                                   [01;31m[K^~~~~~~[m[K
+[2.143s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:107:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+[2.143s]   107 |       rwf = rwm = rwr = linearToAngularVelocity((r+(track/2))*msg.[01;31m[Kangular[m[K.z,wheelRadius);             }
+[2.143s]       |                                                                   [01;31m[K^~~~~~~[m[K
+[2.144s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:116:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+[2.144s]   116 |     odometry_.updateOpenLoop(msg.[01;31m[Klinear[m[K.x, msg.angular.z, joint.header.stamp);
+[2.144s]       |                                  [01;31m[K^~~~~~[m[K
+[2.144s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:116:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+[2.144s]   116 |     odometry_.updateOpenLoop(msg.linear.x, msg.[01;31m[Kangular[m[K.z, joint.header.stamp);
+[2.144s]       |                                                [01;31m[K^~~~~~~[m[K
+[2.144s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:119:26:[m[K [01;31m[Kerror: [m[K‘[01m[KQuaternion[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+[2.144s]   119 |     const geometry_msgs::[01;31m[KQuaternion[m[K orientation(
+[2.144s]       |                          [01;31m[K^~~~~~~~~~[m[K
+[2.145s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:124:37:[m[K [01;31m[Kerror: [m[K‘[01m[Korientation[m[K’ was not declared in this scope
+[2.146s]   124 |        msg_.pose.pose.orientation = [01;31m[Korientation[m[K;
+[2.146s]       |                                     [01;31m[K^~~~~~~~~~~[m[K
+[2.146s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:143:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[2.146s]   143 |     pub_odom_.[01;31m[Kpublish[m[K(msg_);
+[2.146s]       |               [01;31m[K^~~~~~~[m[K
+[2.147s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:144:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[2.147s]   144 |     pub_odom_tf_.[01;31m[Kpublish[m[K(tf_msg_);
+[2.147s]       |                  [01;31m[K^~~~~~~[m[K
+[2.147s] [01m[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:145:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::JointState_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::JointState_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[2.147s]   145 |     pub_.[01;31m[Kpublish[m[K(joint);
+[2.147s]       |          [01;31m[K^~~~~~~[m[K
+[3.678s] make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1
+[3.679s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+[3.679s] make: *** [Makefile:141: all] Error 2
+[3.682s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

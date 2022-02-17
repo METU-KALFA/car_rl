@@ -1,0 +1,66 @@
+[0.000000] (-) TimerEvent: {}
+[0.000625] (joint_control) JobQueued: {'identifier': 'joint_control', 'dependencies': OrderedDict()}
+[0.001011] (joint_control) JobStarted: {'identifier': 'joint_control'}
+[0.012470] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'cmake'}
+[0.013271] (joint_control) JobProgress: {'identifier': 'joint_control', 'progress': 'build'}
+[0.013693] (joint_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/sam_bot_description/src/joint_control/build/joint_control', '--', '-j16', '-l16'], 'cwd': '/root/sam_bot_description/src/joint_control/build/joint_control', 'env': OrderedDict([('HOSTNAME', 'devononeofeleven'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/sam_bot_description'), ('XAUTHORITH', '/tmp/.docker.xauth'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/sam_bot_description/src/constant_test_vel/install:/root/sam_bot_description/src/joint_init/install:/root/sam_bot_description/src/joint_control/install:/root/sam_bot_description/install'), ('ROS_DISTRO', 'foxy'), ('QT_GRAPHICSYSTEM', 'native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/sam_bot_description/src/constant_test_vel/install/constant_test_vel:/root/sam_bot_description/src/joint_init/install/joint_init:/root/sam_bot_description/src/joint_control/install/joint_control:/root/sam_bot_description/install/sam_bot_description:/opt/ros/foxy'), ('ROS_WS', '/root/catkin_ws'), ('PWD', '/root/sam_bot_description/src/joint_control/build/joint_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/sam_bot_description/src/joint_init/install/joint_init/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/sam_bot_description/src/constant_test_vel/install/constant_test_vel:/root/sam_bot_description/src/joint_control/install/joint_control:/root/sam_bot_description/install/sam_bot_description:/root/sam_bot_description/src/joint_init/install/joint_init:/opt/ros/foxy')]), 'shell': False}
+[0.053547] (joint_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target joint\x1b[0m\n'}
+[0.084012] (joint_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o\x1b[0m\n'}
+[0.099380] (-) TimerEvent: {}
+[0.199949] (-) TimerEvent: {}
+[0.300594] (-) TimerEvent: {}
+[0.401044] (-) TimerEvent: {}
+[0.501493] (-) TimerEvent: {}
+[0.601939] (-) TimerEvent: {}
+[0.702343] (-) TimerEvent: {}
+[0.802681] (-) TimerEvent: {}
+[0.903059] (-) TimerEvent: {}
+[1.003519] (-) TimerEvent: {}
+[1.103917] (-) TimerEvent: {}
+[1.204355] (-) TimerEvent: {}
+[1.304730] (-) TimerEvent: {}
+[1.405057] (-) TimerEvent: {}
+[1.505501] (-) TimerEvent: {}
+[1.605947] (-) TimerEvent: {}
+[1.706390] (-) TimerEvent: {}
+[1.806825] (-) TimerEvent: {}
+[1.907262] (-) TimerEvent: {}
+[2.007771] (-) TimerEvent: {}
+[2.108363] (-) TimerEvent: {}
+[2.209031] (-) TimerEvent: {}
+[2.309176] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TwistToAackermann::callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.309442] (-) TimerEvent: {}
+[2.309576] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:166:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time rclcpp::Node::now() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.309761] (joint_control) StderrLine: {'line': b'  166 |     odom_frame.header.stamp = \x1b[01;31m\x1b[Know\x1b[m\x1b[K;\n'}
+[2.310068] (joint_control) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.310143] (joint_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.310194] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.310236] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.310277] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_ros/buffer_interface.h:35\x1b[m\x1b[K,\n'}
+[2.310318] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[2.310359] (joint_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/sam_bot_description/src/joint_control/src/joint_controller.cpp:9\x1b[m\x1b[K:\n'}
+[2.310400] (joint_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1025:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.310441] (joint_control) StderrLine: {'line': b' 1025 |   \x1b[01;36m\x1b[Know\x1b[m\x1b[K() const;\n'}
+[2.310481] (joint_control) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.409584] (-) TimerEvent: {}
+[2.510110] (-) TimerEvent: {}
+[2.610410] (-) TimerEvent: {}
+[2.710968] (-) TimerEvent: {}
+[2.811367] (-) TimerEvent: {}
+[2.911820] (-) TimerEvent: {}
+[3.012260] (-) TimerEvent: {}
+[3.112694] (-) TimerEvent: {}
+[3.213131] (-) TimerEvent: {}
+[3.313572] (-) TimerEvent: {}
+[3.414007] (-) TimerEvent: {}
+[3.514459] (-) TimerEvent: {}
+[3.614895] (-) TimerEvent: {}
+[3.715339] (-) TimerEvent: {}
+[3.815807] (-) TimerEvent: {}
+[3.906208] (joint_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Error 1\n'}
+[3.906701] (joint_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2\n'}
+[3.906959] (joint_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[3.910527] (joint_control) CommandEnded: {'returncode': 2}
+[3.915941] (-) TimerEvent: {}
+[3.975431] (joint_control) JobEnded: {'identifier': 'joint_control', 'rc': 2}
+[3.978191] (-) EventReactorShutdown: {}

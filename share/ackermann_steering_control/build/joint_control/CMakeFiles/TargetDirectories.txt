@@ -1,0 +1,10 @@
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/install/strip.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/install/local.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/install.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/list_install_components.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/rebuild_cache.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/edit_cache.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/test.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/joint.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/joint_control_uninstall.dir
+/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/uninstall.dir

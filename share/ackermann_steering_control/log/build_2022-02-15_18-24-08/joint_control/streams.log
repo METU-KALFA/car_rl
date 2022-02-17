@@ -1,0 +1,23 @@
+[0.015s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.070s] -- Configuring incomplete, errors occurred!
+[0.070s] See also "/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/CMakeOutput.log".
+[0.070s] See also "/root/sam_bot_description/src/joint_control/build/joint_control/CMakeFiles/CMakeError.log".
+[0.070s] CMake Error at CMakeLists.txt:17 (find_package):
+[0.070s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.071s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.071s]   CMake did not find one.
+[0.071s] 
+[0.071s]   Could not find a package configuration file provided by "catkin" with any
+[0.071s]   of the following names:
+[0.071s] 
+[0.071s]     catkinConfig.cmake
+[0.071s]     catkin-config.cmake
+[0.071s] 
+[0.072s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.072s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.072s]   provides a separate development package or SDK, be sure it has been
+[0.072s]   installed.
+[0.072s] 
+[0.072s] 
+[0.073s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.074s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

@@ -1,0 +1,19 @@
+[0.014s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
+[0.070s] [35m[1mScanning dependencies of target joint[0m
+[0.087s] [ 33%] [32mBuilding CXX object CMakeFiles/joint.dir/src/odometry.cpp.o[0m
+[1.311s] [01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:[m[K In member function ‘[01m[Kbool Odometry::update(double, double, const rclcpp::Time&)[m[K’:
+[1.311s] [01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:98:34:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Krclcpp::Time::operator-(const rclcpp::Time&) const(((Odometry*)this)->Odometry::timestamp_)[m[K’ from ‘[01m[Krclcpp::Duration[m[K’ to ‘[01m[Krclcpp::Time[m[K’
+[1.311s]    98 |     const double dt = toSec([01;31m[Ktime - timestamp_[m[K);
+[1.311s]       |                             [01;31m[K~~~~~^~~~~~~~~~~~[m[K
+[1.311s]       |                                  [01;31m[K|[m[K
+[1.311s]       |                                  [01;31m[Krclcpp::Duration[m[K
+[1.318s] [01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:[m[K In member function ‘[01m[Kvoid Odometry::updateOpenLoop(double, double, const rclcpp::Time&)[m[K’:
+[1.319s] [01m[K/root/sam_bot_description/src/joint_control/src/odometry.cpp:121:34:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Krclcpp::Time::operator-(const rclcpp::Time&) const(((Odometry*)this)->Odometry::timestamp_)[m[K’ from ‘[01m[Krclcpp::Duration[m[K’ to ‘[01m[Krclcpp::Time[m[K’
+[1.319s]   121 |     const double dt = toSec([01;31m[Ktime - timestamp_[m[K);
+[1.319s]       |                             [01;31m[K~~~~~^~~~~~~~~~~~[m[K
+[1.319s]       |                                  [01;31m[K|[m[K
+[1.319s]       |                                  [01;31m[Krclcpp::Duration[m[K
+[1.505s] make[2]: *** [CMakeFiles/joint.dir/build.make:76: CMakeFiles/joint.dir/src/odometry.cpp.o] Error 1
+[1.506s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Error 2
+[1.506s] make: *** [Makefile:141: all] Error 2
+[1.509s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
