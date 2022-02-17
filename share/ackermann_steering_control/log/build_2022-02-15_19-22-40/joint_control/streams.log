@@ -1,6 +1,0 @@
-[0.015s] Invoking command in '/root/sam_bot_description/src/joint_control/build/joint_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16
-[0.076s] [ 50%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
-[1.441s] make[2]: *** [CMakeFiles/joint.dir/build.make:63: CMakeFiles/joint.dir/src/joint_controller.cpp.o] Interrupt
-[1.441s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/joint.dir/all] Interrupt
-[1.441s] make: *** [Makefile:141: all] Interrupt
-[1.451s] Invoked command in '/root/sam_bot_description/src/joint_control/build/joint_control' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/sam_bot_description/src/joint_control/build/joint_control -- -j16 -l16

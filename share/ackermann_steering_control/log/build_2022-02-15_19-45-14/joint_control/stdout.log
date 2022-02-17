@@ -1,3 +1,0 @@
-[35m[1mScanning dependencies of target joint[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/joint.dir/src/joint_controller.cpp.o[0m
-[100%] [32m[1mLinking CXX executable joint[0m
