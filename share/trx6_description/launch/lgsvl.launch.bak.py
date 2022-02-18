@@ -12,7 +12,7 @@ from launch.conditions import IfCondition
 
 
 def generate_launch_description():
-    #pointcloud = LaunchConfiguration('pointcloud')
+    pointcloud = LaunchConfiguration('pointcloud')
     declare_pointcloud = DeclareLaunchArgument(
         'pointcloud', default_value='False',
         description='Whether to use pointcloud_to_laserscan')
@@ -36,10 +36,12 @@ def generate_launch_description():
                 'use_inf': True,
                 'inf_epsilon': 1.0
             }],
-            name='pointcloud_to_laserscan'
+            name='pointcloud_to_laserscan',
+            condition=IfCondition(pointcloud)
         )
 
     static_tf_nodes = GroupAction([
+        pointcloud_to_laserscan_node,
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
@@ -77,6 +79,6 @@ def generate_launch_description():
     #ld.add_action(lgsvl_bridge)
     ld.add_action(static_tf_nodes)
     ld.add_action(declare_pointcloud)
-    ld.add_action(pointcloud_to_laserscan_node)
+    #ld.add_action(pointcloud_to_laserscan_node)
     
     return ld

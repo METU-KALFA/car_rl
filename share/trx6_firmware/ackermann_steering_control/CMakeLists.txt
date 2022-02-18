@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(trx6_navigation2)
+project(ackermann_steering_control)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -17,14 +17,31 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(ackermann_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(tf2_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2 REQUIRED)
+#find_package(roscpp REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+add_executable(ackermann_steering_controller src/ackermann_steering_controller_node.cpp src/odometry.cpp src/odometry.h)
+ament_target_dependencies(ackermann_steering_controller rclcpp tf2 tf2_ros tf2_msgs sensor_msgs std_msgs nav_msgs geometry_msgs ackermann_msgs)
+
 install(
-  DIRECTORY config launch maps 
+	DIRECTORY launch scripts
   DESTINATION share/${PROJECT_NAME}
 )
+
+install(TARGETS
+  ackermann_steering_controller
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -38,3 +55,4 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
+

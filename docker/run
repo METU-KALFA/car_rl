@@ -10,6 +10,7 @@ if [ ! -f "$XAUTH" ]; then
 	xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 fi
 
+./paste_dockerd &
 xhost +local:root
 docker run -it --rm \
 	--network host \
