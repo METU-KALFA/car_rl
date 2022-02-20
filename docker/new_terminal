@@ -1,1 +1,5 @@
-docker exec -it $(cat /tmp/dockerd/.session_ps) bash #"source /opt/ros/foxy/setup.bash"
+#!/bin/bash
+
+docker exec -it $(cat /tmp/dockerd/.session_ps) bash 
+#"source /opt/ros/foxy/setup.bash"
+

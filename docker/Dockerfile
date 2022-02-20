@@ -67,9 +67,8 @@ RUN cd ${SHARED_WS} && \
         trx6_navigation2
 
 # Remove source files
-RUN rm -r \
-      ${SHARED_WS}/src/trx6_description \
-      ${SHARED_WS}/src/trx6_navigation2
+RUN rm -r ${SHARED_WS}/src/
+RUN mkdir -p ${SHARED_WS}/src/
 
 # Remove apt caches
 RUN  rm -rf /var/lib/apt/lists/*
