@@ -38,28 +38,29 @@ ekf_filter_node:
         base_link_frame: base_footprint  # Defaults to "base_link" ifunspecified
         world_frame: odom            # Defaults to the value of odom_frame if unspecified
 
-        odom0: /wheel_odom
-        odom0_config: [false, false, false,
-               false, false, false,
-               true,  true,  false,
-               false, false, true,
-               false, false, false]
-        odom0_differential: true
+        odom0: /f1tenth/lgsvl/sensors/gps/data
+        odom0_config: [true,  true,  true,
+                       false, false, false,
+                       false, false, false,
+                       false, false, false,
+                       false, false, false]
         odom0_queue_size: 2
         odom0_nodelay: false
+        odom0_differential: false
+        odom0_relative: true
 
         imu0: /f1tenth/lgsvl/sensors/imu/raw
         imu0_config: [false, false, false,
-                      true,  true,  true,
+                      false, false,  true,
                       false, false, false,
-                      false, false, false,
-                      false, false, false]
+                      false, false,  true,
+                      true,  false, false]
         imu0_nodelay: false
         imu0_differential: false
         imu0_relative: true
         imu0_queue_size: 5
-        imu0_pose_rejection_threshold: 0.1               
-        imu0_twist_rejection_threshold: 0.1
+        imu0_pose_rejection_threshold: 0.8               
+        imu0_twist_rejection_threshold: 0.8
         imu0_linear_acceleration_rejection_threshold: 0.8  
         imu0_remove_gravitational_acceleration: true
         use_control: false

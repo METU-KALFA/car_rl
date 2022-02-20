@@ -1,5 +1,3 @@
-//#include "ros/ros.hpp"
-//#include "ros/console.h"
 #include "std_msgs/msg/string.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "ackermann_msgs/msg/ackermann_drive.hpp"
@@ -28,7 +26,7 @@ void normal(std::vector<double> &pos)
 {
   for (int i = 0; i < 8; i++)
   {
-    pos[i] -= floor(pos[i] / M_PI) * M_PI;
+      pos[i] -= floor(pos[i] / (2*M_PI)) *2* M_PI;
   }
 }
 struct TwistToAackermann : public rclcpp::Node
@@ -54,16 +52,24 @@ struct TwistToAackermann : public rclcpp::Node
   std::shared_ptr<tf2_ros::TransformBroadcaster> tf_publisher_;
   sensor_msgs::msg::JointState joint;
   Odometry odometry_;
-
-  TwistToAackermann() : Node("ackermann_steering_control"), pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", 1)),
+  rclcpp::Time last_time;
+    //you know what to do! why multiple when we can have one
+    bool first= true;
+    bool has_tf;
+  TwistToAackermann(bool _has_tf = false) : Node("ackermann_steering_control"), pub_(create_publisher<sensor_msgs::msg::JointState>("/joint_states", 1)),
                         pub_odom_(create_publisher<nav_msgs::msg::Odometry>("/wheel_odom", 1)),
-                        pub_odom_tf_(create_publisher<tf2_msgs::msg::TFMessage>("/odom_tf", 1)),
-                        sub_(create_subscription<ackermann_msgs::msg::AckermannDrive>("/ackermann_cmd", 1, std::bind(&TwistToAackermann::callback, this, std::placeholders::_1)))
+                         sub_(create_subscription<ackermann_msgs::msg::AckermannDrive>("/ackermann_cmd", 1, std::bind(&TwistToAackermann::callback, this, std::placeholders::_1))),
+			 has_tf(_has_tf)
   {
     //Topic you want to publish
-    tf_publisher_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
-    delta_t = 0.1;
+      if(_has_tf){
+          pub_odom_tf_ = (create_publisher<tf2_msgs::msg::TFMessage>("/odom_tf", 1));
+          tf_publisher_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
     timer_ = this->create_wall_timer(100ms, std::bind(&TwistToAackermann::broadcast_timer_callback, this));
+      }     
+
+    delta_t = 0.1;
+
     joint.header.frame_id = std::string("");
     joint.name = {"drivewhl_rl_joint", "drivewhl_rr_joint",
                   "drivewhl_fl_joint", "drivewhl_fr_joint",
@@ -105,7 +111,8 @@ struct TwistToAackermann : public rclcpp::Node
 
   void broadcast_timer_callback()
   {
-    rclcpp::Time now = this->get_clock()->now();
+      //      if(has_tf){
+      rclcpp::Time now = this->get_clock()->now();
     geometry_msgs::msg::TransformStamped t = tf_msg_.transforms[0];
 
     t.header.stamp = now;
@@ -119,6 +126,8 @@ struct TwistToAackermann : public rclcpp::Node
     t.transform.rotation = orientation;
 
     tf_publisher_->sendTransform(t);
+
+    //}
   }
 
   geometry_msgs::msg::Quaternion createQuaternionMsgFromYaw(double yaw)
@@ -146,7 +155,14 @@ struct TwistToAackermann : public rclcpp::Node
     double rwf;
     double r = 0;
     double tanz = 0;
-    joint.header.stamp = now();
+
+    if(first){
+        last_time= now();
+        first=false;
+    }
+    rclcpp::Time this_time = now();
+    joint.header.stamp = this_time;
+    delta_t = (this_time - last_time).seconds();
     if (msg->steering_angle == 0 || msg->speed == 0)
     {
       lwh = 0;
@@ -178,11 +194,6 @@ struct TwistToAackermann : public rclcpp::Node
     joint.position[6] = lwh;
     joint.position[7] = rwh;
     normal(joint.position);
-    double wheel_pos = wheel_pos_old + msg->speed * delta_t;
-    double steer_pos = steer_pos_old + (lwh + rwh) / 2;
-    //odometry_.update(wheel_pos, steer_pos, joint.header.stamp);
-    wheel_pos_old = wheel_pos;
-    steer_pos_old = steer_pos;
     pose.x += msg->speed * cos(yaw + slip) * delta_t;
     pose.y += msg->speed * sin(yaw + slip) * delta_t;
     if (r != 0)
@@ -198,7 +209,7 @@ struct TwistToAackermann : public rclcpp::Node
     msg_.twist.twist.linear.x = msg->speed;
     msg_.twist.twist.angular.z = msg->steering_angle;
 
-    {
+    if(has_tf){
 
       geometry_msgs::msg::TransformStamped &odom_frame = tf_msg_.transforms[0];
       odom_frame.header.stamp = joint.header.stamp;
@@ -218,7 +229,7 @@ struct TwistToAackermann : public rclcpp::Node
 
     //pubADS_.publish(ads);
     pub_odom_->publish(msg_);
-    pub_odom_tf_->publish(tf_msg_);
+    /* pub_odom_tf_->publish(tf_msg_);*/
     pub_->publish(joint);
   }
   

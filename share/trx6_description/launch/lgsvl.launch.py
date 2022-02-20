@@ -23,7 +23,7 @@ def generate_launch_description():
             package='pointcloud_to_laserscan', executable='pointcloud_to_laserscan_node',
             remappings=[('cloud_in', 'f1tenth/lgsvl/sensors/point_cloud/data'), ('scan', '/scan')],
             parameters=[{
-                'target_frame': 'lidar_link',
+                'target_frame': 'base_scan',
                 'transform_tolerance': 0.01,
                 'min_height': -1.0,
                 'max_height': 1.0,
@@ -45,6 +45,12 @@ def generate_launch_description():
             executable='static_transform_publisher',
             name='static_transform_publisher',
             arguments=['0', '0', '0', '0', '0', '0', '1', 'base_footprint', 'base_link']
+        ),
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='static_transform_publisher',
+            arguments=['0.27', '0', '0.1125', '0', '0', '0', '1', 'base_link', 'base_scan']
         ),
         Node(
             package='tf2_ros',

@@ -2,9 +2,9 @@
 ekf_filter_node:
     ros__parameters:
         use_sim_time: true
-        sensor_timeout: 0.1
+        sensor_timeout: 10.1
         transform_time_offset: 0.0
-        transform_timeout: 0.0
+        transform_timeout: 10.0
 # The frequency, in Hz, at which the filter will output a position estimate. Note that the filter will not begin
 # computation until it receives at least one message from one of theinputs. It will then run continuously at the
 # frequency specified here, regardless of whether it receives more measurements. Defaults to 30 if unspecified.
@@ -14,7 +14,7 @@ ekf_filter_node:
 # set to true, no 3D information will be used in your state estimate. Use this if you are operating in a planar
 # environment and want to ignore the effect of small variations in the ground plane that might otherwise be detected
 # by, for example, an IMU. Defaults to false if unspecified.
-        two_d_mode: true
+        two_d_mode: false
 
 # Whether to publish the acceleration state. Defaults to false if unspecified.
         publish_acceleration: true
@@ -35,42 +35,45 @@ ekf_filter_node:
 #         from robot_localization! However, that instance should *not* fuse the global data.
         map_frame: map              # Defaults to "map" if unspecified
         odom_frame: odom            # Defaults to "odom" if unspecified
-        base_link_frame: base_footprint  # Defaults to "base_link" ifunspecified
-        world_frame: odom            # Defaults to the value of odom_frame if unspecified
+        base_link_frame: base_link  # Defaults to "base_link" ifunspecified
+        world_frame: map            # Defaults to the value of odom_frame if unspecified
 
-        odom0: /wheel_odom
-        odom0_config: [false, false, false,
-               false, false, false,
-               true,  true,  false,
-               false, false, true,
-               false, false, false]
-        odom0_differential: true
-        odom0_queue_size: 2
-        odom0_nodelay: false
-
-        imu0: /f1tenth/lgsvl/sensors/imu/raw
-        imu0_config: [false, false, false,
-                      true,  true,  true,
+        odom0: /f1tenth/lgsvl/sensors/gps/data
+        odom0_config: [true,  true,  false,
+                      false, false, false,
                       false, false, false,
                       false, false, false,
                       false, false, false]
-        imu0_nodelay: false
-        imu0_differential: false
-        imu0_relative: true
-        imu0_queue_size: 5
-        imu0_pose_rejection_threshold: 0.1               
-        imu0_twist_rejection_threshold: 0.1
-        imu0_linear_acceleration_rejection_threshold: 0.8  
-        imu0_remove_gravitational_acceleration: true
-        use_control: false
-        stamped_control: false
-        control_timeout: 0.2
-        control_config: [true, false, false, false, false, true]
-        acceleration_limits: [1.3, 0.0, 0.0, 0.0, 0.0, 3.4]
-        deceleration_limits: [1.3, 0.0, 0.0, 0.0, 0.0, 4.5]
-        acceleration_gains: [0.8, 0.0, 0.0, 0.0, 0.0, 0.9]
-        deceleration_gains: [1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+        odom0_queue_size: 10
+        odom0_nodelay: true
+        odom0_differential: false
+        odom0_relative: false
 
+        odom1: /wheel_odom
+        odom1_config: [true,  true,  false,
+                      false, false, false,
+                      false, false, false,
+                      false, false, false,
+                      false, false, false]
+        odom1_queue_size: 10
+        odom1_nodelay: true
+        odom1_differential: false
+        odom1_relative: false
+
+        imu0: /f1tenth/lgsvl/sensors/imu/raw
+        imu0_config: [false, false, false,
+                      true,  true,  false,
+                      false, false, false,
+                      true,  true,  true,
+                      true,  true,  true]
+        imu0_nodelay: true
+        imu0_differential: false
+        imu0_relative: false
+        imu0_queue_size: 10
+        imu0_remove_gravitational_acceleration: true
+
+        use_control: false
+        
         process_noise_covariance: [1e-3, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
                                   0.0,    1e-3,  0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
                                   0.0,    0.0,    1e-3,  0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
