@@ -1,0 +1,46 @@
+#!/bin/bash
+
+XSOCK=/tmp/.X11-unix
+XAUTH=/tmp/.docker.xauth
+lockfile=/tmp/dockerd/.session_lock
+srcfile=_ROS2_SHARE_
+imgname=ros:foxy-ros-base
+
+if [ ! -f $lockfile ]; then
+	mkdir -p $(dirname $lockfile)
+	
+	if [ ! -f "$XAUTH" ]; then 
+		touch $XAUTH
+		xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
+	fi
+	
+	if [ ! -f "$lockfile" ]; then
+		xhost +local:root
+		docker run -it --rm -d \
+			--network host \
+			--privileged \
+			--env XAUTHORITH=${XAUTH} \
+			--env DISPLAY=$DISPLAY \
+			--env QT_GRAPHICSYSTEM=native \
+			--env QT_X11_NO_MITSHM=1 \
+			--volume $XSOCK:$XSOCK:rw \
+			--volume $XAUTH:$XAUTH:rw \
+			--volume $srcfile:/root/host_ws/src:rw \
+			$imgname > $lockfile
+	fi
+fi
+
+if [ "$1" == "stop" ]; then
+	if [ -f "$lockfile" ]; then
+		docker stop $(cat $lockfile)
+		rm -f /tmp/dockerd/.session_lock
+		xhost -local:root
+	fi
+elif [ $# == 0 ]; then
+	docker exec -it $(cat $lockfile) bash
+else
+	docker exec -it $(cat $lockfile) $@ 
+fi
+
+unset XSOCK XAUTH lockfile srcfile imgname
+

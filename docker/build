@@ -1,3 +1,9 @@
 #!/bin/bash
 
-docker build -f Dockerfile -t kovan:devel ../share
+#docker build -f Dockerfile -t kovan:devel ../share
+srcpath="$(dirname $(pwd))/share"
+binfile='testbin'
+
+sed "s|_ROS2_SHARE_|$srcpath|g" base > $HOME/.local/bin/ros2
+chmod +x $HOME/.local/bin/ros2
+

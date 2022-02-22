@@ -1,5 +1,0 @@
-#/bin/bash
-
-sleep 5
-docker ps | tail -1 | awk '{ print $1 }' > /tmp/dockerd/.session_ps
-

@@ -48,23 +48,24 @@ RUN cd ${PRIVATE_WS} && \
 
 # copy trx6 packages into a new work directory
 ENV SHARED_WS /root/host_ws
+ENV PACKAGES "${SHARED_WS}/src/packages.txt"
 RUN mkdir -p ${SHARED_WS}/src
 COPY . ${SHARED_WS}/src
 WORKDIR ${SHARED_WS}
 
-RUN rosdep update && \
+RUN echo $(cat ${PACKAGES})
+RUN cd ${SHARED_WS}/src && \
+    apt update && \
     TERM=linux rosdep install -y \
       --from-paths \
-        src/trx6_description \
-        src/trx6_navigation2 \
+        $(cat ${PACKAGES}) \
       --ignore-src
 
 RUN cd ${SHARED_WS} && \
     . /opt/ros/${ROS_DISTRO}/setup.sh && \
     colcon build \
       --packages-select \
-        trx6_description \
-        trx6_navigation2
+        $(for pkg_path in $(cat ${PACKAGES}); do basename $pkg_path; done)
 
 # Remove source files
 RUN rm -r ${SHARED_WS}/src/
@@ -76,9 +77,8 @@ RUN  rm -rf /var/lib/apt/lists/*
 WORKDIR /root
 
 # Create an entrypoint file
-RUN sed -i 's/\/opt\/ros\/\$ROS_DISTRO/\$SHARED_WS\/install\//g' /ros_entrypoint.sh 
-ENTRYPOINT ["/ros_entrypoint.sh"]
+COPY entrypoint.sh /root/
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["/bin/bash", "/root/entrypoint.sh"]
 CMD ["/bin/bash"]
-#ENTRYPOINT ["/ros_entrypoint.sh", "ros2"]
-#CMD ["launch", "trx6_description", "robot.launch.py"]
 
