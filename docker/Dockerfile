@@ -56,6 +56,8 @@ WORKDIR ${SHARED_WS}
 RUN ls 
 RUN pwd
 RUN ls ${SHARED_WS}/src
+RUN cat ${PACKAGES}
+RUN ls $(pwd)/src
 RUN echo $(cat ${PACKAGES})
 RUN cd ${SHARED_WS}/src && \
     apt update && \
