@@ -53,6 +53,9 @@ RUN mkdir -p ${SHARED_WS}/src
 COPY . ${SHARED_WS}/src
 WORKDIR ${SHARED_WS}
 
+RUN ls 
+RUN pwd
+RUN ls ${SHARED_WS}/src
 RUN echo $(cat ${PACKAGES})
 RUN cd ${SHARED_WS}/src && \
     apt update && \
