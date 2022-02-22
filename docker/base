@@ -4,7 +4,8 @@ XSOCK=/tmp/.X11-unix
 XAUTH=/tmp/.docker.xauth
 lockfile=/tmp/dockerd/.session_lock
 srcfile=_ROS2_SHARE_
-imgname=ros:foxy-ros-base
+imgname=_ROS2_IMAGE_
+#ros:foxy-ros-base
 
 if [ ! -f $lockfile ]; then
 	mkdir -p $(dirname $lockfile)
@@ -39,7 +40,7 @@ if [ "$1" == "stop" ]; then
 elif [ $# == 0 ]; then
 	docker exec -it $(cat $lockfile) bash
 else
-	docker exec -it $(cat $lockfile) $@ 
+	docker exec -it $(cat $lockfile) ros2 $@ 
 fi
 
 unset XSOCK XAUTH lockfile srcfile imgname

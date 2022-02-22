@@ -1,9 +1,13 @@
 #!/bin/bash
 
-#docker build -f Dockerfile -t kovan:devel ../share
 srcpath="$(dirname $(pwd))/share"
 binfile='testbin'
+#imgname=ros:foxy-ros-base
+imgname=kovan:devel
+
+docker build -f Dockerfile -t $imgname ../share
 
 sed "s|_ROS2_SHARE_|$srcpath|g" base > $HOME/.local/bin/ros2
+sed -i "s|_ROS2_IMAGE_|$imgname|g" $HOME/.local/bin/ros2
 chmod +x $HOME/.local/bin/ros2
 
