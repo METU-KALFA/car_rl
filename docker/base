@@ -59,9 +59,9 @@ else
 	fi
 
 	if [ $# == 0 ]; then
-		docker exec -it $(cat $lockfile) bash 
+		docker exec -it $(cat $lockfile) /ros_entrypoint.sh bash 
 	elif [[ $# != 1 ]] || [[ $1 != 'start' ]]; then
-		docker exec -it $(cat $lockfile) ros2 $@
+		docker exec -it $(cat $lockfile) /ros_entrypoint.sh ros2 $@
 	fi
 fi
 
