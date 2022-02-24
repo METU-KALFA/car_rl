@@ -5,9 +5,22 @@ XAUTH=/tmp/.docker.xauth
 lockfile=/tmp/dockerd/.session_lock
 srcfile=_ROS2_SHARE_
 imgname=_ROS2_IMAGE_
+tmpfile=$lockfile.tmp
 #ros:foxy-ros-base
 
-if [ ! -f $lockfile ]; then
+_usage() {
+	echo "Usage: $0"
+}
+
+_stop_session() {
+	if [ -f "$lockfile" ]; then
+		docker stop $(cat $lockfile)
+		rm -f $lockfile
+		xhost -local:root
+	fi
+}
+
+_start_session() {
 	mkdir -p $(dirname $lockfile)
 	
 	if [ ! -f "$XAUTH" ]; then 
@@ -29,19 +42,27 @@ if [ ! -f $lockfile ]; then
 			--volume $srcfile:/root/host_ws/src:rw \
 			$imgname > $lockfile
 	fi
+}
+
+if [[ $# -eq 1 && $1 -eq 'stop' ]]; then
+	_stop_session
+
+elif [[ $# -eq 1 && $1 -eq 'restart' ]]; then
+	_stop_session
+	_start_session
+else
+	if [ ! -f $lockfile ]; then
+		_start_session
+	fi
+
+	if [ $# == 0 ]; then
+		echo docker exec -it $(cat $lockfile) bash
+	elif [[ $# != 1 ]] || [[ $1 != 'start' ]]; then
+		echo docker exec -it $(cat $lockfile) ros2 $@
+	fi
 fi
 
-if [ "$1" == "stop" ]; then
-	if [ -f "$lockfile" ]; then
-		docker stop $(cat $lockfile)
-		rm -f /tmp/dockerd/.session_lock
-		xhost -local:root
-	fi
-elif [ $# == 0 ]; then
-	docker exec -it $(cat $lockfile) bash
-else
-	docker exec -it $(cat $lockfile) ros2 $@ 
-fi
 
 unset XSOCK XAUTH lockfile srcfile imgname
+unset _usage _start_session _stop_session
 

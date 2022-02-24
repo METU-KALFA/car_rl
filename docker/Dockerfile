@@ -78,6 +78,6 @@ WORKDIR /root
 # Create an entrypoint file
 COPY entrypoint.sh /root/
 RUN chmod +x entrypoint.sh
-ENTRYPOINT ["/bin/bash", "/root/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "-c", "source /root/entrypoint.sh"]
 CMD ["/bin/bash"]
 
