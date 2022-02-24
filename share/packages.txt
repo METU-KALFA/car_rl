@@ -2,4 +2,5 @@ lgsvl_firmware/ackermann_to_lgsvl_control
 teleop_ackermann_keyboard 
 trx6_description 
 trx6_firmware/ackermann_steering_control 
+trx6_firmware/ros_arduino_comm 
 trx6_navigation2 

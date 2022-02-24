@@ -3,6 +3,7 @@
 #include <geometry_msgs/msg/twist.hpp>
 #include <tf2/LinearMath/Quaternion.h>
 #include "sensor_msgs/msg/imu.hpp"
+#include "ackermann_msgs/msg/ackermann_drive.hpp"
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 
 #include <stdio.h>
@@ -51,7 +52,7 @@ inline void nanosleep(){
 //CALLBACK_FUNC_DECL(geometry_msgs::msg::Twist,msg,velocity);
 struct Communicator : public rclcpp::Node{
     Communicator() : Node("Communicator"),
-                     SUB_TYPE_INIT(geometry_msgs::msg::Twist,velocity,cmd_vel),
+                     SUB_TYPE_INIT(ackermann_msgs::msg::AckermannDrive,velocity,ackermann_cmd),
                     pub_(create_publisher<sensor_msgs::msg::Imu>("/imu", 1))
  
     {
@@ -117,10 +118,10 @@ struct Communicator : public rclcpp::Node{
 
         pub_->publish(imu_msg);
     }
-    CALLBACK_FUNC(geometry_msgs::msg::Twist,msg,velocity) {
+    CALLBACK_FUNC(ackermann_msgs::msg::AckermannDrive,msg,velocity) {
 		data[0] = HEADER(TYPE_VELOCITY_CMD);
-        const double linear = msg->linear.x;
-        double angle = msg->angular.z * (180.0/3.141592653589793238463);
+        const double linear = msg->speed;
+        double angle = msg->steering_angle * (180.0/3.141592653589793238463);
         angle > 45 ? (angle = 45) : 0;
         angle < -45 ? (angle = -45) : 0;
         angle += 90;
@@ -215,7 +216,7 @@ next += 35ms;
     }
 
     rclcpp::TimerBase::SharedPtr timer_;
-	SUB_TYPE_DECL(geometry_msgs::msg::Twist,velocity);
+	SUB_TYPE_DECL(ackermann_msgs::msg::AckermannDrive,velocity);
 	SUB_TYPE_DECL(geometry_msgs::msg::Twist,tilt);
     int serial_port;
     struct termios tty;
@@ -236,8 +237,8 @@ int main(int argc, char ** argv)
 {
     rclcpp::init(argc, argv);
     // Communicator::count = 0;
-    /*std::shared_ptr<Communicator> a = std::make_shared<Communicator>();
-    boost::thread thread_b(Communicator::thread_call, a);*/
+    std::shared_ptr<Communicator> a = std::make_shared<Communicator>();
+    //boost::thread thread_b(Communicator::thread_call, a);
     rclcpp::spin(a);
     rclcpp::shutdown();
     //    t1->join();
