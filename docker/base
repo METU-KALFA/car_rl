@@ -30,7 +30,7 @@ _start_session() {
 	
 	if [ ! -f "$lockfile" ]; then
 		xhost +local:root
-		docker run -it --rm -d \
+		docker run -dit --rm \
 			--network host \
 			--privileged \
 			--env XAUTHORITH=${XAUTH} \
@@ -44,21 +44,24 @@ _start_session() {
 	fi
 }
 
-if [[ $# -eq 1 && $1 -eq 'stop' ]]; then
+if [ $# -eq 1 ] && [ "$1" = 'stop' ]; then
 	_stop_session
+	echo stopped...
 
-elif [[ $# -eq 1 && $1 -eq 'restart' ]]; then
+elif [ $# -eq 1 ] && [ "$1" = 'restart' ]; then
 	_stop_session
 	_start_session
+	echo restarted..
 else
 	if [ ! -f $lockfile ]; then
 		_start_session
+		echo created...
 	fi
 
 	if [ $# == 0 ]; then
-		echo docker exec -it $(cat $lockfile) bash
+		docker exec -it $(cat $lockfile) bash 
 	elif [[ $# != 1 ]] || [[ $1 != 'start' ]]; then
-		echo docker exec -it $(cat $lockfile) ros2 $@
+		docker exec -it $(cat $lockfile) ros2 $@
 	fi
 fi
 

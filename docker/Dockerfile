@@ -1,6 +1,10 @@
 FROM ros:foxy-ros-base
 ENV ROS_DISTRO foxy
 
+# setup environment
+#RUN locale-gen en_US.UTF-8
+#ENV LANG en_US.UTF-8
+
 # install ros build tools
 RUN apt-get update && apt-get install -y \
       python3-colcon-common-extensions vim apt-utils
@@ -76,8 +80,8 @@ RUN  rm -rf /var/lib/apt/lists/*
 WORKDIR /root
 
 # Create an entrypoint file
-COPY entrypoint.sh /root/
-RUN chmod +x entrypoint.sh
-ENTRYPOINT ["/bin/bash", "-c", "source /root/entrypoint.sh"]
-CMD ["/bin/bash"]
+COPY ./entrypoint.sh /ros_entrypoint.sh
+RUN chmod +x /ros_entrypoint.sh
+ENTRYPOINT ["/ros_entrypoint.sh"]
+CMD ["bash"]
 

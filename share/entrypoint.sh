@@ -2,5 +2,5 @@
 
 set -e
 
-source /root/host_ws/install/setup.bash
-exec $@
+. "$SHARED_WS/install/setup.bash"
+exec "$@"
