@@ -7,7 +7,7 @@ imgname=kovan:devel
 
 docker build -f Dockerfile -t $imgname ../share
 
-sed "s|_ROS2_SHARE_|$srcpath|g" base > $HOME/.local/bin/ros2
-sed -i "s|_ROS2_IMAGE_|$imgname|g" $HOME/.local/bin/ros2
-chmod +x $HOME/.local/bin/ros2
+sed "s|_ROS2_SHARE_|$srcpath|g" base > /home/car-rl/.local/bin/ros2
+sed -i "s|_ROS2_IMAGE_|$imgname|g" /home/car-rl/.local/bin/ros2
+chmod +x /home/car-rl/.local/bin/ros2
 

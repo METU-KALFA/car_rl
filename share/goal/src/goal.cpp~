@@ -1,0 +1,134 @@
+#include <cstdio>
+#include "service_interface/srv/location.hpp"
+#include "service_interface/srv/force.hpp"
+#include "service_interface/srv/ready.hpp"
+#include <rclcpp/rclcpp.hpp>
+#include "std_msgs/msg/empty.hpp"
+#include <semaphore.h>
+sem_t message_wait;
+// berbat dizayn
+float goal_x = 70.77;
+float goal_y = -3.79;
+
+struct goal : public rclcpp::Node
+{
+    goal() : Node("goal")
+    {
+      sem_init(&message_wait,0,0);
+        timer_callback_group = create_callback_group(rclcpp::callback_group::CallbackGroupType::MutuallyExclusive);
+        ready_callback_group = create_callback_group(rclcpp::callback_group::CallbackGroupType::MutuallyExclusive);
+        force_callback_group = create_callback_group(rclcpp::callback_group::CallbackGroupType::MutuallyExclusive);
+        location_callback_group = create_callback_group(rclcpp::callback_group::CallbackGroupType::MutuallyExclusive);
+        location_client =  this->create_client<service_interface::srv::Location>("/service/odom", rmw_qos_profile_services_default, location_callback_group);
+	    i_location_client =  this->create_client<service_interface::srv::Location>("/init/odom", rmw_qos_profile_services_default, location_callback_group);
+        timer = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&goal::timer_callback, this), timer_callback_group);
+        ready_service = this->create_service<service_interface::srv::Ready>("/ready/goal", std::bind(&goal::ready_callback, this, std::placeholders::_1, std::placeholders::_2), rmw_qos_profile_services_default, ready_callback_group);
+        force_service = this->create_service<service_interface::srv::Force>("/force/goal", std::bind(&goal::force_callback, this, std::placeholders::_1, std::placeholders::_2), rmw_qos_profile_services_default, force_callback_group);
+	    shutdown_pub = this->create_publisher<std_msgs::msg::Empty>("/shutdown", 10);
+    }
+    bool is_ready = false;
+    float force_x = 0.0;
+    float force_y = 0.0;
+    float send_x = 0.0;
+    float send_y = 0.0;
+    std::mutex mtx;
+    rclcpp::TimerBase::SharedPtr timer;
+  rclcpp::Client<service_interface::srv::Location>::SharedPtr location_client;
+  rclcpp::Client<service_interface::srv::Location>::SharedPtr i_location_client;
+  rclcpp::Service<service_interface::srv::Ready>::SharedPtr ready_service;
+    rclcpp::Service<service_interface::srv::Force>::SharedPtr force_service;
+    rclcpp::Publisher<std_msgs::msg::Empty>::SharedPtr shutdown_pub;
+    rclcpp::CallbackGroup::SharedPtr timer_callback_group;
+    rclcpp::CallbackGroup::SharedPtr ready_callback_group;
+    rclcpp::CallbackGroup::SharedPtr force_callback_group;
+    rclcpp::CallbackGroup::SharedPtr location_callback_group;
+  void first_time(){
+     rclcpp::Client<service_interface::srv::Location>::SharedRequest client_request = std::make_shared<service_interface::srv::Location::Request>();
+        rclcpp::Client<service_interface::srv::Location>::SharedResponse client_response = std::make_shared<service_interface::srv::Location::Response>();
+        std::atomic_bool execution_done(false);
+        auto inner_location_callback = [&, this](rclcpp::Client<service_interface::srv::Location>::SharedFuture inner_future)
+        {
+            auto result = inner_future.get();
+            client_response->x = result->x;
+            client_response->y = result->y;
+            client_response->yaw = result->yaw;
+            //execution_done.store(true, std::memory_order_release);
+	    sem_post(&message_wait);
+            RCLCPP_INFO(this->get_logger(), "[inner service] callback executed");
+        };
+        auto location_srv = i_location_client->async_send_request(client_request, inner_location_callback);
+        //while (!execution_done.load(std::memory_order_relaxed))
+        //{
+        //    std::this_thread::sleep_for(std::chrono::nanoseconds(10));
+        //}
+	sem_wait(&message_wait);
+        goal_x = goal_x + client_response->x;
+        goal_y = goal_y + client_response->y;
+       
+  }
+  void timer_callback()
+    {
+      static bool first = true;
+      if(first){
+	first_time();
+	first = false;
+      }		       
+        rclcpp::Client<service_interface::srv::Location>::SharedRequest client_request = std::make_shared<service_interface::srv::Location::Request>();
+        rclcpp::Client<service_interface::srv::Location>::SharedResponse client_response = std::make_shared<service_interface::srv::Location::Response>();
+        std::atomic_bool execution_done(false);
+        auto inner_location_callback = [&, this](rclcpp::Client<service_interface::srv::Location>::SharedFuture inner_future)
+        {
+            auto result = inner_future.get();
+            client_response->x = result->x;
+            client_response->y = result->y;
+            client_response->yaw = result->yaw;
+            sem_post(&message_wait);
+            RCLCPP_INFO(this->get_logger(), "[inner service] callback executed");
+        };
+        auto location_srv = location_client->async_send_request(client_request, inner_location_callback);
+        //while (!execution_done.load(std::memory_order_relaxed))
+	  //{
+	  // std::this_thread::sleep_for(std::chrono::nanoseconds(10));
+	    //}
+	sem_wait(&message_wait);
+        float displacement_x = goal_x - client_response->x;
+        float displacement_y = goal_y - client_response->y;
+        //@TODO: check for arrival here later
+	if(abs(displacement_x) <=0.01 && abs(displacement_y)<=0.01){
+	  	auto msg = std_msgs::msg::Empty();
+		shutdown_pub->publish(msg);
+		return;
+	}
+        mtx.lock();
+        force_x = displacement_x * displacement_x;
+        force_y = displacement_y * displacement_y;
+        is_ready = true;
+        mtx.unlock();
+    }
+    void ready_callback(const std::shared_ptr<service_interface::srv::Ready::Request> request, std::shared_ptr<service_interface::srv::Ready::Response> response)
+    {
+        std::lock_guard<std::mutex> lock(mtx);
+        response->ready = is_ready;
+        send_x = force_x;
+        send_y = force_y;
+    }
+    void force_callback(const std::shared_ptr<service_interface::srv::Force::Request> request, std::shared_ptr<service_interface::srv::Force::Response> response)
+    {
+        std::lock_guard<std::mutex> lock(mtx);
+        RCLCPP_INFO(this->get_logger(), "GOAL FORCE GOT REQUESTED\n");
+        response->x = send_x;
+        response->y = send_y;
+        is_ready = false;
+    }
+};
+
+int main(int argc, char **argv)
+{
+    rclcpp::init(argc, argv);
+    rclcpp::executors::MultiThreadedExecutor executor;
+    auto node = std::make_shared<goal>();
+    executor.add_node(node);
+    executor.spin();
+    rclcpp::shutdown();
+    return 0;
+}
