@@ -3,22 +3,15 @@ Reinforcement autonomous driving project of Kovan Lab.
 
 [![Docker Image CI](https://github.com/METU-KALFA/car_rl/actions/workflows/docker-image.yml/badge.svg)](https://github.com/METU-KALFA/car_rl/actions/workflows/docker-image.yml)
 
-# AutonomousCar & Gym Environment
+# AutonomousCar 
 
-In this project we have built an environment which subclasses OpenAI's gym environment. 
+In this project we have built a driving algorithm in ROS2 that follows a lane. 
 
-* [autonomouscar](./autonomouscar.py) contains the gym environment and interacts with ROS.
-
-* [sensormessages](./sensormessages.py) handles sensor data coming from ROS gazebo simulation.
-
-In order to update any functionality related to autonomouscar, please refer to [autonomouscar](./autonomouscar.py).
-
-Action space consists of 3 inputs.
-1. Throttle must be in the range of [0.0, 1.0]
-2. Brake must be in the range of [0.0, 1.0]
-3. Steer must be in the range of [-1.0, 1.0]
-   
-In order to estimate the state of the agent you should utilize and combine different data from sensors. You can choose which sensors to use by modifying the autonomouscar's observation space.
+TODO List For Near Future:
+   - Start using model predictive control for lane following.
+   - Implement a geometric intersection algorithm for constructing valid areas for the robot to go.
+   - Implement several ways to provide explicit geometric fences for the vehicle.
+   - Find or implement a faster lane detection algorithm.
 
 ***
 
