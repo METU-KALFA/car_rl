@@ -106,21 +106,20 @@ class cvBridgeDemo(Node):
         self.mutex.release()
         return response
     def subsumption_force_callback(self, request, response):
+        # This is the subsumption logic for the force boundary however it will probably change in the future
+        # As the clipping is done here. This is an old solution and is not really scalable.
         dst_now = euclidian_dist([request.x,request.y])
         a = min(dst_now,a_max)
         theta = 0.0
         response.is_overwritten = False
         return response
         if(request.y == 0.0 and request.x==0.0):
-            print("LANYAVSAK")
             response.is_overwritten = False
             return response   
         if(request.y == 0.0 or request.x == 0.0):
             theta = 0.0
-            print("anan: "+str(theta))
         else:
             theta = request.y/request.x
-            print("anan: "+str(theta))
         if theta >= 0 and self.current_target_heading >= 0:
             if theta < self.current_target_heading + 0.09 and theta > self.current_target_heading - 0.09:
                 f = normalize([request.x,request.y])*a

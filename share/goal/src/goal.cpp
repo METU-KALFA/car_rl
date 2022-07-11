@@ -8,7 +8,7 @@
 #include <semaphore.h>
 #include <cmath>
 sem_t message_wait;
-// berbat dizayn
+// bad design elevate to parameter serve
 float goal_x = 70.77;
 float goal_y = -3.79;
 
@@ -48,12 +48,14 @@ struct goal : public rclcpp::Node
   rclcpp::CallbackGroup::SharedPtr location_callback_group;
   void first_time()
   {
-    rclcpp::Client<service_interface::srv::Location>::SharedRequest client_request = std::make_shared<service_interface::srv::Location::Request>();
     double x, y, yaw;
-    auto location_srv = i_location_client->async_send_request(client_request);
+    // The following three lines are a good display of how to use the service calls.
+    rclcpp::Client<service_interface::srv::Location>::SharedRequest client_request = std::make_shared<service_interface::srv::Location::Request>();
+    auto location_srv = i_location_client->async_send_request(client_request); // initial location is requested
     location_get(location_srv, x, y, yaw);
-    goal_x = goal_x + x;
-    goal_y = goal_y + y;
+    // The three lines end here.
+    goal_x = goal_x + x; // we want a displacement from current point rather than an absolute point.
+    goal_y = goal_y + y; 
   }
   void timer_callback()
   {
@@ -73,7 +75,8 @@ struct goal : public rclcpp::Node
 
     if (abs(displacement_x) <= 1 && abs(displacement_y) <= 1)
     {
-      // arrival ti the goal position shutdown message is sent, and is consumed by the pixhawk node
+      // Arrival to the goal position: 
+      // Shutdown message is sent, and is consumed by the pixhawk node
       auto msg = std_msgs::msg::Empty();
       shutdown_pub->publish(msg);
       return;
@@ -84,6 +87,9 @@ struct goal : public rclcpp::Node
     f_absolute =  displacement_x * displacement_x+ displacement_y * displacement_y;
     f_x_local_coordinate = f_absolute * sin(alpha+yaw);
     f_y_local_coordinate = f_absolute * cos(alpha+yaw);
+    // All variables that are interfacing with a ros2 service must be updated in a critical section to
+    // not be gathered in between the update and the request to recieve them. In other words we do not want 
+    // force_x be a newly updated value and force_y be an old value when the ready request tries to gather the values.
     mtx.lock();
     force_x = f_x_local_coordinate;
     force_y = f_y_local_coordinate;
