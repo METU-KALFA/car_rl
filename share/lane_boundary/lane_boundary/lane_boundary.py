@@ -197,7 +197,7 @@ class cvBridgeDemo(Node):
         self.image_pub.publish(self.bridge.cv2_to_imgmsg(orig))
         if(self.im_num != 1800):
             if((self.im_num%30) == 0):
-                cv2.imwrite("/root/host_ws/src/lane_ims/"+str(self.im_num/30)+".png",c)
+                cv2.imwrite("/root/host_ws/src/lane_ims/"+str(self.im_num/30)+".png",orig)
             self.im_num = self.im_num + 1
         
         displacement_y=self.controller.send([self.t,laner.lane_center() - 320.0])
