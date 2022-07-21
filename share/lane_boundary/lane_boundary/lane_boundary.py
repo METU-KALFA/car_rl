@@ -17,7 +17,7 @@ import numpy as np
 import threading
 import time
 import timeit
-from .submodules.lane import Lane
+from .submodules.lane import *
 delta_t = 0.1
 alpha_one = 7
 v_max = 0.17
@@ -54,7 +54,18 @@ def PID(Kp, Ki, Kd, MV_bar=0):
         # update stored data for next iteration
         e_prev = e
         t_prev = t
-    
+def perspective_warp(dst_size=(640,480),
+		     src=np.float32([(60+165,266),(580-165,266),(0, 375), (640,375)]),
+		     dst=np.float32([(1/3,0), (2/3, 0), (1/3,1), (2/3,1)])):
+	dst = dst * np.float32(dst_size)
+	M = cv2.getPerspectiveTransform(src, dst)
+	return M
+def i_perspective_warp(dst_size=(640,480),
+		     src=np.float32([(60+165,266),(580-165,266),(0, 375), (640,375)]),
+		     dst=np.float32([(1/3,0), (2/3, 0), (1/3,1), (2/3,1)])):
+	dst = dst * np.float32(dst_size)
+	M = cv2.getPerspectiveTransform(dst, src)
+	return M
 class cvBridgeDemo(Node):
     def __init__(self):
         super().__init__('LaneFollowing')
@@ -91,8 +102,12 @@ class cvBridgeDemo(Node):
         self.image_pub = self.create_publisher(Image,"lane",10)
         self.image_pub2 = self.create_publisher(Image,"ROI",10)
         self.t = 0
-        self.controller = PID(1.0,0.0,0.0)
+        self.controller = PID(0.004,0.0,0.0)
         self.controller.send(None)
+        self.M = perspective_warp()
+        self.inv_M = i_perspective_warp()
+        self.gray_minus = np.full((480, 640, 1), 50, np.uint8)
+        self.lane_detector = LaneDetection()
     def ready_callback(self, request, response):
         response.ready = self.is_ready
         self.ready_counter = self.ready_counter - 1
@@ -151,71 +166,45 @@ class cvBridgeDemo(Node):
             frame = self.bridge.imgmsg_to_cv2(ros_image, "bgr8")
         except CvBridgeError as e:
             print(e)
-        lane_obj =Lane(orig_frame = frame)    
+        orig = frame.copy()
+        # for lane publishing get a dark image
+        img = np.zeros((480, 640, 3), dtype=np.uint8)
         
-        
-        # Perform thresholding to isolate lane lines
-        lane_obj.get_line_markings()
+        # DARKENED GRAYSCALE
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+	gray = cv2.subtract(gray,self.gray_minus)
+	# HLS COLOR SPACE
+	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HLS)
+	# White and Yellow Masking
+	w_m = cv2.inRange(frame,  np.array([0, 170, 0], dtype=np.uint8), np.array([200, 255, 255], dtype=np.uint8))
+	y_m = cv2.inRange(frame, np.array([10, 0, 100], dtype=np.uint8), np.array([40, 255, 255], dtype=np.uint8))
+	m = cv2.bitwise_or(y_m,w_m)
+	# Mask applied over the grayscale image
+	gray = cv2.bitwise_and(gray, gray, mask=m)
+	# Gaussian Blur
+	gray = cv2.blur(gray, (3,3),0)
+	# Canny Edge detection
+	frame = cv2.Canny(gray, 70, 140)
+	# Warp perspective
+	frame = cv2.warpPerspective(frame, M, (640,480))
+	
+	# Ready for getting lane lines
+        self.lane_detector.process(frame)
+        center_of_lane = int(self.lane_detector.lane_center())
 
-        # Plot the region of interest on the image
-        #roi = lane_obj.plot_roi(plot=False)
-        #self.image_pub2.publish(self.bridge.cv2_to_imgmsg(roi))
-        # Perform the perspective transform to generate a bird's eye view
-        # If Plot == True, show image with new region of interest
-        lane_obj.perspective_transform(plot=False)
-
-        # Generate the image histogram to serve as a starting point
-        # for finding lane line pixels
-        lane_obj.calculate_histogram(plot=False)  
-        
-        # Find lane line pixels using the sliding window method 
-        
-        left_fit, right_fit = lane_obj.get_lane_line_indices_sliding_windows(
-          plot=False)
-        
-        if(type(left_fit) == type(-1)):
-            self.t = self.t + 0.03
-            print("NO LANE DETECTED")
-            return
-
-            # Fill in the lane line
-        lane_obj.get_lane_line_previous_window(left_fit, right_fit, plot=False)
-        
-
-        # Overlay lines on the original frame
-        frame_with_lane_lines = lane_obj.overlay_lane_lines(plot=False)
-        c = cv2.cvtColor(frame_with_lane_lines, cv2.COLOR_BGR2RGB)
-        self.image_pub.publish(self.bridge.cv2_to_imgmsg(c))
+        # Lane publish 
+        self.lane_detector.draw(orig)
+        self.image_pub.publish(self.bridge.cv2_to_imgmsg(orig))
         if(self.im_num != 1800):
             if((self.im_num%30) == 0):
                 cv2.imwrite("/root/host_ws/src/lane_ims/"+str(self.im_num/30)+".png",c)
             self.im_num = self.im_num + 1
-        # Calculate lane line curvature (left and right lane lines)
-        #lane_obj.calculate_curvature(print_to_terminal=False)
-
-        # Calculate center offset                                                                 
-        car_pos =lane_obj.calculate_car_position(print_to_terminal=False)
-        if(car_pos == None):
-            car_pos = -2*self.prev_car_pos
-        if(abs(car_pos)> 2):
-            car_pos = (abs(car_pos)/car_pos)*2
-        print("CAr position"+str(car_pos))
-        print(str(timeit.default_timer() - start)+ "s")
         
-        displacement_y=self.controller.send([self.t,-car_pos])
+        displacement_y=self.controller.send([self.t,laner.lane_center() - 320.0])
         #displacement_y = min(a_max/2,displacement_y)
         self.t = self.t + 0.03
         force1 = np.array([a_max,displacement_y])
         theta = atan2(force1[0],force1[1])
-        #if(theta >= 0.27):
-         #   force1[0] = 3*np.cos(0.27)
-          #  force1[1] = 3*np.sin(0.27)
-           # theta = 0.27
-       # elif(theta <= -0.27):
-        #    force1[0] = 3*np.cos(0.27)
-         #   force1[1] = -3*np.sin(0.27)
-          #  theta = -0.27
-        #if(euclidian_dist(force1) > a_max):
         force1 = normalize(force1)*a_max
         force1[0] = a_max
         force = force1
