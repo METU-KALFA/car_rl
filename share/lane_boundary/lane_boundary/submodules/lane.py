@@ -2,8 +2,9 @@
 import numpy as np
 import cv2
 from random import *
-from sklearn.linear_model import RANSACRegressor
+from sklearn.linear_model import RANSACRegressor,HuberRegressor
 from sklearn.preprocessing import PolynomialFeatures
+import time
 class QuadraticModel:
     def __init__(self,ransac_model,poly_model):
         self.p = poly_model
@@ -36,9 +37,11 @@ class segmentor:
         else:
             separator = 320
             self.lane_center = separator
+        print(img.shape)
         arr = np.array(np.nonzero(img[index])[0], dtype = np.int32)
+        print(arr)
         nonzero_left_points, nonzero_right_points = [arr[arr < separator], arr[~(arr < separator)]]
-        nonzero_left_points, nonzero_right_points = np.unique(nonzero_left_points), np.unique(nonzero_right_points)
+        #nonzero_left_points, nonzero_right_points = np.unique(nonzero_left_points), np.unique(nonzero_right_points)
         #nonzero_left_points = nonzero_left_points[::-1] #ones closer to middle are moved to the front
         self.non_zero_left_point_samples = nonzero_left_points
         self.non_zero_right_point_samples = nonzero_right_points
@@ -155,6 +158,7 @@ class LaneDetection:
         self.left_pointset = None
         self.right_pointset = None
     def process(self,img):
+        start = time.time()
         left_pointset_X  = []
         right_pointset_X = []
         left_pointset_Y = []
@@ -164,22 +168,33 @@ class LaneDetection:
             s.update_pointset(left_pointset_X,left_pointset_Y,right_pointset_X,right_pointset_Y)
         #self.left_pointset = np.array(left_pointset)
         #self.right_pointset = np.array(right_pointset)
-        left_pointset_Y = np.asarray(left_pointset_Y).reshape(-1, 1)
+        left_pointset_Y = np.asarray(left_pointset_Y)#.reshape(-1, 1)
         left_pointset_X = np.asarray(left_pointset_X).reshape(-1, 1) 
-        right_pointset_Y = np.array(right_pointset_Y).reshape(-1, 1)
-        right_pointset_X = np.array(right_pointset_X).reshape(-1, 1)
+        right_pointset_Y = np.asarray(right_pointset_Y)#.reshape(-1, 1)
+        right_pointset_X = np.asarray(right_pointset_X).reshape(-1, 1)
+        if(not left_pointset_Y.any() or not right_pointset_Y.any()):
+            return None
+        
         poly_reg=PolynomialFeatures(degree=2)
         left_X_poly=poly_reg.fit_transform(left_pointset_X)
         poly_reg.fit(left_X_poly,left_pointset_Y)
-        left_ran = RANSACRegressor()
+        left_ran = HuberRegressor()            
         left_ran.fit(left_X_poly,left_pointset_Y)
         self.model_left = QuadraticModel(left_ran,poly_reg)
         poly_reg=PolynomialFeatures(degree=2)
         right_X_poly=poly_reg.fit_transform(right_pointset_X)
         poly_reg.fit(right_X_poly,right_pointset_Y)
-        right_ran = RANSACRegressor()
+        right_ran = HuberRegressor()
         right_ran.fit(right_X_poly,right_pointset_Y)
         self.model_right = QuadraticModel(right_ran,poly_reg)
+        
+        for s in self.segments:
+            s.update_lane(self.model_left,self.model_right)
+        end = time.time()
+        print("--------")
+        print(end-start)
+        print("********")
+        return True
         """self.model_left = left
         
         self.model_right = QuadraticModel([0,0,0])
@@ -193,8 +208,7 @@ class LaneDetection:
             self.model_right = ransac_iter(self.seg_map_right,self.model_right,self.right_pointset)
         for i in range(30):
             self.model_left  = ransac_iter(self.seg_map_left ,self.model_left ,self.left_pointset )"""
-        for s in self.segments:
-            s.update_lane(self.model_left,self.model_right)
+        
     def draw(self,img):
         for s in self.segments:
             s.draw_lane(img)
