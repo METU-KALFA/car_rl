@@ -1,0 +1,3 @@
+[submodule "mav"]
+	path = mav
+	url = https://github.com/Foxy-Boxes/mav.git

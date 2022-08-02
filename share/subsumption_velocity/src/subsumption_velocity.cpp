@@ -85,9 +85,10 @@ struct subsumption_velocity: public rclcpp::Node
       
     }else{
       // if a zero message has arrived (lane is not detected in the last timer callback period), carry on with theold value
-      vel_msg.vx = published_x;
-      vel_msg.vy = published_y;
+       vel_msg.vx = published_x/1.1;
+       vel_msg.vy = published_y/1.1;	
       vel_pub->publish(vel_msg);
+	    return;
       // ideally one would wish to eliminate this by using a fast enough lane detector.
     }
     

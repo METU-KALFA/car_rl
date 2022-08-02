@@ -20,8 +20,8 @@ import timeit
 from .submodules.lane import *
 delta_t = 0.1
 alpha_one = 7
-v_max = 0.17
-a_max = 1.7
+v_max = 0.1
+a_max = 2.5
 delta_x_max = v_max * delta_t
 def euclidian_dist(p1):
     return np.sqrt((p1[0])**2 + (p1[1])**2)
@@ -76,7 +76,7 @@ class cvBridgeDemo(Node):
         self.last_true_value = 0
         self.prev_car_pos = 0
         
-        # Init ros node
+        # I9nit ros node
 
         # What we do during shutdown
 
@@ -102,7 +102,7 @@ class cvBridgeDemo(Node):
         self.image_pub = self.create_publisher(Image,"lane",10)
         self.image_pub2 = self.create_publisher(Image,"ROI",10)
         self.t = 0
-        self.controller = PID(0.004,0.0,0.0)
+        self.controller = PID(0.001,0.0,0.0)
         self.controller.send(None)
         self.M = perspective_warp()
         self.inv_M = i_perspective_warp()
