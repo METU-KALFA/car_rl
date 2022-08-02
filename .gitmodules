@@ -1,3 +1,6 @@
 [submodule "mav"]
 	path = ./share/px4_node/src/mav/
 	url = https://github.com/Foxy-Boxes/mav.git
+[submodule "share/px4_node/src/mav"]
+	path = share/px4_node/src/mav
+	url = https://github.com/Foxy-Boxes/mav.git
