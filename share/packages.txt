@@ -1,9 +1,0 @@
-msg_interface
-service_interface
-px4_node
-realsense-ros
-lane_boundary
-subsumption_velocity
-subsumption_force
-velocity_control
-
