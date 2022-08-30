@@ -1,0 +1,66 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /home/tan/venv/tf2keras/bin/python3
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+-- Found carrl_interface: 0.0.0 (/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/cmake)
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found mavros_msgs: 2.1.1 (/opt/ros/foxy/share/mavros_msgs/cmake)
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tan/Desktop/car_d/car_ws/build/car_vision
+-- Install configuration: ""
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/pythonpath.sh
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/pythonpath.dsv
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/road_seg.py
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/model_float32.h5
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/samp.webp
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/lane_finder_video.py
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/model_float32.onnx
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/lane_finder.py
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/model_float32.pb
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/__init__.py
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/saved_model.pb
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane6.png
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane7.png
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane4.png
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane8.png
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane1.png
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane3.png
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane2.png
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane5.png
+Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision'...
+Compiling '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/__init__.py'...
+Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs'...
+Compiling '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/lane_finder.py'...
+Compiling '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/lane_finder_video.py'...
+Compiling '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/road_seg.py'...
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/package_run_dependencies/car_vision
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/parent_prefix_path/car_vision
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/ament_prefix_path.sh
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/ament_prefix_path.dsv
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/path.sh
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/path.dsv
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.bash
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.sh
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.zsh
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.dsv
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.dsv
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/packages/car_vision
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/cmake/car_visionConfig.cmake
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/cmake/car_visionConfig-version.cmake
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.xml

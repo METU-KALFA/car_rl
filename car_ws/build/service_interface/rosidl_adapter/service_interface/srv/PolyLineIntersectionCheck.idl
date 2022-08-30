@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from service_interface/srv/PolyLineIntersectionCheck.srv
+// generated code does not contain a copyright notice
+
+
+module service_interface {
+  module srv {
+    struct PolyLineIntersectionCheck_Request {
+      float x;
+
+      float y;
+
+      float yaw;
+    };
+    struct PolyLineIntersectionCheck_Response {
+      float dist;
+    };
+  };
+};

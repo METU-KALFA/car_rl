@@ -1,0 +1,40 @@
+[0.024s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[0.096s] [ 12%] Built target test_curve
+[0.098s] [ 25%] Built target test_path
+[0.101s] [ 37%] Built target go_to_pos
+[0.101s] [ 50%] Built target vel_commander
+[0.105s] [ 62%] Built target mpc_commander
+[0.108s] [ 75%] Built target tan_commander_curve
+[0.110s] [ 87%] Built target mpc_commander_opt
+[0.112s] [ 93%] [32mBuilding CXX object CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o[0m
+[4.584s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double fc_mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+[4.584s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:66: warning: unused parameter ‘grad’ [-Wunused-parameter]
+[4.584s]    43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[4.584s]       |                                             ~~~~~~~~~~~~~~~~~~~~~^~~~
+[4.584s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:78: warning: unused parameter ‘f_data’ [-Wunused-parameter]
+[4.584s]    43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[4.585s]       |                                                                        ~~~~~~^~~~~~
+[4.585s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+[4.585s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:89:63: warning: unused parameter ‘grad’ [-Wunused-parameter]
+[4.585s]    89 | double mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[4.585s]       |                                          ~~~~~~~~~~~~~~~~~~~~~^~~~
+[4.585s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘int main(int, char**)’:
+[4.585s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:245:41: warning: catching polymorphic type ‘class nlopt::roundoff_limited’ by value [-Wcatch-value=]
+[4.585s]   245 |         }catch (nlopt::roundoff_limited e){
+[4.586s]       |                                         ^
+[4.586s] In file included from /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/Core:164,
+[4.586s]                  from /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/Dense:1,
+[4.586s]                  from /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:15:
+[4.586s] /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/Matrix.h: In instantiation of ‘Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = 2; int _Cols = 2; int _Options = 0; int _MaxRows = 2; int _MaxCols = 2; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double]’:
+[4.586s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:81:39:   required from here
+[4.586s] /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/util/StaticAssert.h:158:51: error: static assertion failed: THIS_METHOD_IS_ONLY_FOR_VECTORS_OF_A_SPECIFIC_SIZE
+[4.586s]   158 |   EIGEN_STATIC_ASSERT(TYPE::IsVectorAtCompileTime && TYPE::SizeAtCompileTime==SIZE, \
+[4.586s] /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/util/StaticAssert.h:33:54: note: in definition of macro ‘EIGEN_STATIC_ASSERT’
+[4.586s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(X,#MSG);
+[4.586s]       |                                                      ^
+[4.586s] /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/Matrix.h:404:7: note: in expansion of macro ‘EIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE’
+[4.586s]   404 |       EIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE(Matrix, 4)
+[4.586s]       |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.586s] make[2]: *** [CMakeFiles/mpc_commander_opt_curve.dir/build.make:63: CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o] Error 1
+[4.586s] make[1]: *** [CMakeFiles/Makefile2:200: CMakeFiles/mpc_commander_opt_curve.dir/all] Error 2
+[4.586s] make: *** [Makefile:141: all] Error 2

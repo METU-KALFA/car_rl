@@ -1,0 +1,1 @@
+docker run -t -v /dev:/dev -dp 14550:14550/udp --mount type=bind,source=/home/car-rl/car_rl/car_ws/src,target=/car_ws/src --platform=linux/arm64 --name car --privileged tanacar/car_ubuntu:latest

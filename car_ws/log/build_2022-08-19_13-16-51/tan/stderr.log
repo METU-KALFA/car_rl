@@ -1,0 +1,31 @@
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double fc_mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:66: warning: unused parameter ‘grad’ [-Wunused-parameter]
+   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                             ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:78: warning: unused parameter ‘f_data’ [-Wunused-parameter]
+   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                                                        ~~~~~~^~~~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:89:63: warning: unused parameter ‘grad’ [-Wunused-parameter]
+   89 | double mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                          ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘int main(int, char**)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:245:41: warning: catching polymorphic type ‘class nlopt::roundoff_limited’ by value [-Wcatch-value=]
+  245 |         }catch (nlopt::roundoff_limited e){
+      |                                         ^
+In file included from /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/Core:164,
+                 from /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/Dense:1,
+                 from /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:15:
+/home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/Matrix.h: In instantiation of ‘Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = 2; int _Cols = 2; int _Options = 0; int _MaxRows = 2; int _MaxCols = 2; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double]’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:81:39:   required from here
+/home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/util/StaticAssert.h:158:51: error: static assertion failed: THIS_METHOD_IS_ONLY_FOR_VECTORS_OF_A_SPECIFIC_SIZE
+  158 |   EIGEN_STATIC_ASSERT(TYPE::IsVectorAtCompileTime && TYPE::SizeAtCompileTime==SIZE, \
+/home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/util/StaticAssert.h:33:54: note: in definition of macro ‘EIGEN_STATIC_ASSERT’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(X,#MSG);
+      |                                                      ^
+/home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/Matrix.h:404:7: note: in expansion of macro ‘EIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE’
+  404 |       EIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE(Matrix, 4)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/mpc_commander_opt_curve.dir/build.make:63: CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:200: CMakeFiles/mpc_commander_opt_curve.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

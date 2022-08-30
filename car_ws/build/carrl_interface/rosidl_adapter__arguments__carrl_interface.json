@@ -1,0 +1,6 @@
+{
+  "package_name": "carrl_interface",
+  "non_idl_tuples": [
+    "/home/tan/Desktop/car_d/car_ws/src/carrl_interface:msg/CurveCoeffs.msg"
+  ]
+}

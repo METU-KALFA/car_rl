@@ -1,0 +1,4 @@
+source;share/car_vision/local_setup.bash
+source;share/car_vision/local_setup.dsv
+source;share/car_vision/local_setup.sh
+source;share/car_vision/local_setup.zsh

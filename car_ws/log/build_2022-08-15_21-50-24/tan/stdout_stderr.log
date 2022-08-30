@@ -1,0 +1,49 @@
+[35m[1mScanning dependencies of target mpc_commander_opt_curve[0m
+[ 14%] Built target go_to_pos
+[ 28%] Built target test_path
+[ 42%] Built target vel_commander
+[ 57%] Built target test_curve
+[ 71%] Built target mpc_commander
+[ 85%] Built target mpc_commander_opt
+[ 92%] [32mBuilding CXX object CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o[0m
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double fc_mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:66: warning: unused parameter ‘grad’ [-Wunused-parameter]
+   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                             ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:78: warning: unused parameter ‘f_data’ [-Wunused-parameter]
+   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                                                        ~~~~~~^~~~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:87:63: warning: unused parameter ‘grad’ [-Wunused-parameter]
+   87 | double mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                          ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘int main(int, char**)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:236:41: warning: catching polymorphic type ‘class nlopt::roundoff_limited’ by value [-Wcatch-value=]
+  236 |         }catch (nlopt::roundoff_limited e){
+      |                                         ^
+[100%] [32m[1mLinking CXX executable mpc_commander_opt_curve[0m
+[100%] Built target mpc_commander_opt_curve
+-- Install configuration: ""
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/go_to_pos
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/vel_commander
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve
+-- Set runtime path of "/home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve" to ""
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_path
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/package_run_dependencies/tan
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/parent_prefix_path/tan
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.bash
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.zsh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.dsv
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/packages/tan
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig.cmake
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig-version.cmake
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.xml

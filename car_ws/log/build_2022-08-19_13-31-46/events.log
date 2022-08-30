@@ -1,0 +1,177 @@
+[0.000000] (-) TimerEvent: {}
+[0.000082] (-) JobUnselected: {'identifier': 'car_vision'}
+[0.000135] (-) JobUnselected: {'identifier': 'carrl_interface'}
+[0.000192] (-) JobUnselected: {'identifier': 'msg_interface'}
+[0.000211] (-) JobUnselected: {'identifier': 'px4_node'}
+[0.000303] (-) JobUnselected: {'identifier': 'service_interface'}
+[0.000429] (tan) JobQueued: {'identifier': 'tan', 'dependencies': OrderedDict()}
+[0.000692] (tan) JobStarted: {'identifier': 'tan'}
+[0.015845] (tan) JobProgress: {'identifier': 'tan', 'progress': 'cmake'}
+[0.016387] (tan) JobProgress: {'identifier': 'tan', 'progress': 'build'}
+[0.016906] (tan) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tan/Desktop/car_d/car_ws/build/tan', '--', '-j16', '-l16'], 'cwd': '/home/tan/Desktop/car_d/car_ws/build/tan', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'tan'), ('LC_TIME', 'tr_TR.UTF-8'), ('SSH_AGENT_PID', '2256'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/104/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib:/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/tan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tan/Desktop/car_d'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.70.1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ZSH', '/home/tan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/104/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '$(print_icon MULTILINE_FIRST_PROMPT_PREFIX)%f%b%k$(build_left_prompt)\n$(print_icon MULTILINE_LAST_PROMPT_PREFIX)'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2029'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/104/usr/share/code/code'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3146'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('COLCON_PREFIX_PATH', '/home/tan/Desktop/car_d/car_ws/install:/home/tan/ros2_ws/install'), ('LOGNAME', 'tan'), ('JOURNAL_STREAM', '8:47799'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'tan'), ('GAZEBO_MODEL_PATH', '/home/tan/ardupilot_gazebo/models_gazebo:/home/tan/ardupilot_gazebo/models:/usr/share/gazebo-11/models:/home/tan/ardupilot_gazebo/models_gazebo:/home/tan/ardupilot_gazebo/models:/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models:/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/tan/venv/tf2keras/bin:/opt/ros/foxy/bin:/home/tan/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-6-2017-q2-update/bin:/usr/lib/ccache:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/tan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/monster:@/tmp/.ICE-unix/2290,unix/monster:/tmp/.ICE-unix/2290'), ('INVOCATION_ID', '235754de0e564d099f66ba8f632ea6af'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('VSCODE_INJECTION', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4805e75d84.sock'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/104/usr/share/glib-2.0/schemas'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('AMENT_PREFIX_PATH', '/home/tan/Desktop/car_d/car_ws/install/tan:/home/tan/Desktop/car_d/car_ws/install/px4_node:/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:/home/tan/Desktop/car_d/car_ws/install/car_vision:/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'tr_TR.UTF-8'), ('DISABLE_WAYLAND', '1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/tan/ardupilot_gazebo/worlds:/usr/share/gazebo-11:/home/tan/ardupilot_gazebo/worlds:/usr/share/gazebo-11:'), ('QT_IM_MODULE', 'ibus'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('VIRTUAL_ENV', '/home/tan/venv/tf2keras'), ('PWD', '/home/tan/Desktop/car_d/car_ws/build/tan'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('GAZEBO_PLUGIN_PATH', '/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('ZDOTDIR', '/home/tan'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('PYTHONPATH', '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tan/Desktop/car_d/car_ws/install/tan:/home/tan/Desktop/car_d/car_ws/install/px4_node:/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:/home/tan/Desktop/car_d/car_ws/install/car_vision:/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.057302] (tan) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mpc_commander_opt_curve\x1b[0m\n'}
+[0.073773] (tan) StdoutLine: {'line': b'[ 12%] Built target test_curve\n'}
+[0.074022] (tan) StdoutLine: {'line': b'[ 25%] Built target test_path\n'}
+[0.074147] (tan) StdoutLine: {'line': b'[ 37%] Built target go_to_pos\n'}
+[0.076463] (tan) StdoutLine: {'line': b'[ 50%] Built target vel_commander\n'}
+[0.077892] (tan) StdoutLine: {'line': b'[ 62%] Built target mpc_commander_opt\n'}
+[0.078267] (tan) StdoutLine: {'line': b'[ 75%] Built target tan_commander_curve\n'}
+[0.078498] (tan) StdoutLine: {'line': b'[ 87%] Built target mpc_commander\n'}
+[0.092452] (tan) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o\x1b[0m\n'}
+[0.099886] (-) TimerEvent: {}
+[0.200117] (-) TimerEvent: {}
+[0.300330] (-) TimerEvent: {}
+[0.400576] (-) TimerEvent: {}
+[0.500837] (-) TimerEvent: {}
+[0.601163] (-) TimerEvent: {}
+[0.701397] (-) TimerEvent: {}
+[0.801598] (-) TimerEvent: {}
+[0.901800] (-) TimerEvent: {}
+[1.002002] (-) TimerEvent: {}
+[1.102225] (-) TimerEvent: {}
+[1.202432] (-) TimerEvent: {}
+[1.302672] (-) TimerEvent: {}
+[1.402964] (-) TimerEvent: {}
+[1.503182] (-) TimerEvent: {}
+[1.603426] (-) TimerEvent: {}
+[1.703705] (-) TimerEvent: {}
+[1.803925] (-) TimerEvent: {}
+[1.904266] (-) TimerEvent: {}
+[2.004520] (-) TimerEvent: {}
+[2.104760] (-) TimerEvent: {}
+[2.205006] (-) TimerEvent: {}
+[2.305311] (-) TimerEvent: {}
+[2.405527] (-) TimerEvent: {}
+[2.505829] (-) TimerEvent: {}
+[2.606081] (-) TimerEvent: {}
+[2.706328] (-) TimerEvent: {}
+[2.806607] (-) TimerEvent: {}
+[2.906858] (-) TimerEvent: {}
+[3.007103] (-) TimerEvent: {}
+[3.107356] (-) TimerEvent: {}
+[3.207613] (-) TimerEvent: {}
+[3.307945] (-) TimerEvent: {}
+[3.408197] (-) TimerEvent: {}
+[3.508423] (-) TimerEvent: {}
+[3.608720] (-) TimerEvent: {}
+[3.708970] (-) TimerEvent: {}
+[3.809240] (-) TimerEvent: {}
+[3.909543] (-) TimerEvent: {}
+[4.009831] (-) TimerEvent: {}
+[4.110199] (-) TimerEvent: {}
+[4.210402] (-) TimerEvent: {}
+[4.310605] (-) TimerEvent: {}
+[4.410853] (-) TimerEvent: {}
+[4.511071] (-) TimerEvent: {}
+[4.611425] (-) TimerEvent: {}
+[4.711697] (-) TimerEvent: {}
+[4.811909] (-) TimerEvent: {}
+[4.912177] (-) TimerEvent: {}
+[5.012430] (-) TimerEvent: {}
+[5.112798] (-) TimerEvent: {}
+[5.213101] (-) TimerEvent: {}
+[5.313412] (-) TimerEvent: {}
+[5.413737] (-) TimerEvent: {}
+[5.513997] (-) TimerEvent: {}
+[5.614247] (-) TimerEvent: {}
+[5.714501] (-) TimerEvent: {}
+[5.814814] (-) TimerEvent: {}
+[5.915117] (-) TimerEvent: {}
+[6.015371] (-) TimerEvent: {}
+[6.115648] (-) TimerEvent: {}
+[6.215928] (-) TimerEvent: {}
+[6.316132] (-) TimerEvent: {}
+[6.416403] (-) TimerEvent: {}
+[6.516647] (-) TimerEvent: {}
+[6.616895] (-) TimerEvent: {}
+[6.717088] (-) TimerEvent: {}
+[6.817280] (-) TimerEvent: {}
+[6.917486] (-) TimerEvent: {}
+[7.017777] (-) TimerEvent: {}
+[7.118013] (-) TimerEvent: {}
+[7.218270] (-) TimerEvent: {}
+[7.318612] (-) TimerEvent: {}
+[7.418849] (-) TimerEvent: {}
+[7.519088] (-) TimerEvent: {}
+[7.619361] (-) TimerEvent: {}
+[7.719689] (-) TimerEvent: {}
+[7.819951] (-) TimerEvent: {}
+[7.920191] (-) TimerEvent: {}
+[8.020456] (-) TimerEvent: {}
+[8.120692] (-) TimerEvent: {}
+[8.220934] (-) TimerEvent: {}
+[8.321129] (-) TimerEvent: {}
+[8.421366] (-) TimerEvent: {}
+[8.521641] (-) TimerEvent: {}
+[8.621918] (-) TimerEvent: {}
+[8.722128] (-) TimerEvent: {}
+[8.822408] (-) TimerEvent: {}
+[8.922649] (-) TimerEvent: {}
+[9.022883] (-) TimerEvent: {}
+[9.123124] (-) TimerEvent: {}
+[9.223385] (-) TimerEvent: {}
+[9.323628] (-) TimerEvent: {}
+[9.423871] (-) TimerEvent: {}
+[9.524111] (-) TimerEvent: {}
+[9.624486] (-) TimerEvent: {}
+[9.724678] (-) TimerEvent: {}
+[9.824916] (-) TimerEvent: {}
+[9.925133] (-) TimerEvent: {}
+[10.025458] (-) TimerEvent: {}
+[10.125766] (-) TimerEvent: {}
+[10.225975] (-) TimerEvent: {}
+[10.326235] (-) TimerEvent: {}
+[10.389199] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function \xe2\x80\x98double fc_mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)\xe2\x80\x99:\n'}
+[10.389402] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:66: warning: unused parameter \xe2\x80\x98grad\xe2\x80\x99 [-Wunused-parameter]\n'}
+[10.389461] (tan) StderrLine: {'line': b'   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){\n'}
+[10.389509] (tan) StderrLine: {'line': b'      |                                             ~~~~~~~~~~~~~~~~~~~~~^~~~\n'}
+[10.389557] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:78: warning: unused parameter \xe2\x80\x98f_data\xe2\x80\x99 [-Wunused-parameter]\n'}
+[10.389604] (tan) StderrLine: {'line': b'   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){\n'}
+[10.389652] (tan) StderrLine: {'line': b'      |                                                                        ~~~~~~^~~~~~\n'}
+[10.389697] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function \xe2\x80\x98double mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)\xe2\x80\x99:\n'}
+[10.389743] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:89:63: warning: unused parameter \xe2\x80\x98grad\xe2\x80\x99 [-Wunused-parameter]\n'}
+[10.389791] (tan) StderrLine: {'line': b'   89 | double mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){\n'}
+[10.389839] (tan) StderrLine: {'line': b'      |                                          ~~~~~~~~~~~~~~~~~~~~~^~~~\n'}
+[10.389887] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function \xe2\x80\x98int main(int, char**)\xe2\x80\x99:\n'}
+[10.389936] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:245:41: warning: catching polymorphic type \xe2\x80\x98class nlopt::roundoff_limited\xe2\x80\x99 by value [-Wcatch-value=]\n'}
+[10.389986] (tan) StderrLine: {'line': b'  245 |         }catch (nlopt::roundoff_limited e){\n'}
+[10.390034] (tan) StderrLine: {'line': b'      |                                         ^\n'}
+[10.398524] (tan) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mpc_commander_opt_curve\x1b[0m\n'}
+[10.426356] (-) TimerEvent: {}
+[10.526589] (-) TimerEvent: {}
+[10.626859] (-) TimerEvent: {}
+[10.727050] (-) TimerEvent: {}
+[10.817566] (tan) StdoutLine: {'line': b'[100%] Built target mpc_commander_opt_curve\n'}
+[10.825578] (tan) CommandEnded: {'returncode': 0}
+[10.827196] (-) TimerEvent: {}
+[10.856249] (tan) JobProgress: {'identifier': 'tan', 'progress': 'install'}
+[10.864236] (tan) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tan/Desktop/car_d/car_ws/build/tan'], 'cwd': '/home/tan/Desktop/car_d/car_ws/build/tan', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'tan'), ('LC_TIME', 'tr_TR.UTF-8'), ('SSH_AGENT_PID', '2256'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/104/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib:/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/tan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/tan/Desktop/car_d'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.70.1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ZSH', '/home/tan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/104/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '$(print_icon MULTILINE_FIRST_PROMPT_PREFIX)%f%b%k$(build_left_prompt)\n$(print_icon MULTILINE_LAST_PROMPT_PREFIX)'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2029'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/104/usr/share/code/code'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3146'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('COLCON_PREFIX_PATH', '/home/tan/Desktop/car_d/car_ws/install:/home/tan/ros2_ws/install'), ('LOGNAME', 'tan'), ('JOURNAL_STREAM', '8:47799'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'tan'), ('GAZEBO_MODEL_PATH', '/home/tan/ardupilot_gazebo/models_gazebo:/home/tan/ardupilot_gazebo/models:/usr/share/gazebo-11/models:/home/tan/ardupilot_gazebo/models_gazebo:/home/tan/ardupilot_gazebo/models:/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models:/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/tan/venv/tf2keras/bin:/opt/ros/foxy/bin:/home/tan/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-6-2017-q2-update/bin:/usr/lib/ccache:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/tan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/monster:@/tmp/.ICE-unix/2290,unix/monster:/tmp/.ICE-unix/2290'), ('INVOCATION_ID', '235754de0e564d099f66ba8f632ea6af'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('VSCODE_INJECTION', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4805e75d84.sock'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/104/usr/share/glib-2.0/schemas'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('AMENT_PREFIX_PATH', '/home/tan/Desktop/car_d/car_ws/install/tan:/home/tan/Desktop/car_d/car_ws/install/px4_node:/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:/home/tan/Desktop/car_d/car_ws/install/car_vision:/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'tr_TR.UTF-8'), ('DISABLE_WAYLAND', '1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/tan/ardupilot_gazebo/worlds:/usr/share/gazebo-11:/home/tan/ardupilot_gazebo/worlds:/usr/share/gazebo-11:'), ('QT_IM_MODULE', 'ibus'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('VIRTUAL_ENV', '/home/tan/venv/tf2keras'), ('PWD', '/home/tan/Desktop/car_d/car_ws/build/tan'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('GAZEBO_PLUGIN_PATH', '/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('ZDOTDIR', '/home/tan'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('PYTHONPATH', '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tan/Desktop/car_d/car_ws/install/tan:/home/tan/Desktop/car_d/car_ws/install/px4_node:/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:/home/tan/Desktop/car_d/car_ws/install/car_vision:/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy')]), 'shell': False}
+[10.871117] (tan) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.871376] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/go_to_pos\n'}
+[10.871624] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/vel_commander\n'}
+[10.871757] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander\n'}
+[10.871976] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt\n'}
+[10.872201] (tan) StdoutLine: {'line': b'-- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve\n'}
+[10.884189] (tan) StdoutLine: {'line': b'-- Set runtime path of "/home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve" to ""\n'}
+[10.884498] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/tan_commander_curve\n'}
+[10.884603] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_path\n'}
+[10.884787] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve\n'}
+[10.884928] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/package_run_dependencies/tan\n'}
+[10.885005] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/parent_prefix_path/tan\n'}
+[10.885078] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.sh\n'}
+[10.885155] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.dsv\n'}
+[10.885232] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.sh\n'}
+[10.885358] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.dsv\n'}
+[10.885425] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.bash\n'}
+[10.885478] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.sh\n'}
+[10.885542] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.zsh\n'}
+[10.885622] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.dsv\n'}
+[10.885676] (tan) StdoutLine: {'line': b'-- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.dsv\n'}
+[10.885729] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/packages/tan\n'}
+[10.885788] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig.cmake\n'}
+[10.885841] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig-version.cmake\n'}
+[10.885894] (tan) StdoutLine: {'line': b'-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.xml\n'}
+[10.887042] (tan) CommandEnded: {'returncode': 0}
+[10.927285] (-) TimerEvent: {}
+[10.945816] (tan) JobEnded: {'identifier': 'tan', 'rc': 0}
+[10.946805] (-) EventReactorShutdown: {}

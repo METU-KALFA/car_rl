@@ -1,0 +1,4 @@
+source;share/carrl_interface/local_setup.bash
+source;share/carrl_interface/local_setup.dsv
+source;share/carrl_interface/local_setup.sh
+source;share/carrl_interface/local_setup.zsh

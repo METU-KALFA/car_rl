@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from service_interface/srv/VelocityBoundaryCheck.srv
+// generated code does not contain a copyright notice
+
+
+module service_interface {
+  module srv {
+    struct VelocityBoundaryCheck_Request {
+      float x;
+
+      float y;
+    };
+    struct VelocityBoundaryCheck_Response {
+      float x;
+
+      float y;
+    };
+  };
+};

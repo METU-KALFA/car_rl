@@ -1,0 +1,57 @@
+[0.032s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[0.093s] [35m[1mScanning dependencies of target test_curve[0m
+[0.100s] [35m[1mScanning dependencies of target mpc_commander_opt_curve[0m
+[0.144s] [ 14%] Built target go_to_pos
+[0.159s] [ 28%] Built target test_path
+[0.160s] [ 42%] Built target vel_commander
+[0.166s] [ 50%] [32mBuilding CXX object CMakeFiles/test_curve.dir/src/test_curve.cpp.o[0m
+[0.167s] [ 64%] Built target mpc_commander
+[0.168s] [ 78%] Built target mpc_commander_opt
+[0.179s] [ 85%] [32mBuilding CXX object CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o[0m
+[7.329s] [ 92%] [32m[1mLinking CXX executable test_curve[0m
+[7.654s] [ 92%] Built target test_curve
+[11.221s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double fc_mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+[11.221s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:66: warning: unused parameter ‘grad’ [-Wunused-parameter]
+[11.221s]    43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[11.221s]       |                                             ~~~~~~~~~~~~~~~~~~~~~^~~~
+[11.221s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:78: warning: unused parameter ‘f_data’ [-Wunused-parameter]
+[11.221s]    43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[11.221s]       |                                                                        ~~~~~~^~~~~~
+[11.221s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+[11.221s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:88:63: warning: unused parameter ‘grad’ [-Wunused-parameter]
+[11.221s]    88 | double mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[11.221s]       |                                          ~~~~~~~~~~~~~~~~~~~~~^~~~
+[11.221s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘int main(int, char**)’:
+[11.221s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:241:41: warning: catching polymorphic type ‘class nlopt::roundoff_limited’ by value [-Wcatch-value=]
+[11.221s]   241 |         }catch (nlopt::roundoff_limited e){
+[11.221s]       |                                         ^
+[11.228s] [100%] [32m[1mLinking CXX executable mpc_commander_opt_curve[0m
+[11.629s] [100%] Built target mpc_commander_opt_curve
+[11.638s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[11.665s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/tan
+[11.671s] -- Install configuration: ""
+[11.671s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/go_to_pos
+[11.671s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/vel_commander
+[11.671s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander
+[11.672s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt
+[11.672s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve
+[11.682s] -- Set runtime path of "/home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve" to ""
+[11.682s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_path
+[11.682s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve
+[11.689s] -- Set runtime path of "/home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve" to ""
+[11.689s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/package_run_dependencies/tan
+[11.689s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/parent_prefix_path/tan
+[11.689s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.sh
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.dsv
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.sh
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.dsv
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.bash
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.sh
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.zsh
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.dsv
+[11.690s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.dsv
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/packages/tan
+[11.690s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig.cmake
+[11.691s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig-version.cmake
+[11.691s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.xml
+[11.696s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/tan

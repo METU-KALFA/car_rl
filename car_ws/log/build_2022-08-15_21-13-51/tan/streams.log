@@ -1,0 +1,61 @@
+[0.038s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/tan/Desktop/car_d/car_ws/src/tan -DCMAKE_INSTALL_PREFIX=/home/tan/Desktop/car_d/car_ws/install/tan
+[0.093s] -- The C compiler identification is GNU 9.4.0
+[0.145s] -- The CXX compiler identification is GNU 9.4.0
+[0.150s] -- Check for working C compiler: /usr/lib/ccache/cc
+[0.204s] -- Check for working C compiler: /usr/lib/ccache/cc -- works
+[0.205s] -- Detecting C compiler ABI info
+[0.259s] -- Detecting C compiler ABI info - done
+[0.277s] -- Detecting C compile features
+[0.277s] -- Detecting C compile features - done
+[0.280s] -- Check for working CXX compiler: /usr/lib/ccache/c++
+[0.342s] -- Check for working CXX compiler: /usr/lib/ccache/c++ -- works
+[0.343s] -- Detecting CXX compiler ABI info
+[0.406s] -- Detecting CXX compiler ABI info - done
+[0.420s] -- Detecting CXX compile features
+[0.420s] -- Detecting CXX compile features - done
+[0.422s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.449s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.449s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.697s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.744s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.752s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.840s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.872s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.952s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.014s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.016s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.017s] -- Looking for pthread.h
+[1.076s] -- Looking for pthread.h - found
+[1.077s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.134s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.134s] -- Looking for pthread_create in pthreads
+[1.178s] -- Looking for pthread_create in pthreads - not found
+[1.179s] -- Looking for pthread_create in pthread
+[1.233s] -- Looking for pthread_create in pthread - found
+[1.234s] -- Found Threads: TRUE  
+[1.395s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[1.397s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.436s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.521s] -- Found mavros_msgs: 2.1.1 (/opt/ros/foxy/share/mavros_msgs/cmake)
+[2.519s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[2.569s] CMake Error at CMakeLists.txt:27 (find_package):
+[2.570s]   By not providing "Findcarrl_interface.cmake" in CMAKE_MODULE_PATH this
+[2.570s]   project has asked CMake to find a package configuration file provided by
+[2.570s]   "carrl_interface", but CMake did not find one.
+[2.570s] 
+[2.570s]   Could not find a package configuration file provided by "carrl_interface"
+[2.570s]   with any of the following names:
+[2.570s] 
+[2.571s]     carrl_interfaceConfig.cmake
+[2.571s]     carrl_interface-config.cmake
+[2.571s] 
+[2.571s]   Add the installation prefix of "carrl_interface" to CMAKE_PREFIX_PATH or
+[2.571s]   set "carrl_interface_DIR" to a directory containing one of the above files.
+[2.571s]   If "carrl_interface" provides a separate development package or SDK, be
+[2.571s]   sure it has been installed.
+[2.571s] 
+[2.572s] 
+[2.572s] -- Configuring incomplete, errors occurred!
+[2.573s] See also "/home/tan/Desktop/car_d/car_ws/build/tan/CMakeFiles/CMakeOutput.log".
+[2.573s] See also "/home/tan/Desktop/car_d/car_ws/build/tan/CMakeFiles/CMakeError.log".
+[2.594s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/tan/Desktop/car_d/car_ws/src/tan -DCMAKE_INSTALL_PREFIX=/home/tan/Desktop/car_d/car_ws/install/tan

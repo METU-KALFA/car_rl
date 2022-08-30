@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target mpc_commander_opt_curve[0m
+[ 12%] Built target test_curve
+[ 25%] Built target test_path
+[ 37%] Built target vel_commander
+[ 50%] Built target go_to_pos
+[ 62%] Built target mpc_commander_opt
+[ 75%] Built target tan_commander_curve
+[ 87%] Built target mpc_commander
+[ 93%] [32mBuilding CXX object CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o[0m

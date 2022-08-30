@@ -1,0 +1,27 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/service_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/service_interface/srv/detail/force__type_support.c.o"
+  "CMakeFiles/service_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/service_interface/srv/detail/force_boundary_check__type_support.c.o"
+  "CMakeFiles/service_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/service_interface/srv/detail/location__type_support.c.o"
+  "CMakeFiles/service_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/service_interface/srv/detail/poly_line_intersection_check__type_support.c.o"
+  "CMakeFiles/service_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/service_interface/srv/detail/ready__type_support.c.o"
+  "CMakeFiles/service_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/service_interface/srv/detail/velocity_boundary_check__type_support.c.o"
+  "libservice_interface__rosidl_typesupport_introspection_c.pdb"
+  "libservice_interface__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/force__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/force__type_support.c"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/force_boundary_check__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/force_boundary_check__type_support.c"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/location__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/location__type_support.c"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/poly_line_intersection_check__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/poly_line_intersection_check__type_support.c"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/ready__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/ready__type_support.c"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/velocity_boundary_check__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/service_interface/srv/detail/velocity_boundary_check__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/service_interface__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

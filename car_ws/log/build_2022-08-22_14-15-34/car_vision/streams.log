@@ -1,0 +1,56 @@
+[0.042s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/car_vision': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/car_vision -- -j16 -l16
+[0.070s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.089s] -- Using PYTHON_EXECUTABLE: /home/tan/venv/tf2keras/bin/python3
+[0.225s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.264s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.268s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.415s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.477s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.478s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.602s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.602s] -- Found carrl_interface: 0.0.0 (/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/cmake)
+[0.611s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.640s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.698s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.754s] -- Found mavros_msgs: 2.1.1 (/opt/ros/foxy/share/mavros_msgs/cmake)
+[1.089s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.152s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.155s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.156s] -- Added test 'lint_cmake' to check CMake code style
+[1.156s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.157s] -- Added test 'xmllint' to check XML markup files
+[1.160s] -- Configuring done
+[1.163s] -- Generating done
+[1.164s] -- Build files have been written to: /home/tan/Desktop/car_d/car_ws/build/car_vision
+[1.181s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/car_vision' returned '0': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/car_vision -- -j16 -l16
+[1.196s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/car_vision': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/car_vision
+[1.202s] -- Install configuration: ""
+[1.202s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/pythonpath.sh
+[1.202s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/pythonpath.dsv
+[1.202s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision
+[1.202s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/__init__.py
+[1.223s] Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision'...
+[1.224s] Compiling '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/__init__.py'...
+[1.224s] Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs'...
+[1.224s] Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models'...
+[1.224s] Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model'...
+[1.224s] Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/assets'...
+[1.224s] Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/variables'...
+[1.226s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/car_vision/lane_finder.py
+[1.226s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/car_vision/lane_finder_video.py
+[1.227s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/package_run_dependencies/car_vision
+[1.227s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/parent_prefix_path/car_vision
+[1.227s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/ament_prefix_path.sh
+[1.227s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/ament_prefix_path.dsv
+[1.227s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/path.sh
+[1.227s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/path.dsv
+[1.227s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.bash
+[1.227s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.sh
+[1.227s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.zsh
+[1.227s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.dsv
+[1.227s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.dsv
+[1.228s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/packages/car_vision
+[1.228s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/cmake/car_visionConfig.cmake
+[1.228s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/cmake/car_visionConfig-version.cmake
+[1.228s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.xml
+[1.233s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/car_vision' returned '0': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/car_vision

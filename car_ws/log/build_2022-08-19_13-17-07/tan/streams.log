@@ -1,0 +1,41 @@
+[0.012s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[0.061s] [ 37%] Built target test_path
+[0.061s] [ 37%] Built target test_curve
+[0.062s] [ 37%] Built target go_to_pos
+[0.062s] [ 50%] Built target vel_commander
+[0.063s] [ 56%] [32mBuilding CXX object CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o[0m
+[0.065s] [ 68%] Built target mpc_commander
+[0.066s] [ 81%] Built target mpc_commander_opt
+[0.068s] [ 93%] Built target tan_commander_curve
+[4.478s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double fc_mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+[4.478s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:66: warning: unused parameter ‘grad’ [-Wunused-parameter]
+[4.479s]    43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[4.479s]       |                                             ~~~~~~~~~~~~~~~~~~~~~^~~~
+[4.479s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:78: warning: unused parameter ‘f_data’ [-Wunused-parameter]
+[4.479s]    43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[4.479s]       |                                                                        ~~~~~~^~~~~~
+[4.479s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+[4.479s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:89:63: warning: unused parameter ‘grad’ [-Wunused-parameter]
+[4.479s]    89 | double mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+[4.479s]       |                                          ~~~~~~~~~~~~~~~~~~~~~^~~~
+[4.479s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘int main(int, char**)’:
+[4.479s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:245:41: warning: catching polymorphic type ‘class nlopt::roundoff_limited’ by value [-Wcatch-value=]
+[4.479s]   245 |         }catch (nlopt::roundoff_limited e){
+[4.480s]       |                                         ^
+[4.480s] In file included from /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/Core:164,
+[4.480s]                  from /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/Dense:1,
+[4.480s]                  from /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:15:
+[4.480s] /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/Matrix.h: In instantiation of ‘Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = 2; int _Cols = 2; int _Options = 0; int _MaxRows = 2; int _MaxCols = 2; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double]’:
+[4.480s] /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:81:39:   required from here
+[4.480s] /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/util/StaticAssert.h:158:51: error: static assertion failed: THIS_METHOD_IS_ONLY_FOR_VECTORS_OF_A_SPECIFIC_SIZE
+[4.480s]   158 |   EIGEN_STATIC_ASSERT(TYPE::IsVectorAtCompileTime && TYPE::SizeAtCompileTime==SIZE, \
+[4.480s] /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/util/StaticAssert.h:33:54: note: in definition of macro ‘EIGEN_STATIC_ASSERT’
+[4.480s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(X,#MSG);
+[4.480s]       |                                                      ^
+[4.480s] /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/Matrix.h:404:7: note: in expansion of macro ‘EIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE’
+[4.480s]   404 |       EIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE(Matrix, 4)
+[4.480s]       |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.480s] make[2]: *** [CMakeFiles/mpc_commander_opt_curve.dir/build.make:63: CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o] Error 1
+[4.480s] make[1]: *** [CMakeFiles/Makefile2:200: CMakeFiles/mpc_commander_opt_curve.dir/all] Error 2
+[4.480s] make: *** [Makefile:141: all] Error 2
+[4.482s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16

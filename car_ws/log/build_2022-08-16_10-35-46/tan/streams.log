@@ -1,0 +1,68 @@
+[0.045s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[0.086s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.123s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.377s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.427s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.431s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.597s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.647s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.655s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.795s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.796s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.827s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.887s] -- Found mavros_msgs: 2.1.1 (/opt/ros/foxy/share/mavros_msgs/cmake)
+[1.291s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[1.299s] -- Found carrl_interface: 0.0.0 (/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/cmake)
+[1.320s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.371s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.382s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.383s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/tan/Desktop/car_d/car_ws/src/tan/include>
+[1.383s] -- Configured cppcheck exclude dirs and/or files: 
+[1.393s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.393s] -- Configured cpplint exclude dirs and/or files: 
+[1.397s] -- Added test 'lint_cmake' to check CMake code style
+[1.408s] -- Added test 'uncrustify' to check C / C++ code style
+[1.408s] -- Configured uncrustify additional arguments: 
+[1.410s] -- Added test 'xmllint' to check XML markup files
+[1.412s] -- Configuring done
+[1.457s] -- Generating done
+[1.459s] -- Build files have been written to: /home/tan/Desktop/car_d/car_ws/build/tan
+[1.487s] [35m[1mScanning dependencies of target tan_commander_curve[0m
+[1.521s] [ 25%] Built target vel_commander
+[1.521s] [ 25%] Built target mpc_commander
+[1.522s] [ 37%] Built target test_path
+[1.523s] [ 62%] Built target test_curve
+[1.523s] [ 62%] Built target mpc_commander_opt
+[1.526s] [ 75%] Built target go_to_pos
+[1.529s] [ 87%] Built target mpc_commander_opt_curve
+[1.570s] [ 93%] [32mBuilding CXX object CMakeFiles/tan_commander_curve.dir/src/tan_commander_curve.cpp.o[0m
+[10.825s] [100%] [32m[1mLinking CXX executable tan_commander_curve[0m
+[11.201s] [100%] Built target tan_commander_curve
+[11.211s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[11.240s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/tan
+[11.247s] -- Install configuration: ""
+[11.247s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/go_to_pos
+[11.247s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/vel_commander
+[11.247s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander
+[11.247s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt
+[11.248s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve
+[11.248s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/tan_commander_curve
+[11.262s] -- Set runtime path of "/home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/tan_commander_curve" to ""
+[11.262s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_path
+[11.262s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve
+[11.262s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/package_run_dependencies/tan
+[11.262s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/parent_prefix_path/tan
+[11.263s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.sh
+[11.263s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.dsv
+[11.263s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.sh
+[11.263s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.dsv
+[11.263s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.bash
+[11.263s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.sh
+[11.263s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.zsh
+[11.263s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.dsv
+[11.263s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.dsv
+[11.263s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/packages/tan
+[11.263s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig.cmake
+[11.264s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig-version.cmake
+[11.264s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.xml
+[11.268s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/tan

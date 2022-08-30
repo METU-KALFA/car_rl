@@ -1,0 +1,50 @@
+[0.047s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[0.105s] [35m[1mScanning dependencies of target test_curve[0m
+[0.148s] [ 12%] Built target go_to_pos
+[0.151s] [ 25%] Built target test_path
+[0.160s] [ 37%] Built target vel_commander
+[0.161s] [ 50%] Built target mpc_commander_opt
+[0.163s] [ 62%] Built target mpc_commander_opt_curve
+[0.168s] [ 75%] Built target mpc_commander
+[0.171s] [ 81%] [32mBuilding CXX object CMakeFiles/test_curve.dir/src/test_curve.cpp.o[0m
+[0.178s] [ 93%] Built target tan_commander_curve
+[6.543s] /home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp: In function ‘rcl_interfaces::msg::SetParametersResult param_callback(const std::vector<rclcpp::Parameter>&)’:
+[6.544s] /home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:30:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+[6.544s]    30 |         sprintf(a,"c%d",curve.coeffs.size());
+[6.544s]       |                     ~^  ~~~~~~~~~~~~~~~~~~~
+[6.544s]       |                      |                   |
+[6.544s]       |                      int                 std::vector<double, std::allocator<double> >::size_type {aka long unsigned int}
+[6.544s]       |                     %ld
+[6.544s] /home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:35:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[6.544s]    35 |       if(index < curve.coeffs.size()){
+[6.544s]       |          ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[6.552s] [100%] [32m[1mLinking CXX executable test_curve[0m
+[6.841s] [100%] Built target test_curve
+[6.849s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[6.882s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/tan
+[6.889s] -- Install configuration: ""
+[6.889s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/go_to_pos
+[6.889s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/vel_commander
+[6.889s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander
+[6.889s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt
+[6.890s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve
+[6.890s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/tan_commander_curve
+[6.890s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_path
+[6.890s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve
+[6.901s] -- Set runtime path of "/home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve" to ""
+[6.901s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/package_run_dependencies/tan
+[6.901s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/parent_prefix_path/tan
+[6.901s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.sh
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.dsv
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.sh
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.dsv
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.bash
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.sh
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.zsh
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.dsv
+[6.902s] -- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.dsv
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/packages/tan
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig.cmake
+[6.902s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig-version.cmake
+[6.903s] -- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.xml
+[6.907s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/tan

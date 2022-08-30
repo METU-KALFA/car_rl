@@ -1,0 +1,11 @@
+{
+  "package_name": "service_interface",
+  "non_idl_tuples": [
+    "/home/tan/Desktop/car_d/car_ws/src/service_interface:srv/Force.srv",
+    "/home/tan/Desktop/car_d/car_ws/src/service_interface:srv/Location.srv",
+    "/home/tan/Desktop/car_d/car_ws/src/service_interface:srv/ForceBoundaryCheck.srv",
+    "/home/tan/Desktop/car_d/car_ws/src/service_interface:srv/VelocityBoundaryCheck.srv",
+    "/home/tan/Desktop/car_d/car_ws/src/service_interface:srv/PolyLineIntersectionCheck.srv",
+    "/home/tan/Desktop/car_d/car_ws/src/service_interface:srv/Ready.srv"
+  ]
+}
