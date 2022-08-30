@@ -35,6 +35,14 @@ Finds lanes with ROI and Canny methods. Works with video input. Outputs a polyno
 #### `road_seg.py` node
 An attempt to convert and test image segmentation model from Intel called [road-segmentation-adas-0001](https://docs.openvino.ai/nightly/omz_models_model_road_segmentation_adas_0001.html), tested with OpenVINO environment, works great but cannot be run on Nvidia Xavier. Attemped to convert it to a tenserflow model, unfortunately it did not work.
 ## Running
+### Requirements
+#### C++ Dependencies
+Eigen library is included in the `tan` package. In case of any error, the library can be installed to the local user via their instuctions.
+NLopt library is needed for the optimization features in `tan` package. It can be installed via their instructions.
+#### Python Dependencies
+Numpy and OpenCV2 packages are required. They can be installed with `python -m pip install numpy opencv-python` command.
+#### ROS Package Dependencies
+[MAVROS](https://github.com/mavlink/mavros) package is needed to communicate with Pixhawk4. Please follow their install instructions for a complete installation.
 ### Docker
 I provided 2 convenience scripts for running and accessing the docker container.
 #### [`dockerrun.sh`](./dockerrun.sh)
