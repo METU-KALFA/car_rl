@@ -1,0 +1,8 @@
+[ 37%] Built target test_path
+[ 37%] Built target test_curve
+[ 37%] Built target go_to_pos
+[ 50%] Built target vel_commander
+[ 56%] [32mBuilding CXX object CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o[0m
+[ 68%] Built target mpc_commander
+[ 81%] Built target mpc_commander_opt
+[ 93%] Built target tan_commander_curve

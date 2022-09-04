@@ -1,0 +1,10 @@
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/install/strip.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/install/local.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/install.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/list_install_components.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/rebuild_cache.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/edit_cache.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/test.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/px4_node.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/px4_node_uninstall.dir
+/home/tan/Desktop/car_d/car_ws/build/px4_node/CMakeFiles/uninstall.dir

@@ -1,0 +1,64 @@
+[35m[1mScanning dependencies of target test_curve[0m
+[ 12%] Built target mpc_commander_opt_curve
+[ 25%] Built target vel_commander
+[ 37%] Built target mpc_commander
+[ 50%] Built target mpc_commander_opt
+[ 56%] [32mBuilding CXX object CMakeFiles/test_curve.dir/src/test_curve.cpp.o[0m
+[ 68%] Built target go_to_pos
+[ 81%] Built target tan_commander_curve
+[ 93%] Built target test_path
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp: In function ‘rcl_interfaces::msg::SetParametersResult param_callback(const std::vector<rclcpp::Parameter>&)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:30:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+   30 |         sprintf(a,"c%d",curve.coeffs.size());
+      |                     ~^  ~~~~~~~~~~~~~~~~~~~
+      |                      |                   |
+      |                      int                 std::vector<double, std::allocator<double> >::size_type {aka long unsigned int}
+      |                     %ld
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:35:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   35 |       if(index < curve.coeffs.size()){
+      |          ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp: In function ‘int main(int, char**)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:79:55: warning: ignoring return value of ‘rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::add_on_set_parameters_callback(rclcpp::Node::OnParametersSetCallbackType)’, declared with attribute warn_unused_result [-Wunused-result]
+   79 |   node->add_on_set_parameters_callback(param_callback);
+      |                                                       ^
+In file included from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:1:
+/opt/ros/foxy/include/rclcpp/node.hpp:819:3: note: declared here
+  819 |   add_on_set_parameters_callback(OnParametersSetCallbackType callback);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp: In function ‘rcl_interfaces::msg::SetParametersResult param_callback(const std::vector<rclcpp::Parameter>&)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:40:26: warning: ‘Param ’ directive writing 6 bytes into a region of size 5 [-Wformat-overflow=]
+   40 |         sprintf(a, "Param %s requires param /curve_sender/degree to be >= %d", p.get_name().c_str(),index + 1);
+      |                     ~~~~~^
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:40:16: note: ‘sprintf’ output 54 or more bytes into a destination of size 5
+   40 |         sprintf(a, "Param %s requires param /curve_sender/degree to be >= %d", p.get_name().c_str(),index + 1);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[100%] [32m[1mLinking CXX executable test_curve[0m
+[100%] Built target test_curve
+-- Install configuration: ""
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/go_to_pos
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/vel_commander
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/mpc_commander_opt_curve
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/tan_commander_curve
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_path
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve
+-- Set runtime path of "/home/tan/Desktop/car_d/car_ws/install/tan/lib/tan/test_curve" to ""
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/package_run_dependencies/tan
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/parent_prefix_path/tan
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/environment/path.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.bash
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.zsh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/local_setup.dsv
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/ament_index/resource_index/packages/tan
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig.cmake
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/cmake/tanConfig-version.cmake
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.xml

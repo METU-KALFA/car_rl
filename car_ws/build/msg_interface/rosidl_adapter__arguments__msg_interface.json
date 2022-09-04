@@ -1,0 +1,8 @@
+{
+  "package_name": "msg_interface",
+  "non_idl_tuples": [
+    "/home/tan/Desktop/car_d/car_ws/src/msg_interface:msg/Force.msg",
+    "/home/tan/Desktop/car_d/car_ws/src/msg_interface:msg/Velocity.msg",
+    "/home/tan/Desktop/car_d/car_ws/src/msg_interface:msg/Control.msg"
+  ]
+}

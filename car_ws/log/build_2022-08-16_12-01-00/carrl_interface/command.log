@@ -1,0 +1,4 @@
+Invoking command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/carrl_interface -- -j16 -l16
+Invoked command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/carrl_interface -- -j16 -l16
+Invoking command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/carrl_interface
+Invoked command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/carrl_interface

@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from service_interface/srv/Ready.srv
+// generated code does not contain a copyright notice
+
+
+module service_interface {
+  module srv {
+    struct Ready_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct Ready_Response {
+      boolean ready;
+    };
+  };
+};

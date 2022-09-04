@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from service_interface/srv/ForceBoundaryCheck.srv
+// generated code does not contain a copyright notice
+
+
+module service_interface {
+  module srv {
+    struct ForceBoundaryCheck_Request {
+      float x;
+
+      float y;
+    };
+    struct ForceBoundaryCheck_Response {
+      boolean is_overwritten;
+
+      float x;
+
+      float y;
+    };
+  };
+};

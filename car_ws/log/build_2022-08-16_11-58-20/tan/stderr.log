@@ -1,0 +1,21 @@
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp: In function ‘rcl_interfaces::msg::SetParametersResult param_callback(const std::vector<rclcpp::Parameter>&)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:30:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+   30 |         sprintf(a,"c%d",curve.coeffs.size());
+      |                     ~^  ~~~~~~~~~~~~~~~~~~~
+      |                      |                   |
+      |                      int                 std::vector<double, std::allocator<double> >::size_type {aka long unsigned int}
+      |                     %ld
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:35:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   35 |       if(index < curve.coeffs.size()){
+      |          ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp: In function ‘int main(int, char**)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:79:55: warning: ignoring return value of ‘rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::add_on_set_parameters_callback(rclcpp::Node::OnParametersSetCallbackType)’, declared with attribute warn_unused_result [-Wunused-result]
+   79 |   node->add_on_set_parameters_callback(param_callback);
+      |                                                       ^
+In file included from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/tan/Desktop/car_d/car_ws/src/tan/src/test_curve.cpp:1:
+/opt/ros/foxy/include/rclcpp/node.hpp:819:3: note: declared here
+  819 |   add_on_set_parameters_callback(OnParametersSetCallbackType callback);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

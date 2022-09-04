@@ -1,0 +1,15 @@
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double fc_mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:66: warning: unused parameter ‘grad’ [-Wunused-parameter]
+   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                             ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:78: warning: unused parameter ‘f_data’ [-Wunused-parameter]
+   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                                                        ~~~~~~^~~~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘double mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:87:63: warning: unused parameter ‘grad’ [-Wunused-parameter]
+   87 | double mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){
+      |                                          ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function ‘int main(int, char**)’:
+/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:242:41: warning: catching polymorphic type ‘class nlopt::roundoff_limited’ by value [-Wcatch-value=]
+  242 |         }catch (nlopt::roundoff_limited e){
+      |                                         ^

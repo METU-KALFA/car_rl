@@ -1,0 +1,23 @@
+{
+  "package_name": "msg_interface",
+  "output_dir": "/home/tan/Desktop/car_d/car_ws/build/msg_interface/rosidl_typesupport_introspection_cpp/msg_interface",
+  "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/home/tan/Desktop/car_d/car_ws/build/msg_interface/rosidl_adapter/msg_interface:msg/Force.idl",
+    "/home/tan/Desktop/car_d/car_ws/build/msg_interface/rosidl_adapter/msg_interface:msg/Velocity.idl",
+    "/home/tan/Desktop/car_d/car_ws/build/msg_interface/rosidl_adapter/msg_interface:msg/Control.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/foxy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/tan/Desktop/car_d/car_ws/build/msg_interface/rosidl_adapter/msg_interface/msg/Force.idl",
+    "/home/tan/Desktop/car_d/car_ws/build/msg_interface/rosidl_adapter/msg_interface/msg/Velocity.idl",
+    "/home/tan/Desktop/car_d/car_ws/build/msg_interface/rosidl_adapter/msg_interface/msg/Control.idl"
+  ]
+}

@@ -1,0 +1,98 @@
+[0.000000] (-) TimerEvent: {}
+[0.000225] (-) JobUnselected: {'identifier': 'car_vision'}
+[0.000360] (-) JobUnselected: {'identifier': 'carrl_interface'}
+[0.000379] (-) JobUnselected: {'identifier': 'msg_interface'}
+[0.000400] (-) JobUnselected: {'identifier': 'px4_node'}
+[0.000446] (-) JobUnselected: {'identifier': 'service_interface'}
+[0.000484] (tan) JobQueued: {'identifier': 'tan', 'dependencies': OrderedDict()}
+[0.000503] (tan) JobStarted: {'identifier': 'tan'}
+[0.009910] (tan) JobProgress: {'identifier': 'tan', 'progress': 'cmake'}
+[0.010799] (tan) JobProgress: {'identifier': 'tan', 'progress': 'build'}
+[0.010830] (tan) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tan/Desktop/car_d/car_ws/build/tan', '--', '-j16', '-l16'], 'cwd': '/home/tan/Desktop/car_d/car_ws/build/tan', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'tan'), ('LC_TIME', 'tr_TR.UTF-8'), ('SSH_AGENT_PID', '2256'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/tan'), ('OLDPWD', '/home/tan'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/tan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('MANAGERPID', '2029'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('COLCON_PREFIX_PATH', '/home/tan/ros2_ws/install'), ('LOGNAME', 'tan'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:47799'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'tan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/tan/ardupilot_gazebo/models_gazebo:/home/tan/ardupilot_gazebo/models:/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/home/tan/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-6-2017-q2-update/bin:/usr/lib/ccache:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/tan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/monster:@/tmp/.ICE-unix/2290,unix/monster:/tmp/.ICE-unix/2290'), ('INVOCATION_ID', '235754de0e564d099f66ba8f632ea6af'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/955b7656_4b4f_4a69_b831_126437b3ca5a'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.341'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_RESOURCE_PATH', '/home/tan/ardupilot_gazebo/worlds:/usr/share/gazebo-11:'), ('QT_IM_MODULE', 'ibus'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/home/tan/Desktop/car_d/car_ws/build/tan'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('PYTHONPATH', '/home/tan/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.061490] (tan) StdoutLine: {'line': b'[ 37%] Built target test_path\n'}
+[0.061888] (tan) StdoutLine: {'line': b'[ 37%] Built target test_curve\n'}
+[0.062033] (tan) StdoutLine: {'line': b'[ 37%] Built target go_to_pos\n'}
+[0.062153] (tan) StdoutLine: {'line': b'[ 50%] Built target vel_commander\n'}
+[0.063733] (tan) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o\x1b[0m\n'}
+[0.065477] (tan) StdoutLine: {'line': b'[ 68%] Built target mpc_commander\n'}
+[0.066065] (tan) StdoutLine: {'line': b'[ 81%] Built target mpc_commander_opt\n'}
+[0.068003] (tan) StdoutLine: {'line': b'[ 93%] Built target tan_commander_curve\n'}
+[0.098688] (-) TimerEvent: {}
+[0.198930] (-) TimerEvent: {}
+[0.299264] (-) TimerEvent: {}
+[0.399559] (-) TimerEvent: {}
+[0.499784] (-) TimerEvent: {}
+[0.600083] (-) TimerEvent: {}
+[0.700387] (-) TimerEvent: {}
+[0.800637] (-) TimerEvent: {}
+[0.900978] (-) TimerEvent: {}
+[1.001232] (-) TimerEvent: {}
+[1.101554] (-) TimerEvent: {}
+[1.201860] (-) TimerEvent: {}
+[1.302168] (-) TimerEvent: {}
+[1.402453] (-) TimerEvent: {}
+[1.502837] (-) TimerEvent: {}
+[1.603100] (-) TimerEvent: {}
+[1.703442] (-) TimerEvent: {}
+[1.803701] (-) TimerEvent: {}
+[1.904005] (-) TimerEvent: {}
+[2.004314] (-) TimerEvent: {}
+[2.104628] (-) TimerEvent: {}
+[2.204876] (-) TimerEvent: {}
+[2.305127] (-) TimerEvent: {}
+[2.405399] (-) TimerEvent: {}
+[2.505729] (-) TimerEvent: {}
+[2.606032] (-) TimerEvent: {}
+[2.706321] (-) TimerEvent: {}
+[2.806620] (-) TimerEvent: {}
+[2.906918] (-) TimerEvent: {}
+[3.007238] (-) TimerEvent: {}
+[3.107576] (-) TimerEvent: {}
+[3.207859] (-) TimerEvent: {}
+[3.308188] (-) TimerEvent: {}
+[3.408466] (-) TimerEvent: {}
+[3.508807] (-) TimerEvent: {}
+[3.609028] (-) TimerEvent: {}
+[3.709279] (-) TimerEvent: {}
+[3.809627] (-) TimerEvent: {}
+[3.909945] (-) TimerEvent: {}
+[4.010275] (-) TimerEvent: {}
+[4.110541] (-) TimerEvent: {}
+[4.210793] (-) TimerEvent: {}
+[4.311064] (-) TimerEvent: {}
+[4.411275] (-) TimerEvent: {}
+[4.478616] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function \xe2\x80\x98double fc_mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)\xe2\x80\x99:\n'}
+[4.478806] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:66: warning: unused parameter \xe2\x80\x98grad\xe2\x80\x99 [-Wunused-parameter]\n'}
+[4.478942] (tan) StderrLine: {'line': b'   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){\n'}
+[4.479060] (tan) StderrLine: {'line': b'      |                                             ~~~~~~~~~~~~~~~~~~~~~^~~~\n'}
+[4.479187] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:43:78: warning: unused parameter \xe2\x80\x98f_data\xe2\x80\x99 [-Wunused-parameter]\n'}
+[4.479294] (tan) StderrLine: {'line': b'   43 | double fc_mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){\n'}
+[4.479378] (tan) StderrLine: {'line': b'      |                                                                        ~~~~~~^~~~~~\n'}
+[4.479464] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function \xe2\x80\x98double mpc(const std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&, void*)\xe2\x80\x99:\n'}
+[4.479569] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:89:63: warning: unused parameter \xe2\x80\x98grad\xe2\x80\x99 [-Wunused-parameter]\n'}
+[4.479673] (tan) StderrLine: {'line': b'   89 | double mpc(const std::vector<double> &x, std::vector<double> &grad, void* f_data){\n'}
+[4.479764] (tan) StderrLine: {'line': b'      |                                          ~~~~~~~~~~~~~~~~~~~~~^~~~\n'}
+[4.479850] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp: In function \xe2\x80\x98int main(int, char**)\xe2\x80\x99:\n'}
+[4.479903] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:245:41: warning: catching polymorphic type \xe2\x80\x98class nlopt::roundoff_limited\xe2\x80\x99 by value [-Wcatch-value=]\n'}
+[4.479955] (tan) StderrLine: {'line': b'  245 |         }catch (nlopt::roundoff_limited e){\n'}
+[4.480006] (tan) StderrLine: {'line': b'      |                                         ^\n'}
+[4.480080] (tan) StderrLine: {'line': b'In file included from /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/Core:164,\n'}
+[4.480137] (tan) StderrLine: {'line': b'                 from /home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/Dense:1,\n'}
+[4.480189] (tan) StderrLine: {'line': b'                 from /home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:15:\n'}
+[4.480260] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/Matrix.h: In instantiation of \xe2\x80\x98Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = 2; int _Cols = 2; int _Options = 0; int _MaxRows = 2; int _MaxCols = 2; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double]\xe2\x80\x99:\n'}
+[4.480317] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/src/mpc_commander_opt_curve.cpp:81:39:   required from here\n'}
+[4.480393] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/util/StaticAssert.h:158:51: error: static assertion failed: THIS_METHOD_IS_ONLY_FOR_VECTORS_OF_A_SPECIFIC_SIZE\n'}
+[4.480449] (tan) StderrLine: {'line': b'  158 |   EIGEN_STATIC_ASSERT(TYPE::IsVectorAtCompileTime && TYPE::SizeAtCompileTime==SIZE, \\\n'}
+[4.480508] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/util/StaticAssert.h:33:54: note: in definition of macro \xe2\x80\x98EIGEN_STATIC_ASSERT\xe2\x80\x99\n'}
+[4.480574] (tan) StderrLine: {'line': b'   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(X,#MSG);\n'}
+[4.480628] (tan) StderrLine: {'line': b'      |                                                      ^\n'}
+[4.480697] (tan) StderrLine: {'line': b'/home/tan/Desktop/car_d/car_ws/src/tan/include/Eigen/src/Core/Matrix.h:404:7: note: in expansion of macro \xe2\x80\x98EIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE\xe2\x80\x99\n'}
+[4.480764] (tan) StderrLine: {'line': b'  404 |       EIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE(Matrix, 4)\n'}
+[4.480817] (tan) StderrLine: {'line': b'      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[4.480867] (tan) StderrLine: {'line': b'make[2]: *** [CMakeFiles/mpc_commander_opt_curve.dir/build.make:63: CMakeFiles/mpc_commander_opt_curve.dir/src/mpc_commander_opt_curve.cpp.o] Error 1\n'}
+[4.480919] (tan) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:200: CMakeFiles/mpc_commander_opt_curve.dir/all] Error 2\n'}
+[4.480970] (tan) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[4.482000] (tan) CommandEnded: {'returncode': 2}
+[4.511780] (-) TimerEvent: {}
+[4.527150] (tan) JobEnded: {'identifier': 'tan', 'rc': 2}
+[4.537758] (-) EventReactorShutdown: {}

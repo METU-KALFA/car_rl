@@ -1,0 +1,8 @@
+source;share/tan/hook/cmake_prefix_path.ps1
+source;share/tan/hook/cmake_prefix_path.dsv
+source;share/tan/hook/cmake_prefix_path.sh
+source;share/tan/local_setup.bash
+source;share/tan/local_setup.dsv
+source;share/tan/local_setup.ps1
+source;share/tan/local_setup.sh
+source;share/tan/local_setup.zsh

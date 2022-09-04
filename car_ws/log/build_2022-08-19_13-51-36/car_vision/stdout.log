@@ -1,0 +1,51 @@
+-- Install configuration: ""
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/pythonpath.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/pythonpath.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/road_seg.py
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/samp.webp
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/lane_finder_video.py
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/lane_finder.py
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/__init__.py
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/model_weight_quant.tflite
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/variables
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/variables/variables.data-00000-of-00001
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/variables/variables.index
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/model_float32.pb
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/model_float16_quant.tflite
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/saved_model.pb
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/model_float32.tflite
+-- Installing: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/assets
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane6.png
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane7.png
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane4.png
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane8.png
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane1.png
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane3.png
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane2.png
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs/lane5.png
+Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision'...
+Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/car_imgs'...
+Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models'...
+Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model'...
+Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/assets'...
+Listing '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/models/saved_model/variables'...
+Compiling '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages/car_vision/road_seg.py'...
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/package_run_dependencies/car_vision
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/parent_prefix_path/car_vision
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/path.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/environment/path.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.bash
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.sh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.zsh
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/local_setup.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.dsv
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/ament_index/resource_index/packages/car_vision
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/cmake/car_visionConfig.cmake
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/cmake/car_visionConfig-version.cmake
+-- Up-to-date: /home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.xml

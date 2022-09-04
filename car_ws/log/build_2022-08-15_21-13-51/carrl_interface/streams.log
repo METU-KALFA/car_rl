@@ -1,0 +1,103 @@
+[0.045s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/tan/Desktop/car_d/car_ws/src/carrl_interface -DCMAKE_INSTALL_PREFIX=/home/tan/Desktop/car_d/car_ws/install/carrl_interface
+[0.105s] -- The C compiler identification is GNU 9.4.0
+[0.156s] -- The CXX compiler identification is GNU 9.4.0
+[0.161s] -- Check for working C compiler: /usr/lib/ccache/cc
+[0.215s] -- Check for working C compiler: /usr/lib/ccache/cc -- works
+[0.216s] -- Detecting C compiler ABI info
+[0.267s] -- Detecting C compiler ABI info - done
+[0.280s] -- Detecting C compile features
+[0.280s] -- Detecting C compile features - done
+[0.282s] -- Check for working CXX compiler: /usr/lib/ccache/c++
+[0.341s] -- Check for working CXX compiler: /usr/lib/ccache/c++ -- works
+[0.343s] -- Detecting CXX compiler ABI info
+[0.407s] -- Detecting CXX compiler ABI info - done
+[0.420s] -- Detecting CXX compile features
+[0.420s] -- Detecting CXX compile features - done
+[0.423s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.451s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.451s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.693s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.697s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.704s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.815s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.845s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.928s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.976s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.101s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.215s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.223s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.248s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.249s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.278s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.278s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.278s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.278s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.300s] -- Found PythonExtra: .so  
+[1.341s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.362s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.364s] -- Added test 'lint_cmake' to check CMake code style
+[1.366s] -- Added test 'xmllint' to check XML markup files
+[1.370s] -- Configuring done
+[1.401s] -- Generating done
+[1.403s] -- Build files have been written to: /home/tan/Desktop/car_d/car_ws/build/carrl_interface
+[1.409s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/tan/Desktop/car_d/car_ws/src/carrl_interface -DCMAKE_INSTALL_PREFIX=/home/tan/Desktop/car_d/car_ws/install/carrl_interface
+[1.412s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/carrl_interface -- -j16 -l16
+[1.455s] [35m[1mScanning dependencies of target carrl_interface__cpp[0m
+[1.456s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.466s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.823s] [  6%] Built target carrl_interface__cpp
+[1.841s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.841s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.842s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.842s] [35m[1mScanning dependencies of target carrl_interface__rosidl_generator_c[0m
+[1.865s] [ 19%] [32mBuilding C object CMakeFiles/carrl_interface__rosidl_generator_c.dir/rosidl_generator_c/carrl_interface/msg/detail/curve_coeffs__functions.c.o[0m
+[1.909s] [ 22%] [32m[1mLinking C shared library libcarrl_interface__rosidl_generator_c.so[0m
+[1.974s] [ 22%] Built target carrl_interface__rosidl_generator_c
+[1.993s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.994s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.244s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_introspection_cpp[0m
+[2.262s] [ 32%] [32mBuilding CXX object CMakeFiles/carrl_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/carrl_interface/msg/detail/curve_coeffs__type_support.cpp.o[0m
+[2.329s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_cpp[0m
+[2.352s] [ 35%] [32mBuilding CXX object CMakeFiles/carrl_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/carrl_interface/msg/curve_coeffs__type_support.cpp.o[0m
+[2.375s] [ 38%] [32m[1mLinking CXX shared library libcarrl_interface__rosidl_typesupport_introspection_cpp.so[0m
+[2.378s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_fastrtps_cpp[0m
+[2.406s] [ 41%] [32mBuilding CXX object CMakeFiles/carrl_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/carrl_interface/msg/detail/dds_fastrtps/curve_coeffs__type_support.cpp.o[0m
+[2.470s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_c[0m
+[2.493s] [ 45%] [32mBuilding CXX object CMakeFiles/carrl_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/carrl_interface/msg/curve_coeffs__type_support.cpp.o[0m
+[2.502s] [ 48%] [32m[1mLinking CXX shared library libcarrl_interface__rosidl_typesupport_cpp.so[0m
+[2.529s] [ 51%] [32m[1mLinking CXX shared library libcarrl_interface__rosidl_typesupport_c.so[0m
+[2.544s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_introspection_c[0m
+[2.557s] [ 51%] Built target carrl_interface__rosidl_typesupport_introspection_cpp
+[2.568s] [ 54%] [32mBuilding C object CMakeFiles/carrl_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/carrl_interface/msg/detail/curve_coeffs__type_support.c.o[0m
+[2.587s] [ 58%] [32m[1mLinking CXX shared library libcarrl_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.599s] [ 58%] Built target carrl_interface__rosidl_typesupport_cpp
+[2.610s] [ 61%] [32m[1mLinking C shared library libcarrl_interface__rosidl_typesupport_introspection_c.so[0m
+[2.657s] [ 61%] Built target carrl_interface__rosidl_typesupport_c
+[2.684s] [ 61%] Built target carrl_interface__rosidl_typesupport_introspection_c
+[2.767s] [ 61%] Built target carrl_interface__rosidl_typesupport_fastrtps_cpp
+[2.781s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.166s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_fastrtps_c[0m
+[3.188s] [ 67%] [32mBuilding CXX object CMakeFiles/carrl_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/carrl_interface/msg/detail/curve_coeffs__type_support_c.cpp.o[0m
+[3.299s] [ 70%] [32m[1mLinking CXX shared library libcarrl_interface__rosidl_typesupport_fastrtps_c.so[0m
+[3.439s] [ 70%] Built target carrl_interface__rosidl_typesupport_fastrtps_c
+[3.457s] [35m[1mScanning dependencies of target carrl_interface[0m
+[3.471s] [ 70%] Built target carrl_interface
+[3.484s] [35m[1mScanning dependencies of target carrl_interface__py[0m
+[3.502s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.014s] [ 74%] Built target carrl_interface__py
+[4.024s] [35m[1mScanning dependencies of target carrl_interface__python[0m
+[4.041s] [ 77%] [32mBuilding C object CMakeFiles/carrl_interface__python.dir/rosidl_generator_py/carrl_interface/msg/_curve_coeffs_s.c.o[0m
+[4.057s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/carrl_interface/libcarrl_interface__python.so[0m
+[4.094s] [ 80%] Built target carrl_interface__python
+[4.105s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_introspection_c__pyext[0m
+[4.105s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_c__pyext[0m
+[4.106s] [35m[1mScanning dependencies of target carrl_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.124s] [ 87%] [32mBuilding C object CMakeFiles/carrl_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/carrl_interface/_carrl_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[4.124s] [ 87%] [32mBuilding C object CMakeFiles/carrl_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/carrl_interface/_carrl_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.126s] [ 90%] [32mBuilding C object CMakeFiles/carrl_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/carrl_interface/_carrl_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.139s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/carrl_interface/carrl_interface_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.139s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/carrl_interface/carrl_interface_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.140s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/carrl_interface/carrl_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.184s] [100%] Built target carrl_interface__rosidl_typesupport_introspection_c__pyext
+[4.185s] [100%] Built target carrl_interface__rosidl_typesupport_c__pyext
+[4.217s] [100%] Built target carrl_interface__rosidl_typesupport_fastrtps_c__pyext

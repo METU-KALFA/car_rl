@@ -1,0 +1,62 @@
+[0.074s] Invoking command in '/home/tan/Desktop/car_d/car_ws/build/car_vision': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tan/Desktop/car_d/car_ws/src/car_vision -DCMAKE_INSTALL_PREFIX=/home/tan/Desktop/car_d/car_ws/install/car_vision
+[0.334s] -- The C compiler identification is GNU 9.4.0
+[0.443s] -- The CXX compiler identification is GNU 9.4.0
+[0.453s] -- Check for working C compiler: /usr/lib/ccache/cc
+[0.518s] -- Check for working C compiler: /usr/lib/ccache/cc -- works
+[0.519s] -- Detecting C compiler ABI info
+[0.566s] -- Detecting C compiler ABI info - done
+[0.583s] -- Detecting C compile features
+[0.584s] -- Detecting C compile features - done
+[0.588s] -- Check for working CXX compiler: /usr/lib/ccache/c++
+[0.663s] -- Check for working CXX compiler: /usr/lib/ccache/c++ -- works
+[0.664s] -- Detecting CXX compiler ABI info
+[0.712s] -- Detecting CXX compiler ABI info - done
+[0.721s] -- Detecting CXX compile features
+[0.722s] -- Detecting CXX compile features - done
+[0.725s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.747s] -- Found PythonInterp: /home/tan/venv/tf2keras/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.747s] -- Using PYTHON_EXECUTABLE: /home/tan/venv/tf2keras/bin/python3
+[0.873s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.921s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.930s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.018s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.053s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.128s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.180s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.181s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.182s] -- Looking for pthread.h
+[1.242s] -- Looking for pthread.h - found
+[1.242s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.304s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.304s] -- Looking for pthread_create in pthreads
+[1.340s] -- Looking for pthread_create in pthreads - not found
+[1.340s] -- Looking for pthread_create in pthread
+[1.382s] -- Looking for pthread_create in pthread - found
+[1.383s] -- Found Threads: TRUE  
+[1.513s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[1.513s] -- Found carrl_interface: 0.0.0 (/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/cmake)
+[1.523s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.553s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.611s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.671s] -- Found mavros_msgs: 2.1.1 (/opt/ros/foxy/share/mavros_msgs/cmake)
+[2.050s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.070s] Traceback (most recent call last):
+[2.070s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 21, in <module>
+[2.070s]     from catkin_pkg.package import parse_package_string
+[2.070s] ModuleNotFoundError: No module named 'catkin_pkg'
+[2.072s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[2.073s]   execute_process(/home/tan/venv/tf2keras/bin/python3
+[2.073s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[2.073s]   /home/tan/Desktop/car_d/car_ws/src/car_vision/package.xml
+[2.073s]   /home/tan/Desktop/car_d/car_ws/build/car_vision/ament_cmake_core/package.cmake)
+[2.073s]   returned error code 1
+[2.073s] Call Stack (most recent call first):
+[2.073s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.073s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[2.073s]   CMakeLists.txt:39 (ament_lint_auto_find_test_dependencies)
+[2.074s] 
+[2.074s] 
+[2.074s] -- Configuring incomplete, errors occurred!
+[2.074s] See also "/home/tan/Desktop/car_d/car_ws/build/car_vision/CMakeFiles/CMakeOutput.log".
+[2.074s] See also "/home/tan/Desktop/car_d/car_ws/build/car_vision/CMakeFiles/CMakeError.log".
+[2.082s] Invoked command in '/home/tan/Desktop/car_d/car_ws/build/car_vision' returned '1': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tan/Desktop/car_d/car_ws/src/car_vision -DCMAKE_INSTALL_PREFIX=/home/tan/Desktop/car_d/car_ws/install/car_vision

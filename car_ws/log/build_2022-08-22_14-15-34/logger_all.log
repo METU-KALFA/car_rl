@@ -1,0 +1,517 @@
+[0.165s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.165s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f96f5292c10>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f96f5292c10>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f96f529b1c0>)
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.188s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tan/Desktop/car_d/car_ws'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_vision) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/car_vision' with type 'ros.ament_cmake' and name 'car_vision'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/carrl_interface) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carrl_interface' with type 'ros.ament_cmake' and name 'carrl_interface'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interface) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/msg_interface' with type 'ros.ament_cmake' and name 'msg_interface'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_node) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_node' with type 'ros.ament_cmake' and name 'px4_node'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/service_interface) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/service_interface' with type 'ros.ament_cmake' and name 'service_interface'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/tan) by extension 'ros'
+[0.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tan' with type 'ros.ament_cmake' and name 'tan'
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.238s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/tan/ros2_ws/install
+[0.239s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 311 installed packages in /opt/ros/foxy
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'carrl_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'carrl_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tan/Desktop/car_d/car_ws/build/carrl_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tan/Desktop/car_d/car_ws/install/carrl_interface', 'merge_install': False, 'path': '/home/tan/Desktop/car_d/car_ws/src/carrl_interface', 'symlink_install': False, 'test_result_base': None}
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'cmake_target' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'msg_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.296s] DEBUG:colcon.colcon_core.verb:Building package 'msg_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tan/Desktop/car_d/car_ws/build/msg_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tan/Desktop/car_d/car_ws/install/msg_interface', 'merge_install': False, 'path': '/home/tan/Desktop/car_d/car_ws/src/msg_interface', 'symlink_install': False, 'test_result_base': None}
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'cmake_target' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'service_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.298s] DEBUG:colcon.colcon_core.verb:Building package 'service_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tan/Desktop/car_d/car_ws/build/service_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tan/Desktop/car_d/car_ws/install/service_interface', 'merge_install': False, 'path': '/home/tan/Desktop/car_d/car_ws/src/service_interface', 'symlink_install': False, 'test_result_base': None}
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'cmake_target' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'cmake_clean_cache' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'cmake_clean_first' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'cmake_force_configure' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'ament_cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'catkin_cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'tan' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.299s] DEBUG:colcon.colcon_core.verb:Building package 'tan' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tan/Desktop/car_d/car_ws/build/tan', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tan/Desktop/car_d/car_ws/install/tan', 'merge_install': False, 'path': '/home/tan/Desktop/car_d/car_ws/src/tan', 'symlink_install': False, 'test_result_base': None}
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'cmake_target' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'car_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.300s] DEBUG:colcon.colcon_core.verb:Building package 'car_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tan/Desktop/car_d/car_ws/build/car_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tan/Desktop/car_d/car_ws/install/car_vision', 'merge_install': False, 'path': '/home/tan/Desktop/car_d/car_ws/src/car_vision', 'symlink_install': False, 'test_result_base': None}
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'cmake_target' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'px4_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'px4_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tan/Desktop/car_d/car_ws/build/px4_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tan/Desktop/car_d/car_ws/install/px4_node', 'merge_install': False, 'path': '/home/tan/Desktop/car_d/car_ws/src/px4_node', 'symlink_install': False, 'test_result_base': None}
+[0.302s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.308s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.308s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tan/Desktop/car_d/car_ws/src/carrl_interface' with build type 'ament_cmake'
+[0.308s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tan/Desktop/car_d/car_ws/src/carrl_interface'
+[0.320s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.320s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.320s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.327s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tan/Desktop/car_d/car_ws/src/msg_interface' with build type 'ament_cmake'
+[0.327s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tan/Desktop/car_d/car_ws/src/msg_interface'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.335s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tan/Desktop/car_d/car_ws/src/service_interface' with build type 'ament_cmake'
+[0.335s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tan/Desktop/car_d/car_ws/src/service_interface'
+[0.337s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.337s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.347s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tan/Desktop/car_d/car_ws/src/tan' with build type 'ament_cmake'
+[0.347s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tan/Desktop/car_d/car_ws/src/tan'
+[0.350s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.350s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/carrl_interface -- -j16 -l16
+[0.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/msg_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/msg_interface -- -j16 -l16
+[0.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/service_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/service_interface -- -j16 -l16
+[0.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[0.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/tan -- -j16 -l16
+[0.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/tan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/tan
+[0.523s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tan)
+[0.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/tan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/tan
+[0.532s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan' for CMake module files
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan' for CMake config files
+[0.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('tan', 'cmake_prefix_path')
+[0.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/hook/cmake_prefix_path.ps1'
+[0.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/hook/cmake_prefix_path.dsv'
+[0.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/hook/cmake_prefix_path.sh'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/lib'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/bin'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/lib/pkgconfig/tan.pc'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/lib/python3.8/site-packages'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/bin'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.dsv'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.sh'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.bash'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.zsh'
+[0.544s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/tan/share/colcon-core/packages/tan)
+[0.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tan)
+[0.581s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan' for CMake module files
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan' for CMake config files
+[0.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('tan', 'cmake_prefix_path')
+[0.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/hook/cmake_prefix_path.ps1'
+[0.584s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/hook/cmake_prefix_path.dsv'
+[0.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/hook/cmake_prefix_path.sh'
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/lib'
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/bin'
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/lib/pkgconfig/tan.pc'
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/lib/python3.8/site-packages'
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/tan/bin'
+[0.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.ps1'
+[0.588s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.dsv'
+[0.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.sh'
+[0.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.bash'
+[0.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/tan/share/tan/package.zsh'
+[0.589s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/tan/share/colcon-core/packages/tan)
+[0.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/carrl_interface -- -j16 -l16
+[0.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/service_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/service_interface -- -j16 -l16
+[0.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/msg_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/msg_interface -- -j16 -l16
+[0.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/carrl_interface
+[0.650s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/msg_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/msg_interface
+[0.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/service_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/service_interface
+[0.677s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carrl_interface)
+[0.680s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface' for CMake module files
+[0.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/carrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/carrl_interface
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface' for CMake config files
+[0.684s] Level 1:colcon.colcon_core.shell:create_environment_hook('carrl_interface', 'cmake_prefix_path')
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/cmake_prefix_path.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/cmake_prefix_path.dsv'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/cmake_prefix_path.sh'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib'
+[0.691s] Level 1:colcon.colcon_core.shell:create_environment_hook('carrl_interface', 'ld_library_path_lib')
+[0.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/ld_library_path_lib.ps1'
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/ld_library_path_lib.dsv'
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/ld_library_path_lib.sh'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/bin'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/pkgconfig/carrl_interface.pc'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages'
+[0.696s] Level 1:colcon.colcon_core.shell:create_environment_hook('carrl_interface', 'pythonpath')
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/pythonpath.ps1'
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/pythonpath.dsv'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/pythonpath.sh'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/bin'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.ps1'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.dsv'
+[0.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.sh'
+[0.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.bash'
+[0.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.zsh'
+[0.704s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/colcon-core/packages/carrl_interface)
+[0.707s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(msg_interface)
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface' for CMake module files
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface' for CMake config files
+[0.716s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interface', 'cmake_prefix_path')
+[0.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/cmake_prefix_path.ps1'
+[0.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/cmake_prefix_path.dsv'
+[0.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/cmake_prefix_path.sh'
+[0.721s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib'
+[0.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interface', 'ld_library_path_lib')
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/ld_library_path_lib.ps1'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/ld_library_path_lib.dsv'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/ld_library_path_lib.sh'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/bin'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/pkgconfig/msg_interface.pc'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/python3.8/site-packages'
+[0.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interface', 'pythonpath')
+[0.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/pythonpath.ps1'
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/pythonpath.dsv'
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/pythonpath.sh'
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/bin'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.ps1'
+[0.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.dsv'
+[0.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.sh'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.bash'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.zsh'
+[0.734s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/colcon-core/packages/msg_interface)
+[0.737s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(service_interface)
+[0.740s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface' for CMake module files
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface' for CMake config files
+[0.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('service_interface', 'cmake_prefix_path')
+[0.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/cmake_prefix_path.ps1'
+[0.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/msg_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/msg_interface
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/cmake_prefix_path.dsv'
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/cmake_prefix_path.sh'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib'
+[0.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('service_interface', 'ld_library_path_lib')
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/ld_library_path_lib.ps1'
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/ld_library_path_lib.dsv'
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/ld_library_path_lib.sh'
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/bin'
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/pkgconfig/service_interface.pc'
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/python3.8/site-packages'
+[0.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('service_interface', 'pythonpath')
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/pythonpath.ps1'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/pythonpath.dsv'
+[0.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/pythonpath.sh'
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/bin'
+[0.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.ps1'
+[0.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.dsv'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.sh'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.bash'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.zsh'
+[0.762s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/service_interface/share/colcon-core/packages/service_interface)
+[0.767s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carrl_interface)
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface' for CMake module files
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface' for CMake config files
+[0.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/service_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/service_interface
+[0.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('carrl_interface', 'cmake_prefix_path')
+[0.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/cmake_prefix_path.ps1'
+[0.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/cmake_prefix_path.dsv'
+[0.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/cmake_prefix_path.sh'
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib'
+[0.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('carrl_interface', 'ld_library_path_lib')
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/ld_library_path_lib.ps1'
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/ld_library_path_lib.dsv'
+[0.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/ld_library_path_lib.sh'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/bin'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/pkgconfig/carrl_interface.pc'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages'
+[0.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('carrl_interface', 'pythonpath')
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/pythonpath.ps1'
+[0.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/pythonpath.dsv'
+[0.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/hook/pythonpath.sh'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/bin'
+[0.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.ps1'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.dsv'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.sh'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.bash'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/carrl_interface/package.zsh'
+[0.787s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/carrl_interface/share/colcon-core/packages/carrl_interface)
+[0.788s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tan/Desktop/car_d/car_ws/src/car_vision' with build type 'ament_cmake'
+[0.788s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tan/Desktop/car_d/car_ws/src/car_vision'
+[0.790s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.790s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.801s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(msg_interface)
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface' for CMake module files
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface' for CMake config files
+[0.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interface', 'cmake_prefix_path')
+[0.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/cmake_prefix_path.ps1'
+[0.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/cmake_prefix_path.dsv'
+[0.813s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/cmake_prefix_path.sh'
+[0.814s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib'
+[0.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interface', 'ld_library_path_lib')
+[0.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/ld_library_path_lib.ps1'
+[0.817s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/ld_library_path_lib.dsv'
+[0.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/ld_library_path_lib.sh'
+[0.818s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/bin'
+[0.818s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/pkgconfig/msg_interface.pc'
+[0.818s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/python3.8/site-packages'
+[0.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interface', 'pythonpath')
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/pythonpath.ps1'
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/pythonpath.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/hook/pythonpath.sh'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/msg_interface/bin'
+[0.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.ps1'
+[0.825s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.dsv'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.sh'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.bash'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/msg_interface/package.zsh'
+[0.827s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/msg_interface/share/colcon-core/packages/msg_interface)
+[0.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/car_vision': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/car_vision -- -j16 -l16
+[0.848s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(service_interface)
+[0.854s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface' for CMake module files
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface' for CMake config files
+[0.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('service_interface', 'cmake_prefix_path')
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/cmake_prefix_path.ps1'
+[0.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/cmake_prefix_path.dsv'
+[0.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/cmake_prefix_path.sh'
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib'
+[0.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('service_interface', 'ld_library_path_lib')
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/ld_library_path_lib.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/ld_library_path_lib.dsv'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/ld_library_path_lib.sh'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/bin'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/pkgconfig/service_interface.pc'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/python3.8/site-packages'
+[0.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('service_interface', 'pythonpath')
+[0.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/pythonpath.ps1'
+[0.872s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/pythonpath.dsv'
+[0.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/hook/pythonpath.sh'
+[0.873s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/service_interface/bin'
+[0.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.ps1'
+[0.877s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.dsv'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.sh'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.bash'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/service_interface/share/service_interface/package.zsh'
+[0.880s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/service_interface/share/colcon-core/packages/service_interface)
+[0.880s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tan/Desktop/car_d/car_ws/src/px4_node' with build type 'ament_cmake'
+[0.880s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tan/Desktop/car_d/car_ws/src/px4_node'
+[0.884s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.884s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/px4_node': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface/lib:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/px4_node -- -j16 -l16
+[0.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/px4_node' returned '0': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface/lib:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/px4_node -- -j16 -l16
+[0.995s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/px4_node': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface/lib:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/px4_node
+[1.004s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_node)
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node' for CMake module files
+[1.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/px4_node' returned '0': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface:/home/tan/Desktop/car_d/car_ws/install/msg_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/service_interface/lib:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/service_interface/lib/python3.8/site-packages:/home/tan/Desktop/car_d/car_ws/install/msg_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/px4_node
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node' for CMake config files
+[1.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_node', 'cmake_prefix_path')
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/hook/cmake_prefix_path.ps1'
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/hook/cmake_prefix_path.dsv'
+[1.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/hook/cmake_prefix_path.sh'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/lib'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/bin'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/lib/pkgconfig/px4_node.pc'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/lib/python3.8/site-packages'
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/bin'
+[1.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.ps1'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.dsv'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.sh'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.bash'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.zsh'
+[1.017s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/px4_node/share/colcon-core/packages/px4_node)
+[1.039s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_node)
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node' for CMake module files
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node' for CMake config files
+[1.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_node', 'cmake_prefix_path')
+[1.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/hook/cmake_prefix_path.ps1'
+[1.045s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/hook/cmake_prefix_path.dsv'
+[1.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/hook/cmake_prefix_path.sh'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/lib'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/bin'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/lib/pkgconfig/px4_node.pc'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/lib/python3.8/site-packages'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/px4_node/bin'
+[1.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.ps1'
+[1.049s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.dsv'
+[1.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.sh'
+[1.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.bash'
+[1.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/px4_node/share/px4_node/package.zsh'
+[1.050s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/px4_node/share/colcon-core/packages/px4_node)
+[1.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/car_vision' returned '0': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tan/Desktop/car_d/car_ws/build/car_vision -- -j16 -l16
+[1.987s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tan/Desktop/car_d/car_ws/build/car_vision': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/car_vision
+[2.020s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(car_vision)
+[2.023s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision' for CMake module files
+[2.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tan/Desktop/car_d/car_ws/build/car_vision' returned '0': AMENT_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface:/home/tan/ros2_ws/install/realsense2_description:/home/tan/ros2_ws/install/realsense2_camera:/home/tan/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib:/home/tan/ros2_ws/install/realsense2_camera/lib:/home/tan/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/tan/ardupilot_gazebo/build:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/tan/Desktop/car_d/car_ws/install/carrl_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tan/Desktop/car_d/car_ws/build/car_vision
+[2.024s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision' for CMake config files
+[2.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_vision', 'cmake_prefix_path')
+[2.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/cmake_prefix_path.ps1'
+[2.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/cmake_prefix_path.dsv'
+[2.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/cmake_prefix_path.sh'
+[2.027s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib'
+[2.027s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/bin'
+[2.027s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/pkgconfig/car_vision.pc'
+[2.027s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages'
+[2.027s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_vision', 'pythonpath')
+[2.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/pythonpath.ps1'
+[2.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/pythonpath.dsv'
+[2.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/pythonpath.sh'
+[2.030s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/bin'
+[2.032s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.ps1'
+[2.032s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.dsv'
+[2.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.sh'
+[2.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.bash'
+[2.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.zsh'
+[2.033s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/car_vision/share/colcon-core/packages/car_vision)
+[2.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(car_vision)
+[2.053s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision' for CMake module files
+[2.053s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision' for CMake config files
+[2.054s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_vision', 'cmake_prefix_path')
+[2.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/cmake_prefix_path.ps1'
+[2.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/cmake_prefix_path.dsv'
+[2.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/cmake_prefix_path.sh'
+[2.056s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib'
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/bin'
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/pkgconfig/car_vision.pc'
+[2.057s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/lib/python3.8/site-packages'
+[2.057s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_vision', 'pythonpath')
+[2.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/pythonpath.ps1'
+[2.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/pythonpath.dsv'
+[2.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/hook/pythonpath.sh'
+[2.060s] Level 1:colcon.colcon_core.environment:checking '/home/tan/Desktop/car_d/car_ws/install/car_vision/bin'
+[2.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.ps1'
+[2.062s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.dsv'
+[2.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.sh'
+[2.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.bash'
+[2.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/tan/Desktop/car_d/car_ws/install/car_vision/share/car_vision/package.zsh'
+[2.063s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tan/Desktop/car_d/car_ws/install/car_vision/share/colcon-core/packages/car_vision)
+[2.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.064s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.071s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.071s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.071s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.083s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.085s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tan/Desktop/car_d/car_ws/install/local_setup.ps1'
+[2.086s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tan/Desktop/car_d/car_ws/install/_local_setup_util_ps1.py'
+[2.087s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tan/Desktop/car_d/car_ws/install/setup.ps1'
+[2.089s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tan/Desktop/car_d/car_ws/install/local_setup.sh'
+[2.090s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tan/Desktop/car_d/car_ws/install/_local_setup_util_sh.py'
+[2.090s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tan/Desktop/car_d/car_ws/install/setup.sh'
+[2.092s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tan/Desktop/car_d/car_ws/install/local_setup.bash'
+[2.092s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tan/Desktop/car_d/car_ws/install/setup.bash'
+[2.093s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tan/Desktop/car_d/car_ws/install/local_setup.zsh'
+[2.094s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tan/Desktop/car_d/car_ws/install/setup.zsh'
