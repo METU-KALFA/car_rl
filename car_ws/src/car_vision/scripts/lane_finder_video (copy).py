@@ -114,39 +114,34 @@ def main(args=None):
     if RECORD_RESULT:
         result_writer = cv2.VideoWriter(now_str+"_result.mp4",cv2.VideoWriter_fourcc(*"MP4V"),cap.get(cv2.CAP_PROP_FPS),(int(cap.get(3)),int(cap.get(4))))
     while(cap.isOpened()):
-        try:
-            _, frame = cap.read()
-            if RECORD_RAW:
-                raw_writer.write(frame)
-            canny_image = canny(frame)
-            cropped_canny = region_of_interest(canny_image)
-            lines = cv2.HoughLinesP(cropped_canny, 2, np.pi/180, 100, np.array([]), minLineLength=40,maxLineGap=5)
-            averaged_lines = average_slope_intercept(frame, lines)
-            if averaged_lines:
-                mid_line = [(averaged_lines[0][0]+averaged_lines[1][0])//2,(averaged_lines[0][1]+averaged_lines[1][1])//2,(averaged_lines[0][2]+averaged_lines[1][2])//2,(averaged_lines[0][3]+averaged_lines[1][3])//2]
-                p = Poly.polyfit([frame.shape[0],*mid_line[1::2]],[frame.shape[1]//2,*mid_line[::2]],2)
-                p1 = Poly.polyfit((frame.shape[0]-np.array(mid_line[1::2]))*4.0/frame.shape[0],(frame.shape[1]//2-np.array(mid_line[::2]))*4.0/frame.shape[1],(1,2))
-                msg.degree = 2
-                msg.coeffs = p1[1:].tolist()
-                x = list(range(frame.shape[0]//2,frame.shape[0],4))
-                y = Poly.polyval(x,p)
-                pts = (np.asarray([y, x]).T).astype(np.int32)
-                line_image = cv2.polylines(frame, [pts], False, (0,255,0))
-            else:
-                msg.degree = 0
-            pub.publish(msg)
-            line_image = display_lines(frame, averaged_lines)
-            combo_image = cv2.addWeighted(frame, 0.8, line_image, 1, 1)
-            if SHOW:
-                cv2.imshow("result", combo_image)
-                if cv2.waitKey(40) & 0xFF == ord('q'):
-                    break
-            if RECORD_RESULT:
-                result_writer.write(combo_image)
-        except KeyboardInterrupt:
-            break; 
-        except:
-            continue
+        _, frame = cap.read()
+        if RECORD_RAW:
+            raw_writer.write(frame)
+        canny_image = canny(frame)
+        cropped_canny = region_of_interest(canny_image)
+        lines = cv2.HoughLinesP(cropped_canny, 2, np.pi/180, 100, np.array([]), minLineLength=40,maxLineGap=5)
+        averaged_lines = average_slope_intercept(frame, lines)
+        if averaged_lines:
+            mid_line = [(averaged_lines[0][0]+averaged_lines[1][0])//2,(averaged_lines[0][1]+averaged_lines[1][1])//2,(averaged_lines[0][2]+averaged_lines[1][2])//2,(averaged_lines[0][3]+averaged_lines[1][3])//2]
+            p = Poly.polyfit([frame.shape[0],*mid_line[1::2]],[frame.shape[1]//2,*mid_line[::2]],2)
+            p1 = Poly.polyfit((frame.shape[0]-np.array(mid_line[1::2]))*4.0/frame.shape[0],(frame.shape[1]//2-np.array(mid_line[::2]))*4.0/frame.shape[1],(1,2))
+            msg.degree = 2
+            msg.coeffs = p1[1:].tolist()
+            x = list(range(frame.shape[0]//2,frame.shape[0],4))
+            y = Poly.polyval(x,p)
+            pts = (np.asarray([y, x]).T).astype(np.int32)
+            line_image = cv2.polylines(frame, [pts], False, (0,255,0))
+        else:
+            msg.degree = 0
+        pub.publish(msg)
+        line_image = display_lines(frame, averaged_lines)
+        combo_image = cv2.addWeighted(frame, 0.8, line_image, 1, 1)
+        if SHOW:
+            cv2.imshow("result", combo_image)
+            if cv2.waitKey(40) & 0xFF == ord('q'):
+                break
+        if RECORD_RESULT:
+            result_writer.write(combo_image)
     cap.release()
     cv2.destroyAllWindows()
 
